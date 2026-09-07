@@ -1,9 +1,9 @@
 {
-  "hardware/Matrix6/DevBoard.pretty/ESP32-S3-WROOM-1_Edge.kicad_mod": "237e55aaaaeaa52318c4d55d68511deab3aeb2502707f54f94bd662925637618",
+  "hardware/Matrix6/DevBoard.pretty/ESP32-S3-WROOM-1_Edge.kicad_mod": "b1edfd947ea88c719a7abb78c1eeed5e7645b1ad6fb3c2bb247d6f0731c94d7c",
   "hardware/Matrix6/DevBoard.pretty/USB4105_NoUnderbodyCopper.kicad_mod": "4bbaa70574992ef1080f766fed0a294b0f93f629313c2d320ae763e0d73d905b",
-  "hardware/Matrix6/Matrix6.kicad_dru": "3c7b3db8e5b41e7a6f5c85ce00b2faa338fa1fbd8b671bc6aceec9c237a157f3",
-  "hardware/Matrix6/Matrix6.kicad_pcb": "fabde2cfe1d13ff8f631c0265ae2106bbdb555769dfc1150de94dfcd200140ec",
-  "hardware/Matrix6/Matrix6.kicad_pro": "d3f710aa46eace0d8e5668a509a0e7d796a11c1747108aa82aff168eba487fbb",
-  "hardware/Matrix6/Matrix6.kicad_sch": "7852fa1e80fc55f193be03f480d2a7f72dd4e5d0d9b91d0bea9d2e40a3b2ad9a",
+  "hardware/Matrix6/Matrix6.kicad_dru": "4cc922491c66efa1a8118e80a904d6bb954cbbcac1b030b5dce8b21021aee61a",
+  "hardware/Matrix6/Matrix6.kicad_pcb": "029c8b813771f6ebfcc0d3098133f1cb6f452137a26d2b3c5b036f00a528b50d",
+  "hardware/Matrix6/Matrix6.kicad_pro": "90cc12fc574b16131e738304a49ac804a5e1a0f546a8f965a1449d9faa98d301",
+  "hardware/Matrix6/Matrix6.kicad_sch": "ebb9b5fbe49bf1c4970ed344f63347a0c0670d5e0df6354659d76987b0735027",
   "hardware/Matrix6/fp-lib-table": "94acf4155dcf4ef8fa5c6760ef2e0bd14c95b52f87102432366e173ee71cdde0"
 }

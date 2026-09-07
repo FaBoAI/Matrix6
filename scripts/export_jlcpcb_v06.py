@@ -21,7 +21,7 @@ def run(*args):
     subprocess.run([CLI, *map(str, args)], check=True, cwd=ROOT)
 
 run('pcb', 'export', 'gerbers', '--layers',
-    'F.Cu,In1.Cu,In2.Cu,B.Cu,F.Mask,B.Mask,F.SilkS,B.SilkS,F.Paste,B.Paste,Edge.Cuts',
+    ('F.Cu,B.Cu,F.Mask,B.Mask,F.SilkS,B.SilkS,F.Paste,B.Paste,Edge.Cuts' if REV=='0.8' else 'F.Cu,In1.Cu,In2.Cu,B.Cu,F.Mask,B.Mask,F.SilkS,B.SilkS,F.Paste,B.Paste,Edge.Cuts'),
     '--no-x2', '--no-netlist', '--subtract-soldermask', '--disable-aperture-macros',
     '-o', OUT/'gerber/', CAD)
 run('pcb', 'export', 'drill', '--format', 'excellon', '--drill-origin', 'absolute',
@@ -42,7 +42,7 @@ pieces = ['<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1400" vi
 def text(x, y, value, size=27):
     pieces.append(f'<text x="{x}" y="{y}" font-size="{size}">{html.escape(value)}</text>')
 text(60, 65, f'Matrix Six v{REV} — PCB FABRICATION / IMPEDANCE REQUIREMENTS', 37)
-text(60, 108, 'Prototype quotation • CAD hash in source-manifest.json • All dimensions in mm • 2026-09-07', 23)
+text(60, 108, 'Prototype quotation • CAD hash in source-manifest.json • All dimensions in mm • 2026-09-08', 23)
 text(60, 160, 'USB routing', 25)
 scale = 14
 def xy(x, y): return 90+(x-97.46)*scale, 200+(y-100)*scale
@@ -99,11 +99,41 @@ rows=[
 ('Keep connector holes, USB slots and NPTH OPEN.',24),
 ('Preserve soldermask openings as supplied.',24),
 ]
+if REV=='0.8':
+    rows=[
+    ('TWO-LAYER PROTOTYPE / USB',34),
+    ('No controlled-impedance service assumed.',27),
+    ('Nominal uniform cross-section: about 90 ohm.',26),
+    ('Target 90 ohm ±10%; prototype testing required.',24),
+    ('F.Cu width 0.380 / edge gap 0.180',26),
+    ('Front coplanar GND clearance: 0.200',26),
+    ('Preserve coplanar ground bands and stitches.',24),
+    ('Rear GND is a pour with signal crossings.',24),
+    ('FR4 1.6 mm nominal; 1 oz outer copper.',26),
+    ('CAD core 1.530; copper 0.035 each side.',24),
+    ('CAD dielectric Er=4.5 is a modelling assumption.',24),
+    ('Uniform straight section: PCB Y=128.5..141.5.',24),
+    ('Pads, bends and length match are transitions.',24),
+    ('Do not substitute a four-layer impedance stack.',24),
+    ('Submit CAM geometry changes for review.',24),
+    ('',20),
+    ('LAYER ORDER / DRILL',34),
+    ('L1: Matrix6-F_Cu.gtl / L2: Matrix6-B_Cu.gbl',23),
+    ('Exactly TWO copper files. No inner copper.',24),
+    ('Min. finished drill 0.300; normal via pad 0.600.',24),
+    ('U1 pad 41: 12 thermal holes 0.300 / pad 0.800.',24),
+    ('Thermal annulus 0.250; preserve array positions.',24),
+    ('Epoxy-fill and copper-cap thermal/in-pad vias.',24),
+    ('U1 thermal PTH pads are NOT component leads.',24),
+    ('Keep connector holes, USB slots and NPTH OPEN.',24),
+    ('Drill counts/sizes: review/drill-report.txt.',24),
+    ('Preserve supplied soldermask openings.',24),
+    ]
 yy=170
 for row,size in rows:
     text(750,yy,row,size);yy+=41
 text(60,1330,'USB connector body: no L1 tracks, vias or copper fill under x113.31..122.25 / y154.325..161.675.',25)
-text(60,1370,'Keep the supplied pads, board edge, RF antenna area and continuous L2 ground. This sheet is fabrication guidance, not a Gerber layer.',23)
+text(60,1370,('Keep pads, RF antenna keepout and front coplanar GND. This sheet is fabrication guidance, not a Gerber layer.' if REV=='0.8' else 'Keep the supplied pads, board edge, RF antenna area and continuous L2 ground. This sheet is fabrication guidance, not a Gerber layer.'),23)
 pieces.append('</svg>')
 (OUT/'review/Matrix6-fabrication-requirements.svg').write_text('\n'.join(pieces)+'\n')
 print('CAD unchanged. Render fabrication requirements to JPEG before packaging.')

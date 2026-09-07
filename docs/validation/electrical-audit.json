@@ -2,17 +2,17 @@
   "board": "hardware/Matrix6/Matrix6.kicad_pcb",
   "USB": {
     "A": {
-      "minus_centerline_mm": 48.01968396369033,
-      "plus_centerline_mm": 48.019686300711136,
-      "absolute_skew_mm": 2.3370208026562977e-06,
+      "minus_centerline_mm": 48.01968396369034,
+      "plus_centerline_mm": 48.019684537118124,
+      "absolute_skew_mm": 5.734277834790191e-07,
       "R11_geometric_span_mm": 1.6499999999999773,
-      "plus_copper_and_pad_mm": 46.36968630071116,
+      "plus_copper_and_pad_mm": 46.36968453711815,
       "package_delay_unverified": true
     },
     "B": {
-      "minus_centerline_mm": 46.3031154211954,
-      "plus_centerline_mm": 46.303115962551885,
-      "absolute_skew_mm": 5.413564849732211e-07
+      "minus_centerline_mm": 46.30311542119541,
+      "plus_centerline_mm": 46.30311419895887,
+      "absolute_skew_mm": 1.2222365342040575e-06
     },
     "module_N_mm": 1.714475138344093,
     "module_P_mm": 1.7115855222570666,
@@ -20,18 +20,222 @@
     "all_on_top": true
   },
   "GND": {
+    "reference_layer": "B.Cu",
+    "return_architecture": "front coplanar GND, stitched to rear pour; rear has signal crossings",
     "signal_track_count_L2": 0,
-    "connected_copper_regions": 1,
-    "area_mm2": 2179.4484072173263,
-    "USB_reference_samples": 13182,
-    "missing_ground_samples": []
+    "connected_copper_regions": 4,
+    "area_mm2": 1397.0767989064625,
+    "USB_reference_samples": 13191,
+    "missing_ground_sample_count": 5227,
+    "missing_ground_samples": [
+      [
+        "/USB_P",
+        104.76,
+        117.9
+      ],
+      [
+        "/USB_P",
+        105.0,
+        117.9
+      ],
+      [
+        "/USB_P",
+        104.52,
+        117.9
+      ],
+      [
+        "/USB_P",
+        104.76,
+        117.92463
+      ],
+      [
+        "/USB_P",
+        105.0,
+        117.92463
+      ],
+      [
+        "/USB_P",
+        104.52,
+        117.92463
+      ],
+      [
+        "/USB_P",
+        104.76,
+        117.94927
+      ],
+      [
+        "/USB_P",
+        105.0,
+        117.94927
+      ],
+      [
+        "/USB_P",
+        104.52,
+        117.94927
+      ],
+      [
+        "/USB_P",
+        104.76,
+        117.9739
+      ],
+      [
+        "/USB_P",
+        105.0,
+        117.9739
+      ],
+      [
+        "/USB_P",
+        104.52,
+        117.9739
+      ],
+      [
+        "/USB_P",
+        104.76,
+        117.99853
+      ],
+      [
+        "/USB_P",
+        105.0,
+        117.99853
+      ],
+      [
+        "/USB_P",
+        104.52,
+        117.99853
+      ],
+      [
+        "/USB_P",
+        104.76,
+        118.02317
+      ],
+      [
+        "/USB_P",
+        105.0,
+        118.02317
+      ],
+      [
+        "/USB_P",
+        104.52,
+        118.02317
+      ],
+      [
+        "/USB_P",
+        104.76,
+        118.0478
+      ],
+      [
+        "/USB_P",
+        105.0,
+        118.0478
+      ],
+      [
+        "/USB_P",
+        104.52,
+        118.0478
+      ],
+      [
+        "/USB_P",
+        104.76,
+        118.07244
+      ],
+      [
+        "/USB_P",
+        105.0,
+        118.07244
+      ],
+      [
+        "/USB_P",
+        104.52,
+        118.07244
+      ],
+      [
+        "/USB_P",
+        104.76,
+        118.09707
+      ],
+      [
+        "/USB_P",
+        105.0,
+        118.09707
+      ],
+      [
+        "/USB_P",
+        104.52,
+        118.09707
+      ],
+      [
+        "/USB_P",
+        104.76,
+        118.1217
+      ],
+      [
+        "/USB_P",
+        105.0,
+        118.1217
+      ],
+      [
+        "/USB_P",
+        104.52,
+        118.1217
+      ],
+      [
+        "/USB_P",
+        104.76,
+        118.14634
+      ],
+      [
+        "/USB_P",
+        105.0,
+        118.14634
+      ],
+      [
+        "/USB_P",
+        104.52,
+        118.14634
+      ],
+      [
+        "/USB_P",
+        104.76,
+        118.17097
+      ],
+      [
+        "/USB_P",
+        105.0,
+        118.17097
+      ],
+      [
+        "/USB_P",
+        104.52,
+        118.17097
+      ],
+      [
+        "/USB_P",
+        104.76,
+        118.1956
+      ],
+      [
+        "/USB_P",
+        105.0,
+        118.1956
+      ],
+      [
+        "/USB_P",
+        104.52,
+        118.1956
+      ],
+      [
+        "/USB_P",
+        104.76,
+        118.22024
+      ]
+    ]
   },
   "power": {
     "USB_to_fuse": {
       "load_A": 0.76,
-      "one_conductive_path_resistance_ohm_60C": 0.017079126278588604,
-      "copper_drop_V": 0.01298013597172734,
-      "copper_loss_W": 0.009864903338512778,
+      "one_conductive_path_resistance_ohm_60C": 0.017071783717651036,
+      "copper_drop_V": 0.012974555625414788,
+      "copper_loss_W": 0.009860662275315239,
       "max_IPC2221_trace_rise_C_estimate": 5.370852021176289,
       "segments": [
         {
@@ -45,26 +249,8 @@
             125.4,
             150.5
           ],
-          "length_mm": 0.2279,
-          "resistance_ohm_60C": 0.0002261310321178135,
-          "drill_mm": 0.3
-        },
-        {
-          "via_at": [
-            125.4,
-            150.5
-          ],
-          "length_mm": 1.0802,
-          "resistance_ohm_60C": 0.0010718154492920674,
-          "drill_mm": 0.3
-        },
-        {
-          "via_at": [
-            125.4,
-            150.5
-          ],
-          "length_mm": 0.26059999999999994,
-          "resistance_ohm_60C": 0.00025857721355814915,
+          "length_mm": 1.565,
+          "resistance_ohm_60C": 0.0015528524144992459,
           "drill_mm": 0.3
         },
         {
@@ -108,26 +294,8 @@
             114.95,
             152.5
           ],
-          "length_mm": 0.26059999999999994,
-          "resistance_ohm_60C": 0.00025857721355814915,
-          "drill_mm": 0.3
-        },
-        {
-          "via_at": [
-            114.95,
-            152.5
-          ],
-          "length_mm": 1.0802,
-          "resistance_ohm_60C": 0.0010718154492920674,
-          "drill_mm": 0.3
-        },
-        {
-          "via_at": [
-            114.95,
-            152.5
-          ],
-          "length_mm": 0.2279,
-          "resistance_ohm_60C": 0.0002261310321178135,
+          "length_mm": 1.565,
+          "resistance_ohm_60C": 0.0015528524144992459,
           "drill_mm": 0.3
         },
         {
@@ -214,10 +382,10 @@
     },
     "diode_to_converter": {
       "load_A": 0.55,
-      "one_conductive_path_resistance_ohm_60C": 0.02446138686030633,
-      "copper_drop_V": 0.013453762773168483,
-      "copper_loss_W": 0.007399569525242666,
-      "max_IPC2221_trace_rise_C_estimate": 9.771528178542702,
+      "one_conductive_path_resistance_ohm_60C": 0.015660616274557827,
+      "copper_drop_V": 0.008613338951006806,
+      "copper_loss_W": 0.004737336423053743,
+      "max_IPC2221_trace_rise_C_estimate": 2.575351955958709,
       "segments": [
         {
           "layer": "F.Cu",
@@ -250,63 +418,45 @@
           "resistance_ohm_60C": 0.000979243868911805
         },
         {
-          "via_at": [
-            122.0,
-            141.4
-          ],
-          "length_mm": 0.2279,
-          "resistance_ohm_60C": 0.0002261310321178135,
-          "drill_mm": 0.3
-        },
-        {
-          "via_at": [
-            122.0,
-            141.4
-          ],
-          "length_mm": 1.0802,
-          "resistance_ohm_60C": 0.0010718154492920674,
-          "drill_mm": 0.3
-        },
-        {
-          "layer": "In2.Cu",
+          "layer": "F.Cu",
           "length_mm": 1.5,
           "width_mm": 0.8,
-          "resistance_ohm_60C": 0.0024609532894736843
+          "resistance_ohm_60C": 0.001068756857142857
         },
         {
-          "layer": "In2.Cu",
-          "length_mm": 1.4142135623730951,
+          "layer": "F.Cu",
+          "length_mm": 1.6401219466856702,
           "width_mm": 0.8,
-          "resistance_ohm_60C": 0.0023202090122269106
-        },
-        {
-          "layer": "In2.Cu",
-          "length_mm": 5.300000000000011,
-          "width_mm": 0.8,
-          "resistance_ohm_60C": 0.008695368289473702
-        },
-        {
-          "layer": "In2.Cu",
-          "length_mm": 1.8384776310850095,
-          "width_mm": 0.8,
-          "resistance_ohm_60C": 0.00301627171589496
+          "resistance_ohm_60C": 0.0011685943847138675
         },
         {
           "via_at": [
-            125.8,
-            133.8
+            124.8,
+            140.4
           ],
-          "length_mm": 1.0802,
-          "resistance_ohm_60C": 0.0010718154492920674,
+          "length_mm": 1.565,
+          "resistance_ohm_60C": 0.0015528524144992459,
           "drill_mm": 0.3
         },
         {
+          "layer": "B.Cu",
+          "length_mm": 5.300000000000011,
+          "width_mm": 0.8,
+          "resistance_ohm_60C": 0.003776274228571436
+        },
+        {
+          "layer": "B.Cu",
+          "length_mm": 1.640121946685659,
+          "width_mm": 0.8,
+          "resistance_ohm_60C": 0.0011685943847138595
+        },
+        {
           "via_at": [
             125.8,
             133.8
           ],
-          "length_mm": 0.2279,
-          "resistance_ohm_60C": 0.0002261310321178135,
+          "length_mm": 1.565,
+          "resistance_ohm_60C": 0.0015528524144992459,
           "drill_mm": 0.3
         },
         {
@@ -318,10 +468,10 @@
     },
     "converter_to_module": {
       "load_A": 0.5,
-      "one_conductive_path_resistance_ohm_60C": 0.10691565301092282,
-      "copper_drop_V": 0.05345782650546141,
-      "copper_loss_W": 0.026728913252730704,
-      "max_IPC2221_trace_rise_C_estimate": 7.868432151500651,
+      "one_conductive_path_resistance_ohm_60C": 0.09985779646389502,
+      "copper_drop_V": 0.04992889823194751,
+      "copper_loss_W": 0.024964449115973755,
+      "max_IPC2221_trace_rise_C_estimate": 2.073778201468351,
       "segments": [
         {
           "layer": "F.Cu",
@@ -334,26 +484,8 @@
             108.1,
             102.51
           ],
-          "length_mm": 0.2279,
-          "resistance_ohm_60C": 0.0002261310321178135,
-          "drill_mm": 0.3
-        },
-        {
-          "via_at": [
-            108.1,
-            102.51
-          ],
-          "length_mm": 1.0802,
-          "resistance_ohm_60C": 0.0010718154492920674,
-          "drill_mm": 0.3
-        },
-        {
-          "via_at": [
-            108.1,
-            102.51
-          ],
-          "length_mm": 0.26059999999999994,
-          "resistance_ohm_60C": 0.00025857721355814915,
+          "length_mm": 1.565,
+          "resistance_ohm_60C": 0.0015528524144992459,
           "drill_mm": 0.3
         },
         {
@@ -370,9 +502,15 @@
         },
         {
           "layer": "B.Cu",
-          "length_mm": 6.200000000000003,
+          "length_mm": 2.5250000000000057,
           "width_mm": 0.8,
-          "resistance_ohm_60C": 0.004417528342857144
+          "resistance_ohm_60C": 0.0017990740428571468
+        },
+        {
+          "layer": "B.Cu",
+          "length_mm": 3.674999999999997,
+          "width_mm": 0.8,
+          "resistance_ohm_60C": 0.0026184542999999976
         },
         {
           "layer": "B.Cu",
@@ -394,27 +532,33 @@
         },
         {
           "layer": "B.Cu",
-          "length_mm": 8.0,
+          "length_mm": 5.0,
           "width_mm": 0.8,
-          "resistance_ohm_60C": 0.005700036571428571
+          "resistance_ohm_60C": 0.0035625228571428565
         },
         {
           "layer": "B.Cu",
-          "length_mm": 3.299999999999997,
+          "length_mm": 1.200000000000017,
           "width_mm": 0.8,
-          "resistance_ohm_60C": 0.0023512650857142833
+          "resistance_ohm_60C": 0.0008550054857142978
         },
         {
           "layer": "B.Cu",
-          "length_mm": 12.299999999999997,
+          "length_mm": 2.1999999999999886,
           "width_mm": 0.8,
-          "resistance_ohm_60C": 0.008763806228571425
+          "resistance_ohm_60C": 0.0015675100571428489
         },
         {
           "layer": "B.Cu",
-          "length_mm": 1.4000000000000057,
+          "length_mm": 15.599999999999994,
           "width_mm": 0.8,
-          "resistance_ohm_60C": 0.0009975064000000038
+          "resistance_ohm_60C": 0.01111507131428571
+        },
+        {
+          "layer": "B.Cu",
+          "length_mm": 1.0,
+          "width_mm": 0.8,
+          "resistance_ohm_60C": 0.0007125045714285713
         },
         {
           "layer": "B.Cu",
@@ -469,45 +613,45 @@
             122.1,
             133.5
           ],
-          "length_mm": 0.26059999999999994,
-          "resistance_ohm_60C": 0.00025857721355814915,
+          "length_mm": 1.565,
+          "resistance_ohm_60C": 0.0015528524144992459,
           "drill_mm": 0.3
         },
         {
-          "layer": "In2.Cu",
+          "layer": "F.Cu",
+          "length_mm": 2.0999999999999943,
+          "width_mm": 0.8,
+          "resistance_ohm_60C": 0.0014962595999999959
+        },
+        {
+          "layer": "F.Cu",
+          "length_mm": 0.09999999999999432,
+          "width_mm": 0.8,
+          "resistance_ohm_60C": 7.125045714285308e-05
+        },
+        {
+          "layer": "F.Cu",
           "length_mm": 2.0,
           "width_mm": 0.8,
-          "resistance_ohm_60C": 0.003281271052631579
+          "resistance_ohm_60C": 0.0014250091428571426
         },
         {
-          "layer": "In2.Cu",
-          "length_mm": 4.449999999999989,
+          "layer": "F.Cu",
+          "length_mm": 0.5,
           "width_mm": 0.8,
-          "resistance_ohm_60C": 0.007300828092105244
+          "resistance_ohm_60C": 0.00035625228571428566
         },
         {
-          "layer": "In2.Cu",
-          "length_mm": 1.3000000000000114,
+          "layer": "F.Cu",
+          "length_mm": 1.8499999999999943,
           "width_mm": 0.8,
-          "resistance_ohm_60C": 0.0021328261842105452
+          "resistance_ohm_60C": 0.001318133457142853
         },
         {
-          "via_at": [
-            117.65,
-            132.8
-          ],
-          "length_mm": 1.0802,
-          "resistance_ohm_60C": 0.0010718154492920674,
-          "drill_mm": 0.3
-        },
-        {
-          "via_at": [
-            117.65,
-            132.8
-          ],
-          "length_mm": 0.2279,
-          "resistance_ohm_60C": 0.0002261310321178135,
-          "drill_mm": 0.3
+          "layer": "F.Cu",
+          "length_mm": 1.4000000000000057,
+          "width_mm": 0.8,
+          "resistance_ohm_60C": 0.0009975064000000038
         },
         {
           "layer": "F.Cu",
@@ -543,22 +687,14 @@
     },
     "converter_to_left_header": {
       "load_A": 0.5,
-      "one_conductive_path_resistance_ohm_60C": 0.0628841142565141,
-      "copper_drop_V": 0.03144205712825705,
-      "copper_loss_W": 0.015721028564128527,
-      "max_IPC2221_trace_rise_C_estimate": 7.868432151500651,
+      "one_conductive_path_resistance_ohm_60C": 0.05582877721569037,
+      "copper_drop_V": 0.027914388607845186,
+      "copper_loss_W": 0.013957194303922593,
+      "max_IPC2221_trace_rise_C_estimate": 2.073778201468351,
       "segments": [
         {
           "pth": "H1-1",
-          "resistance_ohm_60C": 7.094306889970605e-05
-        },
-        {
-          "pth": "H1-1",
-          "resistance_ohm_60C": 0.0003362558272288832
-        },
-        {
-          "pth": "H1-1",
-          "resistance_ohm_60C": 8.112226307706624e-05
+          "resistance_ohm_60C": 0.00048716938494093885
         },
         {
           "layer": "B.Cu",
@@ -580,27 +716,33 @@
         },
         {
           "layer": "B.Cu",
-          "length_mm": 8.0,
+          "length_mm": 5.0,
           "width_mm": 0.8,
-          "resistance_ohm_60C": 0.005700036571428571
+          "resistance_ohm_60C": 0.0035625228571428565
         },
         {
           "layer": "B.Cu",
-          "length_mm": 3.299999999999997,
+          "length_mm": 1.200000000000017,
           "width_mm": 0.8,
-          "resistance_ohm_60C": 0.0023512650857142833
+          "resistance_ohm_60C": 0.0008550054857142978
         },
         {
           "layer": "B.Cu",
-          "length_mm": 12.299999999999997,
+          "length_mm": 2.1999999999999886,
           "width_mm": 0.8,
-          "resistance_ohm_60C": 0.008763806228571425
+          "resistance_ohm_60C": 0.0015675100571428489
         },
         {
           "layer": "B.Cu",
-          "length_mm": 1.4000000000000057,
+          "length_mm": 15.599999999999994,
           "width_mm": 0.8,
-          "resistance_ohm_60C": 0.0009975064000000038
+          "resistance_ohm_60C": 0.01111507131428571
+        },
+        {
+          "layer": "B.Cu",
+          "length_mm": 1.0,
+          "width_mm": 0.8,
+          "resistance_ohm_60C": 0.0007125045714285713
         },
         {
           "layer": "B.Cu",
@@ -655,45 +797,45 @@
             122.1,
             133.5
           ],
-          "length_mm": 0.26059999999999994,
-          "resistance_ohm_60C": 0.00025857721355814915,
+          "length_mm": 1.565,
+          "resistance_ohm_60C": 0.0015528524144992459,
           "drill_mm": 0.3
         },
         {
-          "layer": "In2.Cu",
+          "layer": "F.Cu",
+          "length_mm": 2.0999999999999943,
+          "width_mm": 0.8,
+          "resistance_ohm_60C": 0.0014962595999999959
+        },
+        {
+          "layer": "F.Cu",
+          "length_mm": 0.09999999999999432,
+          "width_mm": 0.8,
+          "resistance_ohm_60C": 7.125045714285308e-05
+        },
+        {
+          "layer": "F.Cu",
           "length_mm": 2.0,
           "width_mm": 0.8,
-          "resistance_ohm_60C": 0.003281271052631579
+          "resistance_ohm_60C": 0.0014250091428571426
         },
         {
-          "layer": "In2.Cu",
-          "length_mm": 4.449999999999989,
+          "layer": "F.Cu",
+          "length_mm": 0.5,
           "width_mm": 0.8,
-          "resistance_ohm_60C": 0.007300828092105244
+          "resistance_ohm_60C": 0.00035625228571428566
         },
         {
-          "layer": "In2.Cu",
-          "length_mm": 1.3000000000000114,
+          "layer": "F.Cu",
+          "length_mm": 1.8499999999999943,
           "width_mm": 0.8,
-          "resistance_ohm_60C": 0.0021328261842105452
+          "resistance_ohm_60C": 0.001318133457142853
         },
         {
-          "via_at": [
-            117.65,
-            132.8
-          ],
-          "length_mm": 1.0802,
-          "resistance_ohm_60C": 0.0010718154492920674,
-          "drill_mm": 0.3
-        },
-        {
-          "via_at": [
-            117.65,
-            132.8
-          ],
-          "length_mm": 0.2279,
-          "resistance_ohm_60C": 0.0002261310321178135,
-          "drill_mm": 0.3
+          "layer": "F.Cu",
+          "length_mm": 1.4000000000000057,
+          "width_mm": 0.8,
+          "resistance_ohm_60C": 0.0009975064000000038
         },
         {
           "layer": "F.Cu",
@@ -729,10 +871,10 @@
     },
     "converter_to_SD": {
       "load_A": 0.2,
-      "one_conductive_path_resistance_ohm_60C": 0.08512283384513794,
-      "copper_drop_V": 0.01702456676902759,
-      "copper_loss_W": 0.003404913353805518,
-      "max_IPC2221_trace_rise_C_estimate": 3.0725179407143997,
+      "one_conductive_path_resistance_ohm_60C": 0.05499437807782963,
+      "copper_drop_V": 0.010998875615565926,
+      "copper_loss_W": 0.0021997751231131856,
+      "max_IPC2221_trace_rise_C_estimate": 0.25843610944923273,
       "segments": [
         {
           "layer": "B.Cu",
@@ -745,41 +887,47 @@
             117.275,
             140.8
           ],
-          "length_mm": 0.26059999999999994,
-          "resistance_ohm_60C": 0.00025857721355814915,
+          "length_mm": 1.565,
+          "resistance_ohm_60C": 0.0015528524144992459,
           "drill_mm": 0.3
         },
         {
-          "layer": "In2.Cu",
+          "layer": "F.Cu",
           "length_mm": 2.375,
           "width_mm": 0.4,
-          "resistance_ohm_60C": 0.00779301875
+          "resistance_ohm_60C": 0.003384396714285714
         },
         {
-          "layer": "In2.Cu",
-          "length_mm": 4.899999999999977,
+          "layer": "F.Cu",
+          "length_mm": 1.3999999999999773,
           "width_mm": 0.4,
-          "resistance_ohm_60C": 0.016078228157894663
+          "resistance_ohm_60C": 0.0019950127999999673
         },
         {
-          "layer": "In2.Cu",
+          "layer": "F.Cu",
+          "length_mm": 3.5,
+          "width_mm": 0.4,
+          "resistance_ohm_60C": 0.004987531999999999
+        },
+        {
+          "layer": "F.Cu",
           "length_mm": 5.6499999999999915,
           "width_mm": 0.4,
-          "resistance_ohm_60C": 0.018539181447368394
+          "resistance_ohm_60C": 0.008051301657142844
         },
         {
-          "layer": "In2.Cu",
+          "layer": "F.Cu",
           "length_mm": 0.8999999999999773,
           "width_mm": 0.4,
-          "resistance_ohm_60C": 0.0029531439473683466
+          "resistance_ohm_60C": 0.001282508228571396
         },
         {
           "via_at": [
             120.55,
             144.8
           ],
-          "length_mm": 0.26059999999999994,
-          "resistance_ohm_60C": 0.00025857721355814915,
+          "length_mm": 1.565,
+          "resistance_ohm_60C": 0.0015528524144992459,
           "drill_mm": 0.3
         },
         {
@@ -835,45 +983,45 @@
             122.1,
             133.5
           ],
-          "length_mm": 0.26059999999999994,
-          "resistance_ohm_60C": 0.00025857721355814915,
+          "length_mm": 1.565,
+          "resistance_ohm_60C": 0.0015528524144992459,
           "drill_mm": 0.3
         },
         {
-          "layer": "In2.Cu",
+          "layer": "F.Cu",
+          "length_mm": 2.0999999999999943,
+          "width_mm": 0.8,
+          "resistance_ohm_60C": 0.0014962595999999959
+        },
+        {
+          "layer": "F.Cu",
+          "length_mm": 0.09999999999999432,
+          "width_mm": 0.8,
+          "resistance_ohm_60C": 7.125045714285308e-05
+        },
+        {
+          "layer": "F.Cu",
           "length_mm": 2.0,
           "width_mm": 0.8,
-          "resistance_ohm_60C": 0.003281271052631579
+          "resistance_ohm_60C": 0.0014250091428571426
         },
         {
-          "layer": "In2.Cu",
-          "length_mm": 4.449999999999989,
+          "layer": "F.Cu",
+          "length_mm": 0.5,
           "width_mm": 0.8,
-          "resistance_ohm_60C": 0.007300828092105244
+          "resistance_ohm_60C": 0.00035625228571428566
         },
         {
-          "layer": "In2.Cu",
-          "length_mm": 1.3000000000000114,
+          "layer": "F.Cu",
+          "length_mm": 1.8499999999999943,
           "width_mm": 0.8,
-          "resistance_ohm_60C": 0.0021328261842105452
+          "resistance_ohm_60C": 0.001318133457142853
         },
         {
-          "via_at": [
-            117.65,
-            132.8
-          ],
-          "length_mm": 1.0802,
-          "resistance_ohm_60C": 0.0010718154492920674,
-          "drill_mm": 0.3
-        },
-        {
-          "via_at": [
-            117.65,
-            132.8
-          ],
-          "length_mm": 0.2279,
-          "resistance_ohm_60C": 0.0002261310321178135,
-          "drill_mm": 0.3
+          "layer": "F.Cu",
+          "length_mm": 1.4000000000000057,
+          "width_mm": 0.8,
+          "resistance_ohm_60C": 0.0009975064000000038
         },
         {
           "layer": "F.Cu",
@@ -909,10 +1057,10 @@
     },
     "battery_to_PFET": {
       "load_A": 0.8,
-      "one_conductive_path_resistance_ohm_60C": 0.022461629636625832,
-      "copper_drop_V": 0.017969303709300666,
-      "copper_loss_W": 0.014375442967440536,
-      "max_IPC2221_trace_rise_C_estimate": 11.739426626771676,
+      "one_conductive_path_resistance_ohm_60C": 0.01645802050951947,
+      "copper_drop_V": 0.013166416407615575,
+      "copper_loss_W": 0.010533133126092461,
+      "max_IPC2221_trace_rise_C_estimate": 1.9259988470206089,
       "segments": [
         {
           "layer": "B.Cu",
@@ -923,58 +1071,40 @@
         {
           "layer": "B.Cu",
           "length_mm": 0.7375000000000114,
-          "width_mm": 0.6,
-          "resistance_ohm_60C": 0.000700629495238106
-        },
-        {
-          "via_at": [
-            121.0,
-            147.8
-          ],
-          "length_mm": 0.26059999999999994,
-          "resistance_ohm_60C": 0.00025857721355814915,
-          "drill_mm": 0.3
-        },
-        {
-          "layer": "In2.Cu",
-          "length_mm": 1.0,
           "width_mm": 1.2,
-          "resistance_ohm_60C": 0.0010937570175438597
+          "resistance_ohm_60C": 0.000350314747619053
         },
         {
-          "layer": "In2.Cu",
-          "length_mm": 7.0,
-          "width_mm": 1.2,
-          "resistance_ohm_60C": 0.007656299122807018
+          "layer": "B.Cu",
+          "length_mm": 0.42426406871193456,
+          "width_mm": 0.8,
+          "resistance_ohm_60C": 0.0003022900884501389
         },
         {
-          "layer": "In2.Cu",
-          "length_mm": 1.0,
-          "width_mm": 1.2,
-          "resistance_ohm_60C": 0.0010937570175438597
+          "layer": "B.Cu",
+          "length_mm": 6.299999999999997,
+          "width_mm": 0.8,
+          "resistance_ohm_60C": 0.004488778799999997
         },
         {
-          "layer": "In2.Cu",
+          "layer": "B.Cu",
+          "length_mm": 0.5000000000000113,
+          "width_mm": 0.8,
+          "resistance_ohm_60C": 0.00035625228571429374
+        },
+        {
+          "layer": "B.Cu",
           "length_mm": 2.5,
-          "width_mm": 1.2,
-          "resistance_ohm_60C": 0.002734392543859649
+          "width_mm": 0.8,
+          "resistance_ohm_60C": 0.0017812614285714283
         },
         {
           "via_at": [
             111.5,
             147.8
           ],
-          "length_mm": 1.0802,
-          "resistance_ohm_60C": 0.0010718154492920674,
-          "drill_mm": 0.3
-        },
-        {
-          "via_at": [
-            111.5,
-            147.8
-          ],
-          "length_mm": 0.2279,
-          "resistance_ohm_60C": 0.0002261310321178135,
+          "length_mm": 1.565,
+          "resistance_ohm_60C": 0.0015528524144992459,
           "drill_mm": 0.3
         },
         {
@@ -993,10 +1123,10 @@
     },
     "PFET_to_converter": {
       "load_A": 0.8,
-      "one_conductive_path_resistance_ohm_60C": 0.02119547214719934,
-      "copper_drop_V": 0.01695637771775947,
-      "copper_loss_W": 0.01356510217420758,
-      "max_IPC2221_trace_rise_C_estimate": 11.739426626771676,
+      "one_conductive_path_resistance_ohm_60C": 0.01581151503924916,
+      "copper_drop_V": 0.01264921203139933,
+      "copper_loss_W": 0.010119369625119464,
+      "max_IPC2221_trace_rise_C_estimate": 6.03491776529389,
       "segments": [
         {
           "layer": "F.Cu",
@@ -1029,58 +1159,22 @@
           "resistance_ohm_60C": 0.000979243868911805
         },
         {
-          "via_at": [
-            122.0,
-            141.4
-          ],
-          "length_mm": 0.2279,
-          "resistance_ohm_60C": 0.0002261310321178135,
-          "drill_mm": 0.3
-        },
-        {
-          "via_at": [
-            122.0,
-            141.4
-          ],
-          "length_mm": 1.0802,
-          "resistance_ohm_60C": 0.0010718154492920674,
-          "drill_mm": 0.3
-        },
-        {
-          "layer": "In2.Cu",
+          "layer": "F.Cu",
           "length_mm": 0.799999999999983,
           "width_mm": 1.2,
-          "resistance_ohm_60C": 0.0008750056140350691
+          "resistance_ohm_60C": 0.00038000243809522996
         },
         {
-          "layer": "In2.Cu",
+          "layer": "F.Cu",
           "length_mm": 3.0,
           "width_mm": 1.2,
-          "resistance_ohm_60C": 0.0032812710526315793
+          "resistance_ohm_60C": 0.0014250091428571429
         },
         {
-          "layer": "In2.Cu",
+          "layer": "F.Cu",
           "length_mm": 0.6999999999999886,
           "width_mm": 1.2,
-          "resistance_ohm_60C": 0.0007656299122806893
-        },
-        {
-          "via_at": [
-            125.0,
-            141.5
-          ],
-          "length_mm": 1.0802,
-          "resistance_ohm_60C": 0.0010718154492920674,
-          "drill_mm": 0.3
-        },
-        {
-          "via_at": [
-            125.0,
-            141.5
-          ],
-          "length_mm": 0.2279,
-          "resistance_ohm_60C": 0.0002261310321178135,
-          "drill_mm": 0.3
+          "resistance_ohm_60C": 0.0003325021333333279
         },
         {
           "layer": "F.Cu",
@@ -1111,26 +1205,8 @@
             124.8,
             147.4
           ],
-          "length_mm": 0.2279,
-          "resistance_ohm_60C": 0.0002261310321178135,
-          "drill_mm": 0.3
-        },
-        {
-          "via_at": [
-            124.8,
-            147.4
-          ],
-          "length_mm": 1.0802,
-          "resistance_ohm_60C": 0.0010718154492920674,
-          "drill_mm": 0.3
-        },
-        {
-          "via_at": [
-            124.8,
-            147.4
-          ],
-          "length_mm": 0.26059999999999994,
-          "resistance_ohm_60C": 0.00025857721355814915,
+          "length_mm": 1.565,
+          "resistance_ohm_60C": 0.0015528524144992459,
           "drill_mm": 0.3
         },
         {
@@ -1143,49 +1219,31 @@
     },
     "fuse_to_charger": {
       "load_A": 0.11,
-      "one_conductive_path_resistance_ohm_60C": 0.01364011530036121,
-      "copper_drop_V": 0.001500412683039733,
-      "copper_loss_W": 0.00016504539513437062,
-      "max_IPC2221_trace_rise_C_estimate": 0.7896045292904693,
+      "one_conductive_path_resistance_ohm_60C": 0.007364887246555714,
+      "copper_drop_V": 0.0008101375971211285,
+      "copper_loss_W": 8.911513568332413e-05,
+      "max_IPC2221_trace_rise_C_estimate": 0.041343137718664665,
       "segments": [
         {
           "via_at": [
             127.3625,
             147.95
           ],
-          "length_mm": 0.26059999999999994,
-          "resistance_ohm_60C": 0.00025857721355814915,
+          "length_mm": 1.565,
+          "resistance_ohm_60C": 0.0015528524144992459,
           "drill_mm": 0.3
         },
         {
-          "layer": "In2.Cu",
+          "layer": "F.Cu",
           "length_mm": 0.8330103540773055,
           "width_mm": 0.4,
-          "resistance_ohm_60C": 0.0027333327613762444
+          "resistance_ohm_60C": 0.001187047370654826
         },
         {
-          "layer": "In2.Cu",
+          "layer": "F.Cu",
           "length_mm": 2.5455844122715874,
           "width_mm": 0.4,
-          "resistance_ohm_60C": 0.00835275244401693
-        },
-        {
-          "via_at": [
-            128.8,
-            150.5
-          ],
-          "length_mm": 1.0802,
-          "resistance_ohm_60C": 0.0010718154492920674,
-          "drill_mm": 0.3
-        },
-        {
-          "via_at": [
-            128.8,
-            150.5
-          ],
-          "length_mm": 0.2279,
-          "resistance_ohm_60C": 0.0002261310321178135,
-          "drill_mm": 0.3
+          "resistance_ohm_60C": 0.0036274810614016382
         },
         {
           "layer": "F.Cu",
@@ -1203,10 +1261,10 @@
     },
     "charger_to_battery": {
       "load_A": 0.11,
-      "one_conductive_path_resistance_ohm_60C": 0.030834517095957373,
-      "copper_drop_V": 0.003391796880555311,
-      "copper_loss_W": 0.0003730976568610842,
-      "max_IPC2221_trace_rise_C_estimate": 0.12919447071310564,
+      "one_conductive_path_resistance_ohm_60C": 0.025181222716470053,
+      "copper_drop_V": 0.002769934498811706,
+      "copper_loss_W": 0.00030469279486928765,
+      "max_IPC2221_trace_rise_C_estimate": 0.0211959586737761,
       "segments": [
         {
           "layer": "F.Cu",
@@ -1225,51 +1283,33 @@
             111.5,
             147.8
           ],
-          "length_mm": 0.2279,
-          "resistance_ohm_60C": 0.0002261310321178135,
+          "length_mm": 1.565,
+          "resistance_ohm_60C": 0.0015528524144992459,
           "drill_mm": 0.3
         },
         {
-          "via_at": [
-            111.5,
-            147.8
-          ],
-          "length_mm": 1.0802,
-          "resistance_ohm_60C": 0.0010718154492920674,
-          "drill_mm": 0.3
-        },
-        {
-          "layer": "In2.Cu",
+          "layer": "B.Cu",
           "length_mm": 2.5,
-          "width_mm": 1.2,
-          "resistance_ohm_60C": 0.002734392543859649
+          "width_mm": 0.8,
+          "resistance_ohm_60C": 0.0017812614285714283
         },
         {
-          "layer": "In2.Cu",
-          "length_mm": 1.0,
-          "width_mm": 1.2,
-          "resistance_ohm_60C": 0.0010937570175438597
+          "layer": "B.Cu",
+          "length_mm": 0.5000000000000113,
+          "width_mm": 0.8,
+          "resistance_ohm_60C": 0.00035625228571429374
         },
         {
-          "layer": "In2.Cu",
-          "length_mm": 7.0,
-          "width_mm": 1.2,
-          "resistance_ohm_60C": 0.007656299122807018
+          "layer": "B.Cu",
+          "length_mm": 6.299999999999997,
+          "width_mm": 0.8,
+          "resistance_ohm_60C": 0.004488778799999997
         },
         {
-          "layer": "In2.Cu",
-          "length_mm": 1.0,
-          "width_mm": 1.2,
-          "resistance_ohm_60C": 0.0010937570175438597
-        },
-        {
-          "via_at": [
-            121.0,
-            147.8
-          ],
-          "length_mm": 0.26059999999999994,
-          "resistance_ohm_60C": 0.00025857721355814915,
-          "drill_mm": 0.3
+          "layer": "B.Cu",
+          "length_mm": 0.42426406871193456,
+          "width_mm": 0.8,
+          "resistance_ohm_60C": 0.0003022900884501389
         },
         {
           "layer": "B.Cu",
@@ -1305,22 +1345,14 @@
     },
     "fuse_to_shield_VBUS": {
       "load_A": 0.1,
-      "one_conductive_path_resistance_ohm_60C": 0.009036433054530895,
-      "copper_drop_V": 0.0009036433054530896,
-      "copper_loss_W": 9.036433054530897e-05,
+      "one_conductive_path_resistance_ohm_60C": 0.009031609999797394,
+      "copper_drop_V": 0.0009031609999797394,
+      "copper_loss_W": 9.031609999797395e-05,
       "max_IPC2221_trace_rise_C_estimate": 0.010624630027331987,
       "segments": [
         {
           "pth": "H2-1",
-          "resistance_ohm_60C": 7.094306889970605e-05
-        },
-        {
-          "pth": "H2-1",
-          "resistance_ohm_60C": 0.0003362558272288832
-        },
-        {
-          "pth": "H2-1",
-          "resistance_ohm_60C": 8.112226307706624e-05
+          "resistance_ohm_60C": 0.00048716938494093885
         },
         {
           "layer": "B.Cu",
@@ -1351,26 +1383,8 @@
             128.8,
             150.5
           ],
-          "length_mm": 0.26059999999999994,
-          "resistance_ohm_60C": 0.00025857721355814915,
-          "drill_mm": 0.3
-        },
-        {
-          "via_at": [
-            128.8,
-            150.5
-          ],
-          "length_mm": 1.0802,
-          "resistance_ohm_60C": 0.0010718154492920674,
-          "drill_mm": 0.3
-        },
-        {
-          "via_at": [
-            128.8,
-            150.5
-          ],
-          "length_mm": 0.2279,
-          "resistance_ohm_60C": 0.0002261310321178135,
+          "length_mm": 1.565,
+          "resistance_ohm_60C": 0.0015528524144992459,
           "drill_mm": 0.3
         },
         {
@@ -1417,9 +1431,9 @@
     "minimum_loaded_connector_voltage_V": 3.0,
     "input_screen_A": 0.8,
     "PFET_Rds_assumed_hot_ohm": 0.17,
-    "converter_input_lower_bound_V": 2.81907431857294,
+    "converter_input_lower_bound_V": 2.8281843715609853,
     "note": "Protected 1S 3.7V/4.2V battery. No on-board cell protection, undervoltage cutoff at 3V or 5V boost output. This 3V loaded limit is a design condition.",
-    "calculated_input_A_at_lower_bound_and_80pct_efficiency": 0.7316231382803948
+    "calculated_input_A_at_lower_bound_and_80pct_efficiency": 0.7292664582760655
   },
   "inductor": {
     "part": "Bourns SRN4018-2R2M",
@@ -1467,11 +1481,11 @@
     "screen_current_A": 0.76,
     "additional_shield_VBUS_load_A": 0.1,
     "charger_max_screen_A": 0.11,
-    "converter_input_lower_bound_V": 3.8542862496076467,
+    "converter_input_lower_bound_V": 3.8591322537761212,
     "ground_return_drop_allowance_V": 0.01,
     "converter_minimum_input_V": 1.8,
     "note": "Source capable of at least 1A required for this simultaneous-load screen. USB current negotiation/inrush is not certified.",
-    "calculated_input_A_at_lower_bound_and_80pct_efficiency": 0.5351185320524534
+    "calculated_input_A_at_lower_bound_and_80pct_efficiency": 0.5344465709828589
   },
   "assumptions": {
     "copper_temperature_for_resistance_C": 60,

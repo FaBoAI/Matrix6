@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1080" height="910" viewBox="0 0 1080 910">
 <rect width="1080" height="910" fill="#f4f7fa"/>
 <style>text{font-family:Arial,sans-serif;fill:#173047} .small{font-size:15px}</style>
-<text x="65" y="40" font-size="27">Matrix Six v0.7 / microSD access — rear view</text>
+<text x="65" y="40" font-size="27">Matrix Six v0.8 / microSD access — rear view</text>
 <rect x="65.0" y="80" width="487.68" height="732" rx="24.0" fill="white" stroke="#173047" stroke-width="2" stroke-dasharray=""/>
 <rect x="213.7999999999999" y="86.0" width="189.59999999999997" height="270.0" rx="0" fill="#dcf7e8" stroke="#179763" stroke-width="2" stroke-dasharray="7 5"/>
 <rect x="171.14" y="583.94" width="18.11999999999989" height="36.11999999999989" rx="0" fill="#e9edf1" stroke="#4e6781" stroke-width="2" stroke-dasharray=""/>
@@ -16,8 +16,6 @@
 <text x="422.19999999999993" y="756.3999999999999" font-size="14">J3</text>
 <rect x="145.10001199999977" y="725.5399999999998" width="41.400000000000205" height="24.120000000000232" rx="0" fill="#e9edf1" stroke="#4e6781" stroke-width="2" stroke-dasharray=""/>
 <text x="155.80001200000004" y="742.6000000000001" font-size="14">C10</text>
-<rect x="440.53999999999985" y="553.6999999999999" width="24.12000000000006" height="41.400000000000205" rx="0" fill="#e9edf1" stroke="#4e6781" stroke-width="2" stroke-dasharray=""/>
-<text x="442.5999999999998" y="579.3999999999999" font-size="14">C11</text>
 <rect x="147.14" y="571.94" width="18.11999999999989" height="36.11999999999989" rx="0" fill="#e9edf1" stroke="#4e6781" stroke-width="2" stroke-dasharray=""/>
 <text x="146.19999999999993" y="595.0" font-size="14">R14</text>
 <rect x="265.9399999999999" y="574.3399999999999" width="18.12000000000006" height="36.12000000000023" rx="0" fill="#e9edf1" stroke="#4e6781" stroke-width="2" stroke-dasharray=""/>
@@ -26,6 +24,8 @@
 <text x="304.89999999999986" y="593.8000000000001" font-size="14">C12</text>
 <rect x="147.5" y="687.14" width="41.399999999999864" height="24.11999999999989" rx="0" fill="#e9edf1" stroke="#4e6781" stroke-width="2" stroke-dasharray=""/>
 <text x="158.19999999999993" y="704.1999999999999" font-size="14">C9</text>
+<rect x="402.14" y="669.7400000000001" width="36.11999999999989" height="18.11999999999989" rx="0" fill="#e9edf1" stroke="#4e6781" stroke-width="2" stroke-dasharray=""/>
+<text x="410.19999999999993" y="683.8000000000001" font-size="14">R6</text>
 <circle cx="506.96" cy="719.1199999999999" r="6" fill="#f1c55c" stroke="#705812"/>
 <circle cx="506.96" cy="688.64" r="6" fill="#f1c55c" stroke="#705812"/>
 <circle cx="506.96" cy="658.1600000000001" r="6" fill="#f1c55c" stroke="#705812"/>

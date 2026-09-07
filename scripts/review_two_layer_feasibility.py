@@ -14,6 +14,7 @@ OUT.mkdir(exist_ok=True)
 before = CAD.read_bytes()
 app = wx.App(False)
 b = p.LoadBoard(str(CAD))
+assert b.GetCopperLayerCount()==4, 'Historical v0.7 review: use the f12c10f checkout. Current v0.8 is already two-layer; see docs/matrix-six-v08.md.'
 tracks = defaultdict(lambda: {'segments': 0, 'length_mm': 0, 'nets': set()})
 vias = Counter()
 for t in b.GetTracks():

@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "only_board_text_changed": true,
+  "pcb_sha256": "029c8b813771f6ebfcc0d3098133f1cb6f452137a26d2b3c5b036f00a528b50d",
+  "electrical_geometry_sha256": "df7d4eb28623c48c8491e0d6e308e11dba3cb4b3427b9ffcd2d9cc6eb2791e01",
+  "title": {
+    "text": "Matrix Six",
+    "height_mm": 2.0,
+    "position_mm": [
+      122,
+      122.2
+    ]
+  },
+  "credit": {
+    "text": "Designed by GPT-6 Astra",
+    "height_mm": 0.8,
+    "position_mm": [
+      122,
+      125
+    ]
+  },
+  "layer": "F.SilkS",
+  "previous_electrical_models_still_apply": true
+}

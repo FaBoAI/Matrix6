@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1400" viewBox="0 0 1800 1400">
+<rect width="1800" height="1400" fill="white"/>
+<style>text{font-family:Arial,sans-serif;fill:#172337} .small{font-size:22px}</style>
+<text x="60" y="65" font-size="37">Matrix Six v0.8 — PCB FABRICATION / IMPEDANCE REQUIREMENTS</text>
+<text x="60" y="108" font-size="23">Prototype quotation • CAD hash in source-manifest.json • All dimensions in mm • 2026-09-08</text>
+<text x="60" y="160" font-size="25">USB routing</text>
+<rect x="90.0" y="200" width="568.96" height="854" rx="28.0" fill="#f5f7f8" stroke="#253649" stroke-width="3"/>
+<circle cx="143.34000000000003" cy="945.6399999999999" r="5" fill="none" stroke="#8793a0" stroke-width="2"/>
+<circle cx="143.34000000000003" cy="910.0799999999999" r="5" fill="none" stroke="#8793a0" stroke-width="2"/>
+<circle cx="143.34000000000003" cy="874.5199999999998" r="5" fill="none" stroke="#8793a0" stroke-width="2"/>
+<circle cx="143.34000000000003" cy="838.9599999999998" r="5" fill="none" stroke="#8793a0" stroke-width="2"/>
+<circle cx="143.34000000000003" cy="803.3999999999999" r="5" fill="none" stroke="#8793a0" stroke-width="2"/>
+<circle cx="143.34000000000003" cy="767.84" r="5" fill="none" stroke="#8793a0" stroke-width="2"/>
+<circle cx="143.34000000000003" cy="732.2799999999997" r="5" fill="none" stroke="#8793a0" stroke-width="2"/>
+<circle cx="143.34000000000003" cy="696.7199999999998" r="5" fill="none" stroke="#8793a0" stroke-width="2"/>
+<circle cx="143.34000000000003" cy="661.16" r="5" fill="none" stroke="#8793a0" stroke-width="2"/>
+<circle cx="143.34000000000003" cy="625.5999999999997" r="5" fill="none" stroke="#8793a0" stroke-width="2"/>
+<circle cx="143.34000000000003" cy="590.0399999999997" r="5" fill="none" stroke="#8793a0" stroke-width="2"/>
+<circle cx="143.34000000000003" cy="554.4799999999999" r="5" fill="none" stroke="#8793a0" stroke-width="2"/>
+<circle cx="143.34000000000003" cy="518.9199999999998" r="5" fill="none" stroke="#8793a0" stroke-width="2"/>
+<circle cx="143.34000000000003" cy="483.35999999999973" r="5" fill="none" stroke="#8793a0" stroke-width="2"/>
+<circle cx="143.34000000000003" cy="447.79999999999984" r="5" fill="none" stroke="#8793a0" stroke-width="2"/>
+<circle cx="143.34000000000003" cy="412.23999999999995" r="5" fill="none" stroke="#8793a0" stroke-width="2"/>
+<circle cx="143.34000000000003" cy="376.67999999999984" r="5" fill="none" stroke="#8793a0" stroke-width="2"/>
+<circle cx="143.34000000000003" cy="341.1199999999998" r="5" fill="none" stroke="#8793a0" stroke-width="2"/>
+<circle cx="143.34000000000003" cy="305.5599999999999" r="5" fill="none" stroke="#8793a0" stroke-width="2"/>
+<circle cx="143.34000000000003" cy="270.0" r="5" fill="none" stroke="#8793a0" stroke-width="2"/>
+<circle cx="605.62" cy="945.6399999999999" r="5" fill="none" stroke="#8793a0" stroke-width="2"/>
+<circle cx="605.62" cy="910.0799999999999" r="5" fill="none" stroke="#8793a0" stroke-width="2"/>
+<circle cx="605.62" cy="874.5199999999998" r="5" fill="none" stroke="#8793a0" stroke-width="2"/>
+<circle cx="605.62" cy="838.9599999999998" r="5" fill="none" stroke="#8793a0" stroke-width="2"/>
+<circle cx="605.62" cy="803.3999999999999" r="5" fill="none" stroke="#8793a0" stroke-width="2"/>
+<circle cx="605.62" cy="767.84" r="5" fill="none" stroke="#8793a0" stroke-width="2"/>
+<circle cx="605.62" cy="732.2799999999997" r="5" fill="none" stroke="#8793a0" stroke-width="2"/>
+<circle cx="605.62" cy="696.7199999999998" r="5" fill="none" stroke="#8793a0" stroke-width="2"/>
+<circle cx="605.62" cy="661.16" r="5" fill="none" stroke="#8793a0" stroke-width="2"/>
+<circle cx="605.62" cy="625.5999999999997" r="5" fill="none" stroke="#8793a0" stroke-width="2"/>
+<circle cx="605.62" cy="590.0399999999997" r="5" fill="none" stroke="#8793a0" stroke-width="2"/>
+<circle cx="605.62" cy="554.4799999999999" r="5" fill="none" stroke="#8793a0" stroke-width="2"/>
+<circle cx="605.62" cy="518.9199999999998" r="5" fill="none" stroke="#8793a0" stroke-width="2"/>
+<circle cx="605.62" cy="483.35999999999973" r="5" fill="none" stroke="#8793a0" stroke-width="2"/>
+<circle cx="605.62" cy="447.79999999999984" r="5" fill="none" stroke="#8793a0" stroke-width="2"/>
+<circle cx="605.62" cy="412.23999999999995" r="5" fill="none" stroke="#8793a0" stroke-width="2"/>
+<circle cx="605.62" cy="376.67999999999984" r="5" fill="none" stroke="#8793a0" stroke-width="2"/>
+<circle cx="605.62" cy="341.1199999999998" r="5" fill="none" stroke="#8793a0" stroke-width="2"/>
+<circle cx="605.62" cy="305.5599999999999" r="5" fill="none" stroke="#8793a0" stroke-width="2"/>
+<circle cx="605.62" cy="270.0" r="5" fill="none" stroke="#8793a0" stroke-width="2"/>
+<line x1="192.20000000000016" y1="450.6000000000001" x2="192.20000000000016" y2="457.1525740000001" stroke="#bd2e47" stroke-width="5.32" stroke-linecap="round"/>
+<line x1="381.76000000000005" y1="870.0750000000002" x2="389.46000000000004" y2="877.7749999999999" stroke="#bd2e47" stroke-width="2.8000000000000003" stroke-linecap="round"/>
+<line x1="350.26000000000005" y1="901.9249999999998" x2="355.8600000000001" y2="901.9249999999998" stroke="#bd2e47" stroke-width="2.8000000000000003" stroke-linecap="round"/>
+<line x1="389.46000000000004" y1="877.7749999999999" x2="389.46000000000004" y2="945.5" stroke="#bd2e47" stroke-width="2.8000000000000003" stroke-linecap="round"/>
+<line x1="328.0274400000002" y1="854.0799999999999" x2="350.26000000000005" y2="854.0799999999999" stroke="#bd2e47" stroke-width="5.32" stroke-linecap="round"/>
+<line x1="355.8600000000001" y1="901.9249999999998" x2="358.6600000000002" y2="899.125" stroke="#bd2e47" stroke-width="2.8000000000000003" stroke-linecap="round"/>
+<line x1="358.6600000000002" y1="899.125" x2="358.6600000000002" y2="882.3361439999999" stroke="#bd2e47" stroke-width="2.8000000000000003" stroke-linecap="round"/>
+<line x1="262.20000000000016" y1="552.8000000000001" x2="274.8919380000001" y2="565.491938" stroke="#bd2e47" stroke-width="5.32" stroke-linecap="round"/>
+<line x1="262.20000000000016" y1="788.2525740000001" x2="328.0274400000002" y2="854.0799999999999" stroke="#bd2e47" stroke-width="5.32" stroke-linecap="round"/>
+<line x1="350.26000000000005" y1="870.0750000000002" x2="381.76000000000005" y2="870.0750000000002" stroke="#bd2e47" stroke-width="2.8000000000000003" stroke-linecap="round"/>
+<line x1="358.6600000000002" y1="882.3361439999999" x2="361.46000000000004" y2="879.536144" stroke="#bd2e47" stroke-width="2.8000000000000003" stroke-linecap="round"/>
+<line x1="274.8919380000001" y1="576.6000000000001" x2="262.20000000000016" y2="589.2919380000001" stroke="#bd2e47" stroke-width="5.32" stroke-linecap="round"/>
+<line x1="274.8919380000001" y1="565.491938" x2="274.8919380000001" y2="576.6000000000001" stroke="#bd2e47" stroke-width="5.32" stroke-linecap="round"/>
+<line x1="384.98000000000013" y1="949.9799999999999" x2="384.98000000000013" y2="956.0" stroke="#bd2e47" stroke-width="2.8000000000000003" stroke-linecap="round"/>
+<line x1="262.20000000000016" y1="589.2919380000001" x2="262.20000000000016" y2="599.0" stroke="#bd2e47" stroke-width="5.32" stroke-linecap="round"/>
+<line x1="205.01000000000005" y1="450.6000000000001" x2="192.20000000000016" y2="450.6000000000001" stroke="#bd2e47" stroke-width="5.32" stroke-linecap="round"/>
+<line x1="192.20000000000016" y1="457.1525740000001" x2="262.20000000000016" y2="527.1525740000001" stroke="#bd2e47" stroke-width="5.32" stroke-linecap="round"/>
+<line x1="368.18000000000006" y1="879.536144" x2="370.98000000000013" y2="882.3361439999999" stroke="#bd2e47" stroke-width="2.8000000000000003" stroke-linecap="round"/>
+<line x1="262.20000000000016" y1="781.0" x2="262.20000000000016" y2="788.2525740000001" stroke="#bd2e47" stroke-width="5.32" stroke-linecap="round"/>
+<line x1="361.46000000000004" y1="879.536144" x2="368.18000000000006" y2="879.536144" stroke="#bd2e47" stroke-width="2.8000000000000003" stroke-linecap="round"/>
+<line x1="370.98000000000013" y1="882.3361439999999" x2="370.98000000000013" y2="912.9500000000002" stroke="#bd2e47" stroke-width="2.8000000000000003" stroke-linecap="round"/>
+<line x1="262.20000000000016" y1="527.1525740000001" x2="262.20000000000016" y2="552.8000000000001" stroke="#bd2e47" stroke-width="5.32" stroke-linecap="round"/>
+<line x1="262.20000000000016" y1="599.0" x2="262.20000000000016" y2="781.0" stroke="#bd2e47" stroke-width="5.32" stroke-linecap="round"/>
+<line x1="350.26000000000005" y1="870.0750000000002" x2="350.26000000000005" y2="901.9249999999998" stroke="#bd2e47" stroke-width="2.8000000000000003" stroke-linecap="round"/>
+<line x1="389.46000000000004" y1="945.5" x2="384.98000000000013" y2="949.9799999999999" stroke="#bd2e47" stroke-width="2.8000000000000003" stroke-linecap="round"/>
+<line x1="350.26000000000005" y1="854.0799999999999" x2="350.26000000000005" y2="870.0750000000002" stroke="#bd2e47" stroke-width="5.32" stroke-linecap="round"/>
+<line x1="370.98000000000013" y1="936.0499999999998" x2="370.98000000000013" y2="956.0" stroke="#bd2e47" stroke-width="2.8000000000000003" stroke-linecap="round"/>
+<line x1="228.11000000000013" y1="428.19999999999993" x2="251.9800000000001" y2="430.72" stroke="#145daa" stroke-width="3.9200000000000004" stroke-linecap="round"/>
+<line x1="228.11000000000013" y1="450.6000000000001" x2="251.9800000000001" y2="448.5" stroke="#bd2e47" stroke-width="3.9200000000000004" stroke-linecap="round"/>
+<line x1="377.98000000000013" y1="948.5799999999999" x2="377.98000000000013" y2="956.0" stroke="#145daa" stroke-width="2.8000000000000003" stroke-linecap="round"/>
+<line x1="184.36000000000013" y1="460.3999999999999" x2="254.36000000000013" y2="530.3999999999999" stroke="#145daa" stroke-width="5.32" stroke-linecap="round"/>
+<line x1="363.98000000000013" y1="946.6200000000001" x2="363.98000000000013" y2="956.0" stroke="#145daa" stroke-width="2.8000000000000003" stroke-linecap="round"/>
+<line x1="359.3600000000001" y1="924.5" x2="383.1600000000002" y2="924.5" stroke="#145daa" stroke-width="2.8000000000000003" stroke-linecap="round"/>
+<line x1="184.36000000000013" y1="428.19999999999993" x2="184.36000000000013" y2="460.3999999999999" stroke="#145daa" stroke-width="5.32" stroke-linecap="round"/>
+<line x1="205.01000000000005" y1="428.19999999999993" x2="184.36000000000013" y2="428.19999999999993" stroke="#145daa" stroke-width="5.32" stroke-linecap="round"/>
+<line x1="254.36000000000013" y1="791.5" x2="323.6600000000002" y2="860.7999999999998" stroke="#145daa" stroke-width="5.32" stroke-linecap="round"/>
+<line x1="323.6600000000002" y1="860.7999999999998" x2="323.6600000000002" y2="924.5" stroke="#145daa" stroke-width="2.8000000000000003" stroke-linecap="round"/>
+<line x1="359.3600000000001" y1="924.5" x2="359.3600000000001" y2="942.0" stroke="#145daa" stroke-width="2.8000000000000003" stroke-linecap="round"/>
+<line x1="254.36000000000013" y1="781.0" x2="254.36000000000013" y2="791.5" stroke="#145daa" stroke-width="5.32" stroke-linecap="round"/>
+<line x1="254.36000000000013" y1="530.3999999999999" x2="254.36000000000013" y2="599.0" stroke="#145daa" stroke-width="5.32" stroke-linecap="round"/>
+<line x1="359.3600000000001" y1="942.0" x2="363.98000000000013" y2="946.6200000000001" stroke="#145daa" stroke-width="2.8000000000000003" stroke-linecap="round"/>
+<line x1="323.6600000000002" y1="924.5" x2="359.3600000000001" y2="924.5" stroke="#145daa" stroke-width="2.8000000000000003" stroke-linecap="round"/>
+<line x1="383.1600000000002" y1="924.5" x2="383.1600000000002" y2="943.3999999999999" stroke="#145daa" stroke-width="2.8000000000000003" stroke-linecap="round"/>
+<line x1="254.36000000000013" y1="599.0" x2="254.36000000000013" y2="781.0" stroke="#145daa" stroke-width="5.32" stroke-linecap="round"/>
+<line x1="383.1600000000002" y1="943.3999999999999" x2="377.98000000000013" y2="948.5799999999999" stroke="#145daa" stroke-width="2.8000000000000003" stroke-linecap="round"/>
+<rect x="248.4800000000001" y="112.5" width="252" height="357.0" fill="none" stroke="#647488" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="252.4800000000001" y="137.5" font-size="21">U1</text>
+<rect x="311.9000000000001" y="960.5499999999998" width="125.16" height="102.89999999999999" fill="none" stroke="#647488" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="315.9000000000001" y="985.5499999999998" font-size="21">J1 USB-C</text>
+<text x="201.5600000000001" y="413.19999999999993" font-size="20">R3/R4</text>
+<text x="455.98000000000013" y="909.5" font-size="20">R11 0R</text>
+<text x="90" y="1115" font-size="23">D+ red / D− blue; all USB copper on L1.</text>
+<text x="90" y="1150" font-size="23">Board: 40.64 × 61.00; 4 corners R2</text>
+<text x="90" y="1185" font-size="23">KiCad coordinates: X=97.46..138.10</text>
+<text x="90" y="1220" font-size="22">Y=100..161 (downward). Gerber Y is negative.</text>
+<text x="750" y="170" font-size="34">TWO-LAYER PROTOTYPE / USB</text>
+<text x="750" y="211" font-size="27">No controlled-impedance service assumed.</text>
+<text x="750" y="252" font-size="26">Nominal uniform cross-section: about 90 ohm.</text>
+<text x="750" y="293" font-size="24">Target 90 ohm ±10%; prototype testing required.</text>
+<text x="750" y="334" font-size="26">F.Cu width 0.380 / edge gap 0.180</text>
+<text x="750" y="375" font-size="26">Front coplanar GND clearance: 0.200</text>
+<text x="750" y="416" font-size="24">Preserve coplanar ground bands and stitches.</text>
+<text x="750" y="457" font-size="24">Rear GND is a pour with signal crossings.</text>
+<text x="750" y="498" font-size="26">FR4 1.6 mm nominal; 1 oz outer copper.</text>
+<text x="750" y="539" font-size="24">CAD core 1.530; copper 0.035 each side.</text>
+<text x="750" y="580" font-size="24">CAD dielectric Er=4.5 is a modelling assumption.</text>
+<text x="750" y="621" font-size="24">Uniform straight section: PCB Y=128.5..141.5.</text>
+<text x="750" y="662" font-size="24">Pads, bends and length match are transitions.</text>
+<text x="750" y="703" font-size="24">Do not substitute a four-layer impedance stack.</text>
+<text x="750" y="744" font-size="24">Submit CAM geometry changes for review.</text>
+<text x="750" y="785" font-size="20"></text>
+<text x="750" y="826" font-size="34">LAYER ORDER / DRILL</text>
+<text x="750" y="867" font-size="23">L1: Matrix6-F_Cu.gtl / L2: Matrix6-B_Cu.gbl</text>
+<text x="750" y="908" font-size="24">Exactly TWO copper files. No inner copper.</text>
+<text x="750" y="949" font-size="24">Min. finished drill 0.300; normal via pad 0.600.</text>
+<text x="750" y="990" font-size="24">U1 pad 41: 12 thermal holes 0.300 / pad 0.800.</text>
+<text x="750" y="1031" font-size="24">Thermal annulus 0.250; preserve array positions.</text>
+<text x="750" y="1072" font-size="24">Epoxy-fill and copper-cap thermal/in-pad vias.</text>
+<text x="750" y="1113" font-size="24">U1 thermal PTH pads are NOT component leads.</text>
+<text x="750" y="1154" font-size="24">Keep connector holes, USB slots and NPTH OPEN.</text>
+<text x="750" y="1195" font-size="24">Drill counts/sizes: review/drill-report.txt.</text>
+<text x="750" y="1236" font-size="24">Preserve supplied soldermask openings.</text>
+<text x="60" y="1330" font-size="25">USB connector body: no L1 tracks, vias or copper fill under x113.31..122.25 / y154.325..161.675.</text>
+<text x="60" y="1370" font-size="23">Keep pads, RF antenna keepout and front coplanar GND. This sheet is fabrication guidance, not a Gerber layer.</text>
+</svg>

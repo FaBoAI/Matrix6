@@ -22,12 +22,13 @@ def along(q,a,c):
     u=((q[0]-a[0])*dx+(q[1]-a[1])*dy)/l2
     if -.00001<=u<=1.00001 and distance(q,(a[0]+u*dx,a[1]+u*dy))<.00001:return max(0,min(1,u))
     return None
-LAYERS=[p.F_Cu,p.In1_Cu,p.In2_Cu,p.B_Cu]
+TWO_LAYER=b.GetCopperLayerCount()==2
+LAYERS=[p.F_Cu,p.B_Cu] if TWO_LAYER else [p.F_Cu,p.In1_Cu,p.In2_Cu,p.B_Cu]
 # Conservative specified copper thicknesses; 20 um minimum via barrel plating.
 THICKNESS={p.F_Cu:.035,p.B_Cu:.035,p.In1_Cu:.0152,p.In2_Cu:.0152}
 RHO20=1.724e-5 # ohm mm
 RHO=RHO20*(1+.00393*(60-20)) # resistance evaluated at copper 60 C
-Z={p.F_Cu:0,p.In1_Cu:.2279,p.In2_Cu:1.3081,p.B_Cu:1.5687}
+Z={p.F_Cu:0,p.In1_Cu:.2279,p.In2_Cu:1.3081,p.B_Cu:1.565 if TWO_LAYER else 1.5687}
 
 def graph(net,kind='length'):
     netnames={net} if isinstance(net,str) else set(net)
@@ -121,8 +122,9 @@ usb['module_P_mm']=measure('/MCU_USB_P',('U1','14'),('R4','2'))[0]
 usb['vias']=sum(isinstance(t,p.PCB_VIA) for t in b.GetTracks() if 'USB' in t.GetNetname())
 usb['all_on_top']=all(t.GetLayer()==p.F_Cu for t in b.GetTracks() if 'USB' in t.GetNetname())
 
-ground=next(z for z in b.Zones() if not z.GetIsRuleArea() and z.GetLayer()==p.In1_Cu)
-polys=ground.GetFilledPolysList(p.In1_Cu)
+reference_layer=p.B_Cu if TWO_LAYER else p.In1_Cu
+ground=next(z for z in b.Zones() if not z.GetIsRuleArea() and z.GetLayer()==reference_layer)
+polys=ground.GetFilledPolysList(reference_layer)
 def area(chain):
     vv=[xy(chain.CPoint(i)) for i in range(chain.PointCount())]
     return abs(sum(a[0]*c[1]-c[0]*a[1] for a,c in zip(vv,vv[1:]+vv[:1])))/2
@@ -138,9 +140,9 @@ for t in b.GetTracks():
         for off in [0,-p.ToMM(t.GetWidth())/2-.05,p.ToMM(t.GetWidth())/2+.05]:
             x,y=cx+nx*off,cy+ny*off;samples+=1
             if not polys.Contains(pt(x,y)):missing.append([t.GetNetname(),round(x,5),round(y,5)])
-ground_info={'signal_track_count_L2':sum(t.GetLayer()==p.In1_Cu and not isinstance(t,p.PCB_VIA) for t in b.GetTracks()),
+ground_info={'reference_layer':b.GetLayerName(reference_layer),'return_architecture':('front coplanar GND, stitched to rear pour; rear has signal crossings' if TWO_LAYER else 'continuous L2 plane'),'signal_track_count_L2':sum(t.GetLayer()==p.In1_Cu and not isinstance(t,p.PCB_VIA) for t in b.GetTracks()),
              'connected_copper_regions':polys.OutlineCount(),'area_mm2':plane_area,
-             'USB_reference_samples':samples,'missing_ground_samples':missing}
+             'USB_reference_samples':samples,'missing_ground_sample_count':len(missing),'missing_ground_samples':missing[:40] if TWO_LAYER else missing}
 
 power={}
 for label,net,s,d,load in [
@@ -234,4 +236,8 @@ assert thermal['junction_C_sensitivity_at_150K_per_W'] < 125
 assert inductor['peak_A'] < inductor['rating_saturation_A']
 assert usb['all_on_top'] and usb['vias']==0
 assert max(usb[c]['absolute_skew_mm'] for c in ['A','B'])<=.1
-assert ground_info['signal_track_count_L2']==0 and ground_info['connected_copper_regions']==1 and not missing
+assert ground_info['signal_track_count_L2']==0
+if not TWO_LAYER:assert ground_info['connected_copper_regions']==1 and not missing
+else:
+    import subprocess,sys
+    subprocess.run([sys.executable,str(ROOT/'scripts/audit_two_layer_ground.py')],check=True)

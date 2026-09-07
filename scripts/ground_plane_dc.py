@@ -12,7 +12,12 @@ from scipy.sparse import coo_matrix
 from scipy.sparse.csgraph import connected_components
 from scipy.sparse.linalg import spsolve
 ROOT=Path(__file__).resolve().parent.parent;R=ROOT/'docs/validation'
-geo=json.loads((R/'ground-geometry.json').read_text());shape=unary_union([Polygon(p['shell'],p['holes']) for p in geo['polygons']])
+geo=json.loads((R/'ground-geometry.json').read_text())
+if 'layers' in geo:
+ import subprocess,sys
+ subprocess.run([sys.executable,str(ROOT/'scripts/ground_two_layer_dc.py')],check=True)
+ raise SystemExit(0)
+shape=unary_union([Polygon(p['shell'],p['holes']) for p in geo['polygons']])
 rho=1.724e-5*(1+.00393*40);thickness=.0152
 
 def run(step,source,sink):

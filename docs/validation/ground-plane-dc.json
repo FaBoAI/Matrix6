@@ -2,58 +2,80 @@
   "module_return": [
     {
       "mesh_step_mm": 0.25,
-      "source_via_mm": [
+      "source_front_mm": [
         118.8,
         109.7
       ],
-      "sink_via_mm": [
+      "sink_front_mm": [
         121.2,
         137.6
       ],
       "copper_C": 60,
-      "L2_copper_mm": 0.0152,
+      "copper_mm": 0.035,
       "current_A": 0.5,
-      "plane_resistance_ohm": 0.002704546113911217,
-      "plane_drop_mV": 1.3522730569556085,
-      "contact_diameter_mm": 0.6,
-      "nodes": 34902
+      "ground_resistance_ohm": 0.00584688134295394,
+      "ground_drop_mV": 2.9234406714769703,
+      "connected_stitches": 65,
+      "omitted_stitches": [],
+      "active_nodes": 44475
     },
     {
       "mesh_step_mm": 0.125,
-      "source_via_mm": [
+      "source_front_mm": [
         118.8,
         109.7
       ],
-      "sink_via_mm": [
+      "sink_front_mm": [
         121.2,
         137.6
       ],
       "copper_C": 60,
-      "L2_copper_mm": 0.0152,
+      "copper_mm": 0.035,
       "current_A": 0.5,
-      "plane_resistance_ohm": 0.00256770090776183,
-      "plane_drop_mV": 1.283850453880915,
-      "contact_diameter_mm": 0.6,
-      "nodes": 139896
+      "ground_resistance_ohm": 0.00471550557542907,
+      "ground_drop_mV": 2.357752787714535,
+      "connected_stitches": 65,
+      "omitted_stitches": [],
+      "active_nodes": 177842
+    },
+    {
+      "mesh_step_mm": 0.0625,
+      "source_front_mm": [
+        118.8,
+        109.7
+      ],
+      "sink_front_mm": [
+        121.2,
+        137.6
+      ],
+      "copper_C": 60,
+      "copper_mm": 0.035,
+      "current_A": 0.5,
+      "ground_resistance_ohm": 0.004695914899537031,
+      "ground_drop_mV": 2.3479574497685154,
+      "connected_stitches": 65,
+      "omitted_stitches": [],
+      "active_nodes": 710461
     }
   ],
   "input_return": {
     "mesh_step_mm": 0.125,
-    "source_via_mm": [
+    "source_front_mm": [
       121.2,
       137.6
     ],
-    "sink_via_mm": [
+    "sink_front_mm": [
       115.1,
       149.35
     ],
     "copper_C": 60,
-    "L2_copper_mm": 0.0152,
-    "current_A": 0.5,
-    "plane_resistance_ohm": 0.0019232945620949113,
-    "plane_drop_mV": 0.9616472810474557,
-    "contact_diameter_mm": 0.6,
-    "nodes": 139895
+    "copper_mm": 0.035,
+    "current_A": 0.8,
+    "ground_resistance_ohm": 0.00806026096784507,
+    "ground_drop_mV": 6.448208774276056,
+    "connected_stitches": 65,
+    "omitted_stitches": [],
+    "active_nodes": 177842
   },
-  "scope": "L2 only between named GND vias. 0.5 A through a single source/sink; copper 60C. Does not include via barrels, solder/contact resistance or top-layer spreading."
+  "scope": "Front and rear filled pours, through-hole GND stitches; 20 um barrel plating; 60 C copper. Approximate DC mesh. GND pads/traces are included and drill holes subtracted; solder/contact resistance is not included. Not an EMC or thermal certification."
 }

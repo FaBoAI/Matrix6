@@ -15,16 +15,25 @@ original=parse(baseline('hardware/Matrix6/Matrix6.kicad_pcb'))
 def usb_copper(board):
     return sorted(dump(t) for tag in ['segment','arc','via'] for t in children(board,tag)
                   if child(t,'net') and child(t,'net')[1] in ['/USB_N','/USB_P','/USB_A_P','/MCU_USB_N','/MCU_USB_P'])
-assert usb_copper(b)==usb_copper(original), 'USB copper changed from reviewed v0.4'
+two_layer=sum(1 for q in child(b,'layers') if isinstance(q,list) and str(q[1]).endswith('.Cu'))==2
+if not two_layer:assert usb_copper(b)==usb_copper(original), 'USB copper changed from reviewed v0.4'
+else:assert all(child(t,'layer')[1]=='F.Cu' for tag in ['segment','arc'] for t in children(b,tag) if child(t,'net') and 'USB' in child(t,'net')[1])
 pro=json.loads((ROOT/'hardware/Matrix6/Matrix6.kicad_pro').read_text())
 oldpro=json.loads(baseline('hardware/Matrix6/Matrix6.kicad_pro'))
 for key in ['rules','rule_severities','drc_exclusions']:
     assert pro['board']['design_settings'][key]==oldpro['board']['design_settings'][key],key
+if two_layer:
+    for c in oldpro['net_settings']['classes']:
+        if c['name']=='USB':c['track_width']=.38;c['diff_pair_width']=.38;c['diff_pair_gap']=.18
 assert pro['net_settings']['classes']==oldpro['net_settings']['classes']
 rules=(ROOT/'hardware/Matrix6/Matrix6.kicad_dru').read_text()
 expected=baseline('hardware/Matrix6/Matrix6.kicad_dru').replace("A.NetName == '/VBUS_FUSED'\"", "A.NetName == '/VBUS_FUSED' && !A.memberOfGroup('CHARGER_BRANCH')\"")
 expected += "\n(rule \"Charger branch minimum\" (condition \"A.memberOfGroup('CHARGER_BRANCH')\") (constraint track_width (min 0.25mm)))\n"
-assert rules==expected, 'Only reviewed low-current charger escape rule may differ'
+if not two_layer:assert rules==expected, 'Only reviewed low-current charger escape rule may differ'
+else:
+    assert '0.38mm' in rules and '0.20mm' in rules
+    assert 'via_count (max 0)' in rules
+    assert 'C2-1' in rules and '/SW_L1' in rules and '/SW_L2' in rules
 fps={next(x[2] for x in children(f,'property') if x[1]=='Reference'):f for f in children(b,'footprint')}
 reference=json.loads((ROOT/'docs/reference/matrix5-pinout.json').read_text())['headers']
 shields=json.loads((ROOT/'docs/reference/matrix5-shield-interface.json').read_text())['shields']
@@ -62,6 +71,6 @@ for name,pins in shields.items():
             assert actual['net']=='/'+target,(name,key,actual,target)
             active.append({'pin':f'{key[0]}.{key[1]}','shield_net':pin['net_on_shield'],'matrix6_net':target})
     results[name]={'pad_positions_checked':len(pins),'used_pins_checked':len(active),'connections':active,'status':'PIN_MAP_PASS'}
-report={'pcb_sha256':hashlib.sha256(PCB.read_bytes()).hexdigest(),'preserved_from_v04':{'usb_copper':True,'design_rules_except_documented_charger_escape':True,'net_classes':True},'row_pitch_mm':2.54,'column_spacing_mm':33.02,'header_pins':40,'main_pins_matched':38,'intentional_NC':{f'{h}.{p}':signal for (h,p),signal in exceptions.items()},'shields':results,'scope':'XY pad positions and used signal/power pin assignments only. Connector mating height, all shield loads, radio behavior and physical operation remain prototype tests.'}
+report={'pcb_sha256':hashlib.sha256(PCB.read_bytes()).hexdigest(),'preserved_from_v04':{'usb_copper':not two_layer,'design_rules_except_documented_charger_escape':not two_layer,'net_classes':True},'two_layer_redesign':two_layer,'row_pitch_mm':2.54,'column_spacing_mm':33.02,'header_pins':40,'main_pins_matched':38,'intentional_NC':{f'{h}.{p}':signal for (h,p),signal in exceptions.items()},'shields':results,'scope':'XY pad positions and used signal/power pin assignments only. Connector mating height, all shield loads, radio behavior and physical operation remain prototype tests.'}
 (ROOT/'docs/validation/matrix5-compatibility.json').write_text(json.dumps(report,indent=2)+'\n')
 print(f'PASS: 40 pad positions; 38 Main assignments + 2 documented NC; all {len(shields)} shield interfaces matched.')

@@ -1,0 +1,131 @@
+{
+  "method": "2-D odd-mode finite-volume electrostatics: Zdiff=2/(c*sqrt(C*Cvacuum))",
+  "target_ohm": [
+    81,
+    99
+  ],
+  "nominal_uniform_section_only": true,
+  "fabrication_impedance_guarantee": false,
+  "scope": "Symmetric, uniform cross-sections only; no connector/package/bend/meander or frequency-dependent loss model. Finite coplanar ground and loss of the distant rear reference are separate screening cases. Sensitivity corners are assumptions, not JLCPCB tolerances or acceptance limits.",
+  "requirements": "Retain the top coplanar return bands and stitches. Confirm actual FR4/copper/etch and test both USB-C orientations, SI/EMC and supply transients on assembled prototypes.",
+  "cases": [
+    {
+      "parameters_mm": {
+        "width": 0.38,
+        "gap": 0.18,
+        "height": 1.53,
+        "er": 4.5,
+        "coplanar": 0.2,
+        "step": 0.01,
+        "domain": 5.0,
+        "coplanar_width": 1.0,
+        "bottom_reference": true
+      },
+      "odd_capacitance_F_per_m": 1.2358188014904192e-10,
+      "vacuum_capacitance_F_per_m": 4.4244084084919104e-11,
+      "differential_ohm": 90.22030462227156,
+      "relative_residual": 2.2295610185512732e-15,
+      "unknowns": 226205,
+      "case": "nominal"
+    },
+    {
+      "parameters_mm": {
+        "width": 0.38,
+        "gap": 0.18,
+        "height": 1.53,
+        "er": 4.5,
+        "coplanar": 0.2,
+        "step": 0.0075,
+        "domain": 5.0,
+        "coplanar_width": 1.0,
+        "bottom_reference": true
+      },
+      "odd_capacitance_F_per_m": 1.2372660688382484e-10,
+      "vacuum_capacitance_F_per_m": 4.4158028255134346e-11,
+      "differential_ohm": 90.255339628231,
+      "relative_residual": 2.5894090434470762e-15,
+      "unknowns": 401746,
+      "case": "finer_mesh"
+    },
+    {
+      "parameters_mm": {
+        "width": 0.38,
+        "gap": 0.18,
+        "height": 1.53,
+        "er": 4.5,
+        "coplanar": 0.2,
+        "step": 0.01,
+        "domain": 5.0,
+        "coplanar_width": 0.5,
+        "bottom_reference": true
+      },
+      "odd_capacitance_F_per_m": 1.2352714456667036e-10,
+      "vacuum_capacitance_F_per_m": 4.422079521567337e-11,
+      "differential_ohm": 90.26405035830746,
+      "relative_residual": 1.9487479566024778e-15,
+      "unknowns": 226505,
+      "case": "minimum_checked_ground_width"
+    },
+    {
+      "parameters_mm": {
+        "width": 0.38,
+        "gap": 0.18,
+        "height": 1.53,
+        "er": 4.5,
+        "coplanar": 0.2,
+        "step": 0.01,
+        "domain": 5.0,
+        "coplanar_width": 1.0,
+        "bottom_reference": false
+      },
+      "odd_capacitance_F_per_m": 1.2343176020746412e-10,
+      "vacuum_capacitance_F_per_m": 4.422312962196222e-11,
+      "differential_ohm": 90.29653696136708,
+      "relative_residual": 1.9881595709031e-15,
+      "unknowns": 375905,
+      "case": "no_rear_reference"
+    },
+    {
+      "parameters_mm": {
+        "width": 0.36,
+        "gap": 0.2,
+        "height": 1.53,
+        "er": 4.3,
+        "coplanar": 0.22,
+        "step": 0.01,
+        "domain": 5.0,
+        "coplanar_width": 1.0,
+        "bottom_reference": true
+      },
+      "odd_capacitance_F_per_m": 1.1316507499862821e-10,
+      "vacuum_capacitance_F_per_m": 4.1876674633356854e-11,
+      "differential_ohm": 96.9096424214336,
+      "relative_residual": 1.7500124764598687e-15,
+      "unknowns": 226217,
+      "case": "higher_impedance_sensitivity"
+    },
+    {
+      "parameters_mm": {
+        "width": 0.4,
+        "gap": 0.16,
+        "height": 1.53,
+        "er": 4.7,
+        "coplanar": 0.18,
+        "step": 0.01,
+        "domain": 5.0,
+        "coplanar_width": 1.0,
+        "bottom_reference": true
+      },
+      "odd_capacitance_F_per_m": 1.3531955075988514e-10,
+      "vacuum_capacitance_F_per_m": 4.6924702619021954e-11,
+      "differential_ohm": 83.71981395655868,
+      "relative_residual": 1.9866981015016796e-15,
+      "unknowns": 226193,
+      "case": "lower_impedance_sensitivity"
+    }
+  ],
+  "sources": [
+    "https://docs.espressif.com/projects/esp-hardware-design-guidelines/en/latest/esp32s3/pcb-layout-design.html",
+    "https://jlcpcb.com/capabilities/pcb-capabilities/"
+  ]
+}

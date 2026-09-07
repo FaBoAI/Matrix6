@@ -33,13 +33,13 @@ for row in bom:
     groups.setdefault((name,fp,lcsc,mpn),[]).append(ref)
 bf=DEST/f'Matrix6-v{REV}-BOM.csv'
 with bf.open('w',newline='') as f:
-    w=csv.writer(f);w.writerow(['Comment','Designator','Footprint','JLCPCB Part #','Manufacturer Part Number','Quantity'])
+    w=csv.writer(f,lineterminator="\n");w.writerow(['Comment','Designator','Footprint','JLCPCB Part #','Manufacturer Part Number','Quantity'])
     for (name,fp,lcsc,mpn),rr in groups.items():w.writerow([name,','.join(rr),fp,lcsc,mpn,len(rr)])
 # Only non-centred connectors need a centroid offset. Fab outline geometry is
 # measured in board coordinates, so the rear mirror is already applied.
 centroids={};cf=DEST/f'Matrix6-v{REV}-CPL.csv'
 with cf.open('w',newline='') as f:
-    w=csv.writer(f);w.writerow(['Designator','Mid X','Mid Y','Rotation','Layer'])
+    w=csv.writer(f,lineterminator="\n");w.writerow(['Designator','Mid X','Mid Y','Rotation','Layer'])
     for row in pos:
         ref=row['Ref'];x,y=float(row['PosX']),float(row['PosY']);fp=fps[ref]
         if ref in ['H1','H2','J2','J3']:
@@ -65,13 +65,16 @@ with cf.open('w',newline='') as f:
         if ref=='J2':rot=(rot+180)%360
         w.writerow([ref,f'{x:.6f}',f'{y:.6f}',f'{rot:.6f}','Top' if row['Side']=='top' else 'Bottom'])
 files=sorted(q for q in (OUT/'gerber').iterdir() if q.suffix!='.gbrjob')
-assert {'.gtl','.g1','.g2','.gbl','.gts','.gbs','.gto','.gbo','.gtp','.gbp','.gm1'}<={q.suffix for q in files}
+required={'.gtl','.gbl','.gts','.gbs','.gto','.gbo','.gtp','.gbp','.gm1'}
+if REV!='0.8':required|={'.g1','.g2'}
+else:assert not {'.g1','.g2'}&{q.suffix for q in files}
+assert required<={q.suffix for q in files}
 assert sum(q.suffix=='.drl' for q in files)==2
 assert (OUT/'gerber/Matrix6-fabrication-requirements.jpg').exists()
 with zipfile.ZipFile(OUT/f'Matrix6-v{REV}-Gerber.zip','w',zipfile.ZIP_DEFLATED) as z:
     for q in files:z.write(q,q.name)
 with zipfile.ZipFile(OUT/f'Matrix6-v{REV}-Gerber.zip') as z:assert z.testzip() is None
-report={'status':'QUOTATION; all 26 BOM groups matched live; JLC engineering placement and CAM approval required before manufacture','cad_pcb_sha256':hashlib.sha256(CAD.read_bytes()).hexdigest(),'component_count':len(refs),'bom_groups':len(groups),'top_count':sum(r['Side']=='top' for r in pos),'bottom_count':sum(r['Side']=='bottom' for r in pos),'centroid_adjustments':centroids,'coordinate_origin':'KiCad absolute origin, same as Gerber, Y inverted to Cartesian; rotation offsets below adapt to selected JLC models','jlc_rotation_offsets_degrees':{'H1':90,'H2':90,'J2':180},'placement_reference':'review/Matrix6-assembly-reference.png','unmatched':[','.join(rr) for (_,_,lcsc,_),rr in groups.items() if not lcsc]}
+report={'status':('TWO-LAYER PROTOTYPE QUOTATION; inherited exact parts mapping; current stock, revised CPL placement and CAM review pending' if REV=='0.8' else 'QUOTATION; all 26 BOM groups matched live; JLC engineering placement and CAM approval required before manufacture'),'cad_pcb_sha256':hashlib.sha256(CAD.read_bytes()).hexdigest(),'component_count':len(refs),'bom_groups':len(groups),'top_count':sum(r['Side']=='top' for r in pos),'bottom_count':sum(r['Side']=='bottom' for r in pos),'centroid_adjustments':centroids,'coordinate_origin':'KiCad absolute origin, same as Gerber, Y inverted to Cartesian; rotation offsets below adapt to selected JLC models','jlc_rotation_offsets_degrees':{'H1':90,'H2':90,'J2':180},'placement_reference':'review/Matrix6-assembly-reference.png','unmatched':[','.join(rr) for (_,_,lcsc,_),rr in groups.items() if not lcsc]}
 (DEST/'export-validation.json').write_text(json.dumps(report,indent=2)+'\n')
 manifest={**report,'cad_hashes':hashes,'files':{str(q.relative_to(OUT)):hashlib.sha256(q.read_bytes()).hexdigest() for q in OUT.rglob('*') if q.is_file() and q.name!='source-manifest.json'}}
 (OUT/'source-manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')

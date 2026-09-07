@@ -1,0 +1,93 @@
+{
+  "status": "TWO-LAYER PROTOTYPE QUOTATION; inherited exact parts mapping; current stock, revised CPL placement and CAM review pending",
+  "cad_pcb_sha256": "029c8b813771f6ebfcc0d3098133f1cb6f452137a26d2b3c5b036f00a528b50d",
+  "component_count": 48,
+  "bom_groups": 26,
+  "top_count": 37,
+  "bottom_count": 11,
+  "centroid_adjustments": {
+    "J2": {
+      "anchor": [
+        117.8,
+        -132.0
+      ],
+      "fab_body_center": [
+        117.80000000000001,
+        -131.75
+      ]
+    },
+    "J3": {
+      "anchor": [
+        108.5,
+        -153.5
+      ],
+      "fab_body_center": [
+        107.5,
+        -155.95
+      ]
+    },
+    "H1": {
+      "anchor": [
+        101.27,
+        -153.26
+      ],
+      "fab_body_center": [
+        101.27000000000001,
+        -129.13
+      ]
+    },
+    "H2": {
+      "anchor": [
+        134.29,
+        -153.26
+      ],
+      "fab_body_center": [
+        134.29000000000002,
+        -129.13
+      ]
+    }
+  },
+  "coordinate_origin": "KiCad absolute origin, same as Gerber, Y inverted to Cartesian; rotation offsets below adapt to selected JLC models",
+  "jlc_rotation_offsets_degrees": {
+    "H1": 90,
+    "H2": 90,
+    "J2": 180
+  },
+  "placement_reference": "review/Matrix6-assembly-reference.png",
+  "unmatched": [],
+  "cad_hashes": {
+    "hardware/Matrix6/DevBoard.pretty/ESP32-S3-WROOM-1_Edge.kicad_mod": "b1edfd947ea88c719a7abb78c1eeed5e7645b1ad6fb3c2bb247d6f0731c94d7c",
+    "hardware/Matrix6/DevBoard.pretty/USB4105_NoUnderbodyCopper.kicad_mod": "4bbaa70574992ef1080f766fed0a294b0f93f629313c2d320ae763e0d73d905b",
+    "hardware/Matrix6/Matrix6.kicad_dru": "4cc922491c66efa1a8118e80a904d6bb954cbbcac1b030b5dce8b21021aee61a",
+    "hardware/Matrix6/Matrix6.kicad_pcb": "029c8b813771f6ebfcc0d3098133f1cb6f452137a26d2b3c5b036f00a528b50d",
+    "hardware/Matrix6/Matrix6.kicad_pro": "90cc12fc574b16131e738304a49ac804a5e1a0f546a8f965a1449d9faa98d301",
+    "hardware/Matrix6/Matrix6.kicad_sch": "ebb9b5fbe49bf1c4970ed344f63347a0c0670d5e0df6354659d76987b0735027",
+    "hardware/Matrix6/fp-lib-table": "94acf4155dcf4ef8fa5c6760ef2e0bd14c95b52f87102432366e173ee71cdde0"
+  },
+  "files": {
+    "Matrix6-v0.8-Gerber.zip": "0ad1b2e32f28fd094bad2db647fef95eab0683307b5ddb15235d00cbdca28d9d",
+    "README.md": "cfeef88f32cf4538e524a1a01e660141f1cb507193bebede6ba00dd8d57cd578",
+    "assembly/Matrix6-v0.8-BOM.csv": "f6f77328540943156100e85a7b7c570021ce9e5473b0ef439b6931c4c0c7037c",
+    "assembly/Matrix6-v0.8-CPL.csv": "ac37a980a436c0ad0831c20a0826176cdb71ca870df6ea468c1126e2933dfaea",
+    "assembly/export-validation.json": "4c42c0ac39f4758e1e2e26f740c8d09ccdcbed3238fc0419d3f98eac70318d30",
+    "gerber/Matrix6-B_Cu.gbl": "e61d3aa151d599958c5c2e4f3293d843f8e9381d36546fc72f6ca8258b1ec6c3",
+    "gerber/Matrix6-B_Mask.gbs": "5c1f72607bd3281bdbde7f267dfbd8b3fd33f2d51381d79a781c85ae7eb3324b",
+    "gerber/Matrix6-B_Paste.gbp": "69e7bc6b94ddd4ca5f0a27331de1c3be06e0b15cf6e7de844f5439d05111760b",
+    "gerber/Matrix6-B_Silkscreen.gbo": "e50e00dce557204e2ca344b3de27418063e868caac8208edf51b1a752abb3e8b",
+    "gerber/Matrix6-Edge_Cuts.gm1": "9985c6d59d5214070ed81c318faf4e3599473a2879ecb6b1776cea3ee339edde",
+    "gerber/Matrix6-F_Cu.gtl": "86bdadb8dc7857ebe537b995f240e33bb1b32f928c244a88532013b8ee0e663e",
+    "gerber/Matrix6-F_Mask.gts": "a5ecd8a72197e68bd24ea74f3cc8dd86f63600c6fa94512831623e0489958d52",
+    "gerber/Matrix6-F_Paste.gtp": "9df7f2e7802612144a139a937e74afbfacfddfc3de2165305cfbf349f8e3d9a2",
+    "gerber/Matrix6-F_Silkscreen.gto": "7e41c227587eef1df273e70768547c70079c6e9f68ad5f3aa685f2a244fdfeb9",
+    "gerber/Matrix6-NPTH.drl": "c721605090de041f25aa0a7e32d14c0a9834084e4721a0552f991aed8f6256b5",
+    "gerber/Matrix6-PTH.drl": "af883e1c883aaf5ecfe495707b512545210ccc5ef3c0d2553c1a11d4802c343d",
+    "gerber/Matrix6-fabrication-requirements.jpg": "58811521dc291fcfa6ba312e5aaa774520cbf55883db8d374f961919d14e1d14",
+    "gerber/Matrix6-job.gbrjob": "91305add54974233b8025ecca3c5d98f5114940aec231fd9a004dc5dc4154e91",
+    "review/Matrix6-KiCad-BOM-DRAFT.csv": "08d0ea9997f70cb605c325818560239dfcb9e3555bd5c18282aaa4445e147319",
+    "review/Matrix6-KiCad-positions.csv": "687afd8a8c7a35ce13069e714766d3b93eb52ebd9e9265dd3bc79e044c7fb69b",
+    "review/Matrix6-assembly-reference.png": "3924b34be845a3304369ccbd1dcfe1debef9bea7e717dfce637f43123dc48478",
+    "review/Matrix6-assembly-reference.svg": "9bbf82fb3f0b3ca64ee3276e354b7f9e670d9d32a68b2c715217a7cf589db856",
+    "review/Matrix6-fabrication-requirements.svg": "0359a6abcc79be1b9025f58640baef9b0eb46b1e7aa772c9d783e203d79b7e3f",
+    "review/drill-report.txt": "1d480f5f4b9176facf3a40439da5242adc538f0b775ece584eec224ef10915f0"
+  }
+}
