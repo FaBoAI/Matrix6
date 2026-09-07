@@ -1,0 +1,338 @@
+{
+  "status": "FEASIBILITY REVIEW ONLY; no two-layer PCB has been released",
+  "pcb_sha256": "fabde2cfe1d13ff8f631c0265ae2106bbdb555769dfc1150de94dfcd200140ec",
+  "revision": "0.7",
+  "tracks_by_layer": {
+    "F.Cu": {
+      "segments": 232,
+      "length_mm": 611.074,
+      "nets": [
+        "/+3V3",
+        "/CC1",
+        "/CC2",
+        "/EN",
+        "/GND",
+        "/IO0",
+        "/IO1",
+        "/IO10",
+        "/IO11",
+        "/IO12",
+        "/IO13",
+        "/IO14",
+        "/IO15",
+        "/IO16",
+        "/IO17",
+        "/IO18",
+        "/IO2",
+        "/IO21",
+        "/IO3",
+        "/IO38",
+        "/IO39",
+        "/IO4",
+        "/IO40",
+        "/IO41",
+        "/IO42",
+        "/IO43_TX",
+        "/IO44_RX",
+        "/IO45",
+        "/IO46",
+        "/IO47",
+        "/IO48",
+        "/IO5",
+        "/IO6",
+        "/IO7",
+        "/IO8",
+        "/IO9",
+        "/LED_PWR_A",
+        "/LED_USR_A",
+        "/MCU_USB_N",
+        "/MCU_USB_P",
+        "/SD_DAT1",
+        "/SW_L1",
+        "/SW_L2",
+        "/USB_A_P",
+        "/USB_N",
+        "/USB_P",
+        "/VBAT",
+        "/VBUS",
+        "/VBUS_FUSED",
+        "/VINA",
+        "/VSYS"
+      ]
+    },
+    "B.Cu": {
+      "segments": 132,
+      "length_mm": 733.637,
+      "nets": [
+        "/+3V3",
+        "/CHG_PROG",
+        "/EN",
+        "/GND",
+        "/IO0",
+        "/IO1",
+        "/IO10",
+        "/IO11",
+        "/IO12",
+        "/IO13",
+        "/IO14",
+        "/IO15",
+        "/IO16",
+        "/IO17",
+        "/IO18",
+        "/IO2",
+        "/IO21",
+        "/IO3",
+        "/IO38",
+        "/IO39",
+        "/IO4",
+        "/IO40",
+        "/IO41",
+        "/IO42",
+        "/IO43_TX",
+        "/IO44_RX",
+        "/IO45",
+        "/IO47",
+        "/IO48",
+        "/IO5",
+        "/IO6",
+        "/IO7",
+        "/IO8",
+        "/IO9",
+        "/SD_DAT1",
+        "/SD_DAT2",
+        "/VBAT",
+        "/VBUS",
+        "/VBUS_FUSED",
+        "/VSYS"
+      ]
+    },
+    "In2.Cu": {
+      "segments": 110,
+      "length_mm": 580.659,
+      "nets": [
+        "/+3V3",
+        "/CC1",
+        "/CC2",
+        "/EN",
+        "/IO0",
+        "/IO1",
+        "/IO10",
+        "/IO11",
+        "/IO12",
+        "/IO13",
+        "/IO14",
+        "/IO15",
+        "/IO16",
+        "/IO17",
+        "/IO18",
+        "/IO2",
+        "/IO21",
+        "/IO3",
+        "/IO38",
+        "/IO39",
+        "/IO4",
+        "/IO40",
+        "/IO41",
+        "/IO42",
+        "/IO43_TX",
+        "/IO44_RX",
+        "/IO45",
+        "/IO46",
+        "/IO47",
+        "/IO48",
+        "/IO5",
+        "/IO6",
+        "/IO7",
+        "/IO8",
+        "/IO9",
+        "/VBAT",
+        "/VBUS_FUSED",
+        "/VSYS"
+      ]
+    }
+  },
+  "via_sizes": [
+    {
+      "drill_mm": 0.3,
+      "diameter_mm": 0.6,
+      "count": 150
+    }
+  ],
+  "plated_pads_with_drill_below_0_3mm": [
+    {
+      "reference": "U1",
+      "pad": "41",
+      "drill_mm": [
+        0.2,
+        0.2
+      ],
+      "pad_size_mm": [
+        0.6,
+        0.6
+      ]
+    },
+    {
+      "reference": "U1",
+      "pad": "41",
+      "drill_mm": [
+        0.2,
+        0.2
+      ],
+      "pad_size_mm": [
+        0.6,
+        0.6
+      ]
+    },
+    {
+      "reference": "U1",
+      "pad": "41",
+      "drill_mm": [
+        0.2,
+        0.2
+      ],
+      "pad_size_mm": [
+        0.6,
+        0.6
+      ]
+    },
+    {
+      "reference": "U1",
+      "pad": "41",
+      "drill_mm": [
+        0.2,
+        0.2
+      ],
+      "pad_size_mm": [
+        0.6,
+        0.6
+      ]
+    },
+    {
+      "reference": "U1",
+      "pad": "41",
+      "drill_mm": [
+        0.2,
+        0.2
+      ],
+      "pad_size_mm": [
+        0.6,
+        0.6
+      ]
+    },
+    {
+      "reference": "U1",
+      "pad": "41",
+      "drill_mm": [
+        0.2,
+        0.2
+      ],
+      "pad_size_mm": [
+        0.6,
+        0.6
+      ]
+    },
+    {
+      "reference": "U1",
+      "pad": "41",
+      "drill_mm": [
+        0.2,
+        0.2
+      ],
+      "pad_size_mm": [
+        0.6,
+        0.6
+      ]
+    },
+    {
+      "reference": "U1",
+      "pad": "41",
+      "drill_mm": [
+        0.2,
+        0.2
+      ],
+      "pad_size_mm": [
+        0.6,
+        0.6
+      ]
+    },
+    {
+      "reference": "U1",
+      "pad": "41",
+      "drill_mm": [
+        0.2,
+        0.2
+      ],
+      "pad_size_mm": [
+        0.6,
+        0.6
+      ]
+    },
+    {
+      "reference": "U1",
+      "pad": "41",
+      "drill_mm": [
+        0.2,
+        0.2
+      ],
+      "pad_size_mm": [
+        0.6,
+        0.6
+      ]
+    },
+    {
+      "reference": "U1",
+      "pad": "41",
+      "drill_mm": [
+        0.2,
+        0.2
+      ],
+      "pad_size_mm": [
+        0.6,
+        0.6
+      ]
+    },
+    {
+      "reference": "U1",
+      "pad": "41",
+      "drill_mm": [
+        0.2,
+        0.2
+      ],
+      "pad_size_mm": [
+        0.6,
+        0.6
+      ]
+    }
+  ],
+  "existing_USB_reference_coverage": {
+    "In1.Cu": {
+      "filled_regions": 1,
+      "samples": 13182,
+      "missing_ground_samples": 0,
+      "missing_by_net": {}
+    },
+    "B.Cu": {
+      "filled_regions": 1,
+      "samples": 13182,
+      "missing_ground_samples": 6463,
+      "missing_by_net": {
+        "/USB_P": 3311,
+        "/MCU_USB_N": 73,
+        "/MCU_USB_P": 73,
+        "/USB_N": 3006
+      }
+    }
+  },
+  "interpretation": [
+    "In2.Cu signal and power tracks must be rerouted onto the outer layers.",
+    "The existing B.Cu pour is not a continuous reference under the USB routes; it cannot replace In1.Cu as-is.",
+    "The twelve 0.2 mm holes have 0.6 mm copper pads. The previous 0.2/(0.3/0.35) quote selection is unnecessarily restrictive.",
+    "Small-hole quote eligibility must be confirmed against Gerber/CAM; this review does not waive filled/capped thermal-hole requirements.",
+    "JLCPCB standard FR4 controlled-impedance service lists four layers and above. A two-layer design needs a different validation agreement."
+  ],
+  "sources": [
+    "https://docs.espressif.com/projects/esp-hardware-design-guidelines/en/latest/esp32s3/pcb-layout-design.html",
+    "https://jlcpcb.com/capabilities/pcb-capabilities/",
+    "https://cart.jlcpcb.com/quote"
+  ]
+}
