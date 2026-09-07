@@ -264,7 +264,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "ESP32-S3-DevBoard.kicad_pro",
+    "filename": "Matrix6.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -372,8 +372,8 @@
     "legacy_lib_list": [],
     "top_level_sheets": [
       {
-        "filename": "ESP32-S3-DevBoard.kicad_sch",
-        "name": "ESP32-S3-DevBoard",
+        "filename": "Matrix6.kicad_sch",
+        "name": "Matrix6",
         "uuid": "00000000-0000-0000-0000-000000000000"
       }
     ]

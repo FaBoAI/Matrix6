@@ -1,0 +1,3547 @@
+{
+  "source": "Read-only EasyEDA MatrixFive project on 2026-09-07; coordinates independently checked against Matrix5 public fabrication ZIPs where available.",
+  "shields": {
+    "S1_WS2812_6x6": [
+      {
+        "header": "H1",
+        "pin": 1,
+        "x_mm": 0.0,
+        "y_mm": 0.0,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 2,
+        "x_mm": 0.0,
+        "y_mm": 2.54,
+        "net_on_shield": "GND",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 3,
+        "x_mm": 0.0,
+        "y_mm": 5.08,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 4,
+        "x_mm": 0.0,
+        "y_mm": 7.62,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 5,
+        "x_mm": 0.0,
+        "y_mm": 10.16,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 6,
+        "x_mm": 0.0,
+        "y_mm": 12.7,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 7,
+        "x_mm": 0.0,
+        "y_mm": 15.24,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 8,
+        "x_mm": 0.0,
+        "y_mm": 17.78,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 9,
+        "x_mm": 0.0,
+        "y_mm": 20.32,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 10,
+        "x_mm": 0.0,
+        "y_mm": 22.86,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 11,
+        "x_mm": 0.0,
+        "y_mm": 25.4,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 12,
+        "x_mm": 0.0,
+        "y_mm": 27.94,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 13,
+        "x_mm": 0.0,
+        "y_mm": 30.48,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 14,
+        "x_mm": 0.0,
+        "y_mm": 33.02,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 15,
+        "x_mm": 0.0,
+        "y_mm": 35.56,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 16,
+        "x_mm": 0.0,
+        "y_mm": 38.1,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 17,
+        "x_mm": 0.0,
+        "y_mm": 40.64,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 18,
+        "x_mm": 0.0,
+        "y_mm": 43.18,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 19,
+        "x_mm": 0.0,
+        "y_mm": 45.72,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 20,
+        "x_mm": 0.0,
+        "y_mm": 48.26,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 1,
+        "x_mm": 33.02,
+        "y_mm": 0.0,
+        "net_on_shield": "VBUS",
+        "used": true
+      },
+      {
+        "header": "H2",
+        "pin": 2,
+        "x_mm": 33.02,
+        "y_mm": 2.54,
+        "net_on_shield": "GND",
+        "used": true
+      },
+      {
+        "header": "H2",
+        "pin": 3,
+        "x_mm": 33.02,
+        "y_mm": 5.08,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 4,
+        "x_mm": 33.02,
+        "y_mm": 7.62,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 5,
+        "x_mm": 33.02,
+        "y_mm": 10.16,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 6,
+        "x_mm": 33.02,
+        "y_mm": 12.7,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 7,
+        "x_mm": 33.02,
+        "y_mm": 15.24,
+        "net_on_shield": "IO21",
+        "used": true
+      },
+      {
+        "header": "H2",
+        "pin": 8,
+        "x_mm": 33.02,
+        "y_mm": 17.78,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 9,
+        "x_mm": 33.02,
+        "y_mm": 20.32,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 10,
+        "x_mm": 33.02,
+        "y_mm": 22.86,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 11,
+        "x_mm": 33.02,
+        "y_mm": 25.4,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 12,
+        "x_mm": 33.02,
+        "y_mm": 27.94,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 13,
+        "x_mm": 33.02,
+        "y_mm": 30.48,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 14,
+        "x_mm": 33.02,
+        "y_mm": 33.02,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 15,
+        "x_mm": 33.02,
+        "y_mm": 35.56,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 16,
+        "x_mm": 33.02,
+        "y_mm": 38.1,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 17,
+        "x_mm": 33.02,
+        "y_mm": 40.64,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 18,
+        "x_mm": 33.02,
+        "y_mm": 43.18,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 19,
+        "x_mm": 33.02,
+        "y_mm": 45.72,
+        "net_on_shield": "GND",
+        "used": true
+      },
+      {
+        "header": "H2",
+        "pin": 20,
+        "x_mm": 33.02,
+        "y_mm": 48.26,
+        "net_on_shield": null,
+        "used": false
+      }
+    ],
+    "S2_ICM20948_x9": [
+      {
+        "header": "H1",
+        "pin": 1,
+        "x_mm": 0.0,
+        "y_mm": 0.0,
+        "net_on_shield": "3V3",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 2,
+        "x_mm": 0.0,
+        "y_mm": 2.54,
+        "net_on_shield": "GND",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 3,
+        "x_mm": 0.0,
+        "y_mm": 5.08,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 4,
+        "x_mm": 0.0,
+        "y_mm": 7.62,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 5,
+        "x_mm": 0.0,
+        "y_mm": 10.16,
+        "net_on_shield": "CS1",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 6,
+        "x_mm": 0.0,
+        "y_mm": 12.7,
+        "net_on_shield": "CS2",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 7,
+        "x_mm": 0.0,
+        "y_mm": 15.24,
+        "net_on_shield": "CS3",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 8,
+        "x_mm": 0.0,
+        "y_mm": 17.78,
+        "net_on_shield": "CS4",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 9,
+        "x_mm": 0.0,
+        "y_mm": 20.32,
+        "net_on_shield": "CS5",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 10,
+        "x_mm": 0.0,
+        "y_mm": 22.86,
+        "net_on_shield": "CS6",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 11,
+        "x_mm": 0.0,
+        "y_mm": 25.4,
+        "net_on_shield": "CS7",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 12,
+        "x_mm": 0.0,
+        "y_mm": 27.94,
+        "net_on_shield": "CS8",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 13,
+        "x_mm": 0.0,
+        "y_mm": 30.48,
+        "net_on_shield": "CS9",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 14,
+        "x_mm": 0.0,
+        "y_mm": 33.02,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 15,
+        "x_mm": 0.0,
+        "y_mm": 35.56,
+        "net_on_shield": "MOSI",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 16,
+        "x_mm": 0.0,
+        "y_mm": 38.1,
+        "net_on_shield": "SCLK",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 17,
+        "x_mm": 0.0,
+        "y_mm": 40.64,
+        "net_on_shield": "MISO",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 18,
+        "x_mm": 0.0,
+        "y_mm": 43.18,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 19,
+        "x_mm": 0.0,
+        "y_mm": 45.72,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 20,
+        "x_mm": 0.0,
+        "y_mm": 48.26,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 1,
+        "x_mm": 33.02,
+        "y_mm": 0.0,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 2,
+        "x_mm": 33.02,
+        "y_mm": 2.54,
+        "net_on_shield": "GND",
+        "used": true
+      },
+      {
+        "header": "H2",
+        "pin": 3,
+        "x_mm": 33.02,
+        "y_mm": 5.08,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 4,
+        "x_mm": 33.02,
+        "y_mm": 7.62,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 5,
+        "x_mm": 33.02,
+        "y_mm": 10.16,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 6,
+        "x_mm": 33.02,
+        "y_mm": 12.7,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 7,
+        "x_mm": 33.02,
+        "y_mm": 15.24,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 8,
+        "x_mm": 33.02,
+        "y_mm": 17.78,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 9,
+        "x_mm": 33.02,
+        "y_mm": 20.32,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 10,
+        "x_mm": 33.02,
+        "y_mm": 22.86,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 11,
+        "x_mm": 33.02,
+        "y_mm": 25.4,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 12,
+        "x_mm": 33.02,
+        "y_mm": 27.94,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 13,
+        "x_mm": 33.02,
+        "y_mm": 30.48,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 14,
+        "x_mm": 33.02,
+        "y_mm": 33.02,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 15,
+        "x_mm": 33.02,
+        "y_mm": 35.56,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 16,
+        "x_mm": 33.02,
+        "y_mm": 38.1,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 17,
+        "x_mm": 33.02,
+        "y_mm": 40.64,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 18,
+        "x_mm": 33.02,
+        "y_mm": 43.18,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 19,
+        "x_mm": 33.02,
+        "y_mm": 45.72,
+        "net_on_shield": "GND",
+        "used": true
+      },
+      {
+        "header": "H2",
+        "pin": 20,
+        "x_mm": 33.02,
+        "y_mm": 48.26,
+        "net_on_shield": null,
+        "used": false
+      }
+    ],
+    "S3_BME690_x9": [
+      {
+        "header": "H1",
+        "pin": 1,
+        "x_mm": 0.0,
+        "y_mm": 0.0,
+        "net_on_shield": "3V3",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 2,
+        "x_mm": 0.0,
+        "y_mm": 2.54,
+        "net_on_shield": "GND",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 3,
+        "x_mm": 0.0,
+        "y_mm": 5.08,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 4,
+        "x_mm": 0.0,
+        "y_mm": 7.62,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 5,
+        "x_mm": 0.0,
+        "y_mm": 10.16,
+        "net_on_shield": "CS1",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 6,
+        "x_mm": 0.0,
+        "y_mm": 12.7,
+        "net_on_shield": "CS2",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 7,
+        "x_mm": 0.0,
+        "y_mm": 15.24,
+        "net_on_shield": "CS3",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 8,
+        "x_mm": 0.0,
+        "y_mm": 17.78,
+        "net_on_shield": "CS4",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 9,
+        "x_mm": 0.0,
+        "y_mm": 20.32,
+        "net_on_shield": "CS5",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 10,
+        "x_mm": 0.0,
+        "y_mm": 22.86,
+        "net_on_shield": "CS6",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 11,
+        "x_mm": 0.0,
+        "y_mm": 25.4,
+        "net_on_shield": "CS7",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 12,
+        "x_mm": 0.0,
+        "y_mm": 27.94,
+        "net_on_shield": "CS8",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 13,
+        "x_mm": 0.0,
+        "y_mm": 30.48,
+        "net_on_shield": "CS9",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 14,
+        "x_mm": 0.0,
+        "y_mm": 33.02,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 15,
+        "x_mm": 0.0,
+        "y_mm": 35.56,
+        "net_on_shield": "MOSI",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 16,
+        "x_mm": 0.0,
+        "y_mm": 38.1,
+        "net_on_shield": "SCLK",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 17,
+        "x_mm": 0.0,
+        "y_mm": 40.64,
+        "net_on_shield": "MISO",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 18,
+        "x_mm": 0.0,
+        "y_mm": 43.18,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 19,
+        "x_mm": 0.0,
+        "y_mm": 45.72,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 20,
+        "x_mm": 0.0,
+        "y_mm": 48.26,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 1,
+        "x_mm": 33.02,
+        "y_mm": 0.0,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 2,
+        "x_mm": 33.02,
+        "y_mm": 2.54,
+        "net_on_shield": "GND",
+        "used": true
+      },
+      {
+        "header": "H2",
+        "pin": 3,
+        "x_mm": 33.02,
+        "y_mm": 5.08,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 4,
+        "x_mm": 33.02,
+        "y_mm": 7.62,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 5,
+        "x_mm": 33.02,
+        "y_mm": 10.16,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 6,
+        "x_mm": 33.02,
+        "y_mm": 12.7,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 7,
+        "x_mm": 33.02,
+        "y_mm": 15.24,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 8,
+        "x_mm": 33.02,
+        "y_mm": 17.78,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 9,
+        "x_mm": 33.02,
+        "y_mm": 20.32,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 10,
+        "x_mm": 33.02,
+        "y_mm": 22.86,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 11,
+        "x_mm": 33.02,
+        "y_mm": 25.4,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 12,
+        "x_mm": 33.02,
+        "y_mm": 27.94,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 13,
+        "x_mm": 33.02,
+        "y_mm": 30.48,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 14,
+        "x_mm": 33.02,
+        "y_mm": 33.02,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 15,
+        "x_mm": 33.02,
+        "y_mm": 35.56,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 16,
+        "x_mm": 33.02,
+        "y_mm": 38.1,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 17,
+        "x_mm": 33.02,
+        "y_mm": 40.64,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 18,
+        "x_mm": 33.02,
+        "y_mm": 43.18,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 19,
+        "x_mm": 33.02,
+        "y_mm": 45.72,
+        "net_on_shield": "GND",
+        "used": true
+      },
+      {
+        "header": "H2",
+        "pin": 20,
+        "x_mm": 33.02,
+        "y_mm": 48.26,
+        "net_on_shield": null,
+        "used": false
+      }
+    ],
+    "S4_MLX90393_x9": [
+      {
+        "header": "H1",
+        "pin": 1,
+        "x_mm": 0.0,
+        "y_mm": 0.0,
+        "net_on_shield": "3V3",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 2,
+        "x_mm": 0.0,
+        "y_mm": 2.54,
+        "net_on_shield": "GND",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 3,
+        "x_mm": 0.0,
+        "y_mm": 5.08,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 4,
+        "x_mm": 0.0,
+        "y_mm": 7.62,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 5,
+        "x_mm": 0.0,
+        "y_mm": 10.16,
+        "net_on_shield": "CS1",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 6,
+        "x_mm": 0.0,
+        "y_mm": 12.7,
+        "net_on_shield": "CS2",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 7,
+        "x_mm": 0.0,
+        "y_mm": 15.24,
+        "net_on_shield": "CS3",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 8,
+        "x_mm": 0.0,
+        "y_mm": 17.78,
+        "net_on_shield": "CS4",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 9,
+        "x_mm": 0.0,
+        "y_mm": 20.32,
+        "net_on_shield": "CS5",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 10,
+        "x_mm": 0.0,
+        "y_mm": 22.86,
+        "net_on_shield": "CS6",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 11,
+        "x_mm": 0.0,
+        "y_mm": 25.4,
+        "net_on_shield": "CS7",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 12,
+        "x_mm": 0.0,
+        "y_mm": 27.94,
+        "net_on_shield": "CS8",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 13,
+        "x_mm": 0.0,
+        "y_mm": 30.48,
+        "net_on_shield": "CS9",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 14,
+        "x_mm": 0.0,
+        "y_mm": 33.02,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 15,
+        "x_mm": 0.0,
+        "y_mm": 35.56,
+        "net_on_shield": "MOSI",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 16,
+        "x_mm": 0.0,
+        "y_mm": 38.1,
+        "net_on_shield": "SCLK",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 17,
+        "x_mm": 0.0,
+        "y_mm": 40.64,
+        "net_on_shield": "MISO",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 18,
+        "x_mm": 0.0,
+        "y_mm": 43.18,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 19,
+        "x_mm": 0.0,
+        "y_mm": 45.72,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 20,
+        "x_mm": 0.0,
+        "y_mm": 48.26,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 1,
+        "x_mm": 33.02,
+        "y_mm": 0.0,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 2,
+        "x_mm": 33.02,
+        "y_mm": 2.54,
+        "net_on_shield": "GND",
+        "used": true
+      },
+      {
+        "header": "H2",
+        "pin": 3,
+        "x_mm": 33.02,
+        "y_mm": 5.08,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 4,
+        "x_mm": 33.02,
+        "y_mm": 7.62,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 5,
+        "x_mm": 33.02,
+        "y_mm": 10.16,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 6,
+        "x_mm": 33.02,
+        "y_mm": 12.7,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 7,
+        "x_mm": 33.02,
+        "y_mm": 15.24,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 8,
+        "x_mm": 33.02,
+        "y_mm": 17.78,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 9,
+        "x_mm": 33.02,
+        "y_mm": 20.32,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 10,
+        "x_mm": 33.02,
+        "y_mm": 22.86,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 11,
+        "x_mm": 33.02,
+        "y_mm": 25.4,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 12,
+        "x_mm": 33.02,
+        "y_mm": 27.94,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 13,
+        "x_mm": 33.02,
+        "y_mm": 30.48,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 14,
+        "x_mm": 33.02,
+        "y_mm": 33.02,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 15,
+        "x_mm": 33.02,
+        "y_mm": 35.56,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 16,
+        "x_mm": 33.02,
+        "y_mm": 38.1,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 17,
+        "x_mm": 33.02,
+        "y_mm": 40.64,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 18,
+        "x_mm": 33.02,
+        "y_mm": 43.18,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 19,
+        "x_mm": 33.02,
+        "y_mm": 45.72,
+        "net_on_shield": "GND",
+        "used": true
+      },
+      {
+        "header": "H2",
+        "pin": 20,
+        "x_mm": 33.02,
+        "y_mm": 48.26,
+        "net_on_shield": null,
+        "used": false
+      }
+    ],
+    "S5_VL53L1X_x9": [
+      {
+        "header": "H1",
+        "pin": 1,
+        "x_mm": 0.0,
+        "y_mm": 0.0,
+        "net_on_shield": "3V3",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 2,
+        "x_mm": 0.0,
+        "y_mm": 2.54,
+        "net_on_shield": "GND",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 3,
+        "x_mm": 0.0,
+        "y_mm": 5.08,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 4,
+        "x_mm": 0.0,
+        "y_mm": 7.62,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 5,
+        "x_mm": 0.0,
+        "y_mm": 10.16,
+        "net_on_shield": "XSHUT1",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 6,
+        "x_mm": 0.0,
+        "y_mm": 12.7,
+        "net_on_shield": "XSHUT2",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 7,
+        "x_mm": 0.0,
+        "y_mm": 15.24,
+        "net_on_shield": "XSHUT3",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 8,
+        "x_mm": 0.0,
+        "y_mm": 17.78,
+        "net_on_shield": "XSHUT4",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 9,
+        "x_mm": 0.0,
+        "y_mm": 20.32,
+        "net_on_shield": "XSHUT5",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 10,
+        "x_mm": 0.0,
+        "y_mm": 22.86,
+        "net_on_shield": "XSHUT6",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 11,
+        "x_mm": 0.0,
+        "y_mm": 25.4,
+        "net_on_shield": "XSHUT7",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 12,
+        "x_mm": 0.0,
+        "y_mm": 27.94,
+        "net_on_shield": "XSHUT8",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 13,
+        "x_mm": 0.0,
+        "y_mm": 30.48,
+        "net_on_shield": "XSHUT9",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 14,
+        "x_mm": 0.0,
+        "y_mm": 33.02,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 15,
+        "x_mm": 0.0,
+        "y_mm": 35.56,
+        "net_on_shield": "SDA",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 16,
+        "x_mm": 0.0,
+        "y_mm": 38.1,
+        "net_on_shield": "SCL",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 17,
+        "x_mm": 0.0,
+        "y_mm": 40.64,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 18,
+        "x_mm": 0.0,
+        "y_mm": 43.18,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 19,
+        "x_mm": 0.0,
+        "y_mm": 45.72,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 20,
+        "x_mm": 0.0,
+        "y_mm": 48.26,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 1,
+        "x_mm": 33.02,
+        "y_mm": 0.0,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 2,
+        "x_mm": 33.02,
+        "y_mm": 2.54,
+        "net_on_shield": "GND",
+        "used": true
+      },
+      {
+        "header": "H2",
+        "pin": 3,
+        "x_mm": 33.02,
+        "y_mm": 5.08,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 4,
+        "x_mm": 33.02,
+        "y_mm": 7.62,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 5,
+        "x_mm": 33.02,
+        "y_mm": 10.16,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 6,
+        "x_mm": 33.02,
+        "y_mm": 12.7,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 7,
+        "x_mm": 33.02,
+        "y_mm": 15.24,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 8,
+        "x_mm": 33.02,
+        "y_mm": 17.78,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 9,
+        "x_mm": 33.02,
+        "y_mm": 20.32,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 10,
+        "x_mm": 33.02,
+        "y_mm": 22.86,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 11,
+        "x_mm": 33.02,
+        "y_mm": 25.4,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 12,
+        "x_mm": 33.02,
+        "y_mm": 27.94,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 13,
+        "x_mm": 33.02,
+        "y_mm": 30.48,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 14,
+        "x_mm": 33.02,
+        "y_mm": 33.02,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 15,
+        "x_mm": 33.02,
+        "y_mm": 35.56,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 16,
+        "x_mm": 33.02,
+        "y_mm": 38.1,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 17,
+        "x_mm": 33.02,
+        "y_mm": 40.64,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 18,
+        "x_mm": 33.02,
+        "y_mm": 43.18,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 19,
+        "x_mm": 33.02,
+        "y_mm": 45.72,
+        "net_on_shield": "GND",
+        "used": true
+      },
+      {
+        "header": "H2",
+        "pin": 20,
+        "x_mm": 33.02,
+        "y_mm": 48.26,
+        "net_on_shield": null,
+        "used": false
+      }
+    ],
+    "S6_BMP581_x9": [
+      {
+        "header": "H1",
+        "pin": 1,
+        "x_mm": 0.0,
+        "y_mm": 0.0,
+        "net_on_shield": "3V3",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 2,
+        "x_mm": 0.0,
+        "y_mm": 2.54,
+        "net_on_shield": "GND",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 3,
+        "x_mm": 0.0,
+        "y_mm": 5.08,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 4,
+        "x_mm": 0.0,
+        "y_mm": 7.62,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 5,
+        "x_mm": 0.0,
+        "y_mm": 10.16,
+        "net_on_shield": "CS1",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 6,
+        "x_mm": 0.0,
+        "y_mm": 12.7,
+        "net_on_shield": "CS2",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 7,
+        "x_mm": 0.0,
+        "y_mm": 15.24,
+        "net_on_shield": "CS3",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 8,
+        "x_mm": 0.0,
+        "y_mm": 17.78,
+        "net_on_shield": "CS4",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 9,
+        "x_mm": 0.0,
+        "y_mm": 20.32,
+        "net_on_shield": "CS5",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 10,
+        "x_mm": 0.0,
+        "y_mm": 22.86,
+        "net_on_shield": "CS6",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 11,
+        "x_mm": 0.0,
+        "y_mm": 25.4,
+        "net_on_shield": "CS7",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 12,
+        "x_mm": 0.0,
+        "y_mm": 27.94,
+        "net_on_shield": "CS8",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 13,
+        "x_mm": 0.0,
+        "y_mm": 30.48,
+        "net_on_shield": "CS9",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 14,
+        "x_mm": 0.0,
+        "y_mm": 33.02,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 15,
+        "x_mm": 0.0,
+        "y_mm": 35.56,
+        "net_on_shield": "MOSI",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 16,
+        "x_mm": 0.0,
+        "y_mm": 38.1,
+        "net_on_shield": "SCLK",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 17,
+        "x_mm": 0.0,
+        "y_mm": 40.64,
+        "net_on_shield": "MISO",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 18,
+        "x_mm": 0.0,
+        "y_mm": 43.18,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 19,
+        "x_mm": 0.0,
+        "y_mm": 45.72,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 20,
+        "x_mm": 0.0,
+        "y_mm": 48.26,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 1,
+        "x_mm": 33.02,
+        "y_mm": 0.0,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 2,
+        "x_mm": 33.02,
+        "y_mm": 2.54,
+        "net_on_shield": "GND",
+        "used": true
+      },
+      {
+        "header": "H2",
+        "pin": 3,
+        "x_mm": 33.02,
+        "y_mm": 5.08,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 4,
+        "x_mm": 33.02,
+        "y_mm": 7.62,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 5,
+        "x_mm": 33.02,
+        "y_mm": 10.16,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 6,
+        "x_mm": 33.02,
+        "y_mm": 12.7,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 7,
+        "x_mm": 33.02,
+        "y_mm": 15.24,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 8,
+        "x_mm": 33.02,
+        "y_mm": 17.78,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 9,
+        "x_mm": 33.02,
+        "y_mm": 20.32,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 10,
+        "x_mm": 33.02,
+        "y_mm": 22.86,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 11,
+        "x_mm": 33.02,
+        "y_mm": 25.4,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 12,
+        "x_mm": 33.02,
+        "y_mm": 27.94,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 13,
+        "x_mm": 33.02,
+        "y_mm": 30.48,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 14,
+        "x_mm": 33.02,
+        "y_mm": 33.02,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 15,
+        "x_mm": 33.02,
+        "y_mm": 35.56,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 16,
+        "x_mm": 33.02,
+        "y_mm": 38.1,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 17,
+        "x_mm": 33.02,
+        "y_mm": 40.64,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 18,
+        "x_mm": 33.02,
+        "y_mm": 43.18,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 19,
+        "x_mm": 33.02,
+        "y_mm": 45.72,
+        "net_on_shield": "GND",
+        "used": true
+      },
+      {
+        "header": "H2",
+        "pin": 20,
+        "x_mm": 33.02,
+        "y_mm": 48.26,
+        "net_on_shield": null,
+        "used": false
+      }
+    ],
+    "S7_VL6180X_x9": [
+      {
+        "header": "H1",
+        "pin": 1,
+        "x_mm": 0.0,
+        "y_mm": 0.0,
+        "net_on_shield": "3V3",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 2,
+        "x_mm": 0.0,
+        "y_mm": 2.54,
+        "net_on_shield": "GND",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 3,
+        "x_mm": 0.0,
+        "y_mm": 5.08,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 4,
+        "x_mm": 0.0,
+        "y_mm": 7.62,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 5,
+        "x_mm": 0.0,
+        "y_mm": 10.16,
+        "net_on_shield": "CE1",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 6,
+        "x_mm": 0.0,
+        "y_mm": 12.7,
+        "net_on_shield": "CE2",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 7,
+        "x_mm": 0.0,
+        "y_mm": 15.24,
+        "net_on_shield": "CE3",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 8,
+        "x_mm": 0.0,
+        "y_mm": 17.78,
+        "net_on_shield": "CE4",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 9,
+        "x_mm": 0.0,
+        "y_mm": 20.32,
+        "net_on_shield": "CE5",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 10,
+        "x_mm": 0.0,
+        "y_mm": 22.86,
+        "net_on_shield": "CE6",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 11,
+        "x_mm": 0.0,
+        "y_mm": 25.4,
+        "net_on_shield": "CE7",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 12,
+        "x_mm": 0.0,
+        "y_mm": 27.94,
+        "net_on_shield": "CE8",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 13,
+        "x_mm": 0.0,
+        "y_mm": 30.48,
+        "net_on_shield": "CE9",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 14,
+        "x_mm": 0.0,
+        "y_mm": 33.02,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 15,
+        "x_mm": 0.0,
+        "y_mm": 35.56,
+        "net_on_shield": "SDA",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 16,
+        "x_mm": 0.0,
+        "y_mm": 38.1,
+        "net_on_shield": "SCL",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 17,
+        "x_mm": 0.0,
+        "y_mm": 40.64,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 18,
+        "x_mm": 0.0,
+        "y_mm": 43.18,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 19,
+        "x_mm": 0.0,
+        "y_mm": 45.72,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 20,
+        "x_mm": 0.0,
+        "y_mm": 48.26,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 1,
+        "x_mm": 33.02,
+        "y_mm": 0.0,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 2,
+        "x_mm": 33.02,
+        "y_mm": 2.54,
+        "net_on_shield": "GND",
+        "used": true
+      },
+      {
+        "header": "H2",
+        "pin": 3,
+        "x_mm": 33.02,
+        "y_mm": 5.08,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 4,
+        "x_mm": 33.02,
+        "y_mm": 7.62,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 5,
+        "x_mm": 33.02,
+        "y_mm": 10.16,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 6,
+        "x_mm": 33.02,
+        "y_mm": 12.7,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 7,
+        "x_mm": 33.02,
+        "y_mm": 15.24,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 8,
+        "x_mm": 33.02,
+        "y_mm": 17.78,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 9,
+        "x_mm": 33.02,
+        "y_mm": 20.32,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 10,
+        "x_mm": 33.02,
+        "y_mm": 22.86,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 11,
+        "x_mm": 33.02,
+        "y_mm": 25.4,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 12,
+        "x_mm": 33.02,
+        "y_mm": 27.94,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 13,
+        "x_mm": 33.02,
+        "y_mm": 30.48,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 14,
+        "x_mm": 33.02,
+        "y_mm": 33.02,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 15,
+        "x_mm": 33.02,
+        "y_mm": 35.56,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 16,
+        "x_mm": 33.02,
+        "y_mm": 38.1,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 17,
+        "x_mm": 33.02,
+        "y_mm": 40.64,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 18,
+        "x_mm": 33.02,
+        "y_mm": 43.18,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 19,
+        "x_mm": 33.02,
+        "y_mm": 45.72,
+        "net_on_shield": "GND",
+        "used": true
+      },
+      {
+        "header": "H2",
+        "pin": 20,
+        "x_mm": 33.02,
+        "y_mm": 48.26,
+        "net_on_shield": null,
+        "used": false
+      }
+    ],
+    "S8_Touch3x3": [
+      {
+        "header": "H1",
+        "pin": 1,
+        "x_mm": 0.0,
+        "y_mm": 0.0,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 2,
+        "x_mm": 0.0,
+        "y_mm": 2.54,
+        "net_on_shield": "GND",
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 3,
+        "x_mm": 0.0,
+        "y_mm": 5.08,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 4,
+        "x_mm": 0.0,
+        "y_mm": 7.62,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 5,
+        "x_mm": 0.0,
+        "y_mm": 10.16,
+        "net_on_shield": "T1",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 6,
+        "x_mm": 0.0,
+        "y_mm": 12.7,
+        "net_on_shield": "T2",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 7,
+        "x_mm": 0.0,
+        "y_mm": 15.24,
+        "net_on_shield": "T3",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 8,
+        "x_mm": 0.0,
+        "y_mm": 17.78,
+        "net_on_shield": "T4",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 9,
+        "x_mm": 0.0,
+        "y_mm": 20.32,
+        "net_on_shield": "T5",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 10,
+        "x_mm": 0.0,
+        "y_mm": 22.86,
+        "net_on_shield": "T6",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 11,
+        "x_mm": 0.0,
+        "y_mm": 25.4,
+        "net_on_shield": "T7",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 12,
+        "x_mm": 0.0,
+        "y_mm": 27.94,
+        "net_on_shield": "T8",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 13,
+        "x_mm": 0.0,
+        "y_mm": 30.48,
+        "net_on_shield": "T9",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 14,
+        "x_mm": 0.0,
+        "y_mm": 33.02,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 15,
+        "x_mm": 0.0,
+        "y_mm": 35.56,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 16,
+        "x_mm": 0.0,
+        "y_mm": 38.1,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 17,
+        "x_mm": 0.0,
+        "y_mm": 40.64,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 18,
+        "x_mm": 0.0,
+        "y_mm": 43.18,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 19,
+        "x_mm": 0.0,
+        "y_mm": 45.72,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 20,
+        "x_mm": 0.0,
+        "y_mm": 48.26,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 1,
+        "x_mm": 33.02,
+        "y_mm": 0.0,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 2,
+        "x_mm": 33.02,
+        "y_mm": 2.54,
+        "net_on_shield": "GND",
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 3,
+        "x_mm": 33.02,
+        "y_mm": 5.08,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 4,
+        "x_mm": 33.02,
+        "y_mm": 7.62,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 5,
+        "x_mm": 33.02,
+        "y_mm": 10.16,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 6,
+        "x_mm": 33.02,
+        "y_mm": 12.7,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 7,
+        "x_mm": 33.02,
+        "y_mm": 15.24,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 8,
+        "x_mm": 33.02,
+        "y_mm": 17.78,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 9,
+        "x_mm": 33.02,
+        "y_mm": 20.32,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 10,
+        "x_mm": 33.02,
+        "y_mm": 22.86,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 11,
+        "x_mm": 33.02,
+        "y_mm": 25.4,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 12,
+        "x_mm": 33.02,
+        "y_mm": 27.94,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 13,
+        "x_mm": 33.02,
+        "y_mm": 30.48,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 14,
+        "x_mm": 33.02,
+        "y_mm": 33.02,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 15,
+        "x_mm": 33.02,
+        "y_mm": 35.56,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 16,
+        "x_mm": 33.02,
+        "y_mm": 38.1,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 17,
+        "x_mm": 33.02,
+        "y_mm": 40.64,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 18,
+        "x_mm": 33.02,
+        "y_mm": 43.18,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 19,
+        "x_mm": 33.02,
+        "y_mm": 45.72,
+        "net_on_shield": "GND",
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 20,
+        "x_mm": 33.02,
+        "y_mm": 48.26,
+        "net_on_shield": null,
+        "used": false
+      }
+    ],
+    "S9_MagPix": [
+      {
+        "header": "H1",
+        "pin": 1,
+        "x_mm": 0.0,
+        "y_mm": 0.0,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 2,
+        "x_mm": 0.0,
+        "y_mm": 2.54,
+        "net_on_shield": "GND",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 3,
+        "x_mm": 0.0,
+        "y_mm": 5.08,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 4,
+        "x_mm": 0.0,
+        "y_mm": 7.62,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 5,
+        "x_mm": 0.0,
+        "y_mm": 10.16,
+        "net_on_shield": "G1",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 6,
+        "x_mm": 0.0,
+        "y_mm": 12.7,
+        "net_on_shield": "G2",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 7,
+        "x_mm": 0.0,
+        "y_mm": 15.24,
+        "net_on_shield": "G3",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 8,
+        "x_mm": 0.0,
+        "y_mm": 17.78,
+        "net_on_shield": "G4",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 9,
+        "x_mm": 0.0,
+        "y_mm": 20.32,
+        "net_on_shield": "G5",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 10,
+        "x_mm": 0.0,
+        "y_mm": 22.86,
+        "net_on_shield": "G6",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 11,
+        "x_mm": 0.0,
+        "y_mm": 25.4,
+        "net_on_shield": "G7",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 12,
+        "x_mm": 0.0,
+        "y_mm": 27.94,
+        "net_on_shield": "G8",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 13,
+        "x_mm": 0.0,
+        "y_mm": 30.48,
+        "net_on_shield": "G9",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 14,
+        "x_mm": 0.0,
+        "y_mm": 33.02,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 15,
+        "x_mm": 0.0,
+        "y_mm": 35.56,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 16,
+        "x_mm": 0.0,
+        "y_mm": 38.1,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 17,
+        "x_mm": 0.0,
+        "y_mm": 40.64,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 18,
+        "x_mm": 0.0,
+        "y_mm": 43.18,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 19,
+        "x_mm": 0.0,
+        "y_mm": 45.72,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 20,
+        "x_mm": 0.0,
+        "y_mm": 48.26,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 1,
+        "x_mm": 33.02,
+        "y_mm": 0.0,
+        "net_on_shield": "VBUS_IN",
+        "used": true
+      },
+      {
+        "header": "H2",
+        "pin": 2,
+        "x_mm": 33.02,
+        "y_mm": 2.54,
+        "net_on_shield": "GND",
+        "used": true
+      },
+      {
+        "header": "H2",
+        "pin": 3,
+        "x_mm": 33.02,
+        "y_mm": 5.08,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 4,
+        "x_mm": 33.02,
+        "y_mm": 7.62,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 5,
+        "x_mm": 33.02,
+        "y_mm": 10.16,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 6,
+        "x_mm": 33.02,
+        "y_mm": 12.7,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 7,
+        "x_mm": 33.02,
+        "y_mm": 15.24,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 8,
+        "x_mm": 33.02,
+        "y_mm": 17.78,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 9,
+        "x_mm": 33.02,
+        "y_mm": 20.32,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 10,
+        "x_mm": 33.02,
+        "y_mm": 22.86,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 11,
+        "x_mm": 33.02,
+        "y_mm": 25.4,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 12,
+        "x_mm": 33.02,
+        "y_mm": 27.94,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 13,
+        "x_mm": 33.02,
+        "y_mm": 30.48,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 14,
+        "x_mm": 33.02,
+        "y_mm": 33.02,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 15,
+        "x_mm": 33.02,
+        "y_mm": 35.56,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 16,
+        "x_mm": 33.02,
+        "y_mm": 38.1,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 17,
+        "x_mm": 33.02,
+        "y_mm": 40.64,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 18,
+        "x_mm": 33.02,
+        "y_mm": 43.18,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 19,
+        "x_mm": 33.02,
+        "y_mm": 45.72,
+        "net_on_shield": "GND",
+        "used": true
+      },
+      {
+        "header": "H2",
+        "pin": 20,
+        "x_mm": 33.02,
+        "y_mm": 48.26,
+        "net_on_shield": null,
+        "used": false
+      }
+    ],
+    "S10_AirFlow": [
+      {
+        "header": "H1",
+        "pin": 1,
+        "x_mm": 0.0,
+        "y_mm": 0.0,
+        "net_on_shield": "3V3",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 2,
+        "x_mm": 0.0,
+        "y_mm": 2.54,
+        "net_on_shield": "GND",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 3,
+        "x_mm": 0.0,
+        "y_mm": 5.08,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 4,
+        "x_mm": 0.0,
+        "y_mm": 7.62,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 5,
+        "x_mm": 0.0,
+        "y_mm": 10.16,
+        "net_on_shield": "A1",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 6,
+        "x_mm": 0.0,
+        "y_mm": 12.7,
+        "net_on_shield": "A2",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 7,
+        "x_mm": 0.0,
+        "y_mm": 15.24,
+        "net_on_shield": "A3",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 8,
+        "x_mm": 0.0,
+        "y_mm": 17.78,
+        "net_on_shield": "A4",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 9,
+        "x_mm": 0.0,
+        "y_mm": 20.32,
+        "net_on_shield": "A5",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 10,
+        "x_mm": 0.0,
+        "y_mm": 22.86,
+        "net_on_shield": "A6",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 11,
+        "x_mm": 0.0,
+        "y_mm": 25.4,
+        "net_on_shield": "A7",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 12,
+        "x_mm": 0.0,
+        "y_mm": 27.94,
+        "net_on_shield": "A8",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 13,
+        "x_mm": 0.0,
+        "y_mm": 30.48,
+        "net_on_shield": "A9",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 14,
+        "x_mm": 0.0,
+        "y_mm": 33.02,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 15,
+        "x_mm": 0.0,
+        "y_mm": 35.56,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 16,
+        "x_mm": 0.0,
+        "y_mm": 38.1,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 17,
+        "x_mm": 0.0,
+        "y_mm": 40.64,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 18,
+        "x_mm": 0.0,
+        "y_mm": 43.18,
+        "net_on_shield": "HEAT_EN",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 19,
+        "x_mm": 0.0,
+        "y_mm": 45.72,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 20,
+        "x_mm": 0.0,
+        "y_mm": 48.26,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 1,
+        "x_mm": 33.02,
+        "y_mm": 0.0,
+        "net_on_shield": "VBUS",
+        "used": true
+      },
+      {
+        "header": "H2",
+        "pin": 2,
+        "x_mm": 33.02,
+        "y_mm": 2.54,
+        "net_on_shield": "GND",
+        "used": true
+      },
+      {
+        "header": "H2",
+        "pin": 3,
+        "x_mm": 33.02,
+        "y_mm": 5.08,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 4,
+        "x_mm": 33.02,
+        "y_mm": 7.62,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 5,
+        "x_mm": 33.02,
+        "y_mm": 10.16,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 6,
+        "x_mm": 33.02,
+        "y_mm": 12.7,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 7,
+        "x_mm": 33.02,
+        "y_mm": 15.24,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 8,
+        "x_mm": 33.02,
+        "y_mm": 17.78,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 9,
+        "x_mm": 33.02,
+        "y_mm": 20.32,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 10,
+        "x_mm": 33.02,
+        "y_mm": 22.86,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 11,
+        "x_mm": 33.02,
+        "y_mm": 25.4,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 12,
+        "x_mm": 33.02,
+        "y_mm": 27.94,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 13,
+        "x_mm": 33.02,
+        "y_mm": 30.48,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 14,
+        "x_mm": 33.02,
+        "y_mm": 33.02,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 15,
+        "x_mm": 33.02,
+        "y_mm": 35.56,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 16,
+        "x_mm": 33.02,
+        "y_mm": 38.1,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 17,
+        "x_mm": 33.02,
+        "y_mm": 40.64,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 18,
+        "x_mm": 33.02,
+        "y_mm": 43.18,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 19,
+        "x_mm": 33.02,
+        "y_mm": 45.72,
+        "net_on_shield": "GND",
+        "used": true
+      },
+      {
+        "header": "H2",
+        "pin": 20,
+        "x_mm": 33.02,
+        "y_mm": 48.26,
+        "net_on_shield": null,
+        "used": false
+      }
+    ],
+    "S11_Display": [
+      {
+        "header": "H1",
+        "pin": 1,
+        "x_mm": 0.0,
+        "y_mm": 0.0,
+        "net_on_shield": "3V3",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 2,
+        "x_mm": 0.0,
+        "y_mm": 2.54,
+        "net_on_shield": "GND",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 3,
+        "x_mm": 0.0,
+        "y_mm": 5.08,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 4,
+        "x_mm": 0.0,
+        "y_mm": 7.62,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 5,
+        "x_mm": 0.0,
+        "y_mm": 10.16,
+        "net_on_shield": "CS",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 6,
+        "x_mm": 0.0,
+        "y_mm": 12.7,
+        "net_on_shield": "DC",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 7,
+        "x_mm": 0.0,
+        "y_mm": 15.24,
+        "net_on_shield": "LCD_RST",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 8,
+        "x_mm": 0.0,
+        "y_mm": 17.78,
+        "net_on_shield": "BL_PWM",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 9,
+        "x_mm": 0.0,
+        "y_mm": 20.32,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 10,
+        "x_mm": 0.0,
+        "y_mm": 22.86,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 11,
+        "x_mm": 0.0,
+        "y_mm": 25.4,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 12,
+        "x_mm": 0.0,
+        "y_mm": 27.94,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 13,
+        "x_mm": 0.0,
+        "y_mm": 30.48,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 14,
+        "x_mm": 0.0,
+        "y_mm": 33.02,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 15,
+        "x_mm": 0.0,
+        "y_mm": 35.56,
+        "net_on_shield": "MOSI",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 16,
+        "x_mm": 0.0,
+        "y_mm": 38.1,
+        "net_on_shield": "SCLK",
+        "used": true
+      },
+      {
+        "header": "H1",
+        "pin": 17,
+        "x_mm": 0.0,
+        "y_mm": 40.64,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 18,
+        "x_mm": 0.0,
+        "y_mm": 43.18,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 19,
+        "x_mm": 0.0,
+        "y_mm": 45.72,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H1",
+        "pin": 20,
+        "x_mm": 0.0,
+        "y_mm": 48.26,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 1,
+        "x_mm": 33.02,
+        "y_mm": 0.0,
+        "net_on_shield": "VBUS",
+        "used": true
+      },
+      {
+        "header": "H2",
+        "pin": 2,
+        "x_mm": 33.02,
+        "y_mm": 2.54,
+        "net_on_shield": "GND",
+        "used": true
+      },
+      {
+        "header": "H2",
+        "pin": 3,
+        "x_mm": 33.02,
+        "y_mm": 5.08,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 4,
+        "x_mm": 33.02,
+        "y_mm": 7.62,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 5,
+        "x_mm": 33.02,
+        "y_mm": 10.16,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 6,
+        "x_mm": 33.02,
+        "y_mm": 12.7,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 7,
+        "x_mm": 33.02,
+        "y_mm": 15.24,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 8,
+        "x_mm": 33.02,
+        "y_mm": 17.78,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 9,
+        "x_mm": 33.02,
+        "y_mm": 20.32,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 10,
+        "x_mm": 33.02,
+        "y_mm": 22.86,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 11,
+        "x_mm": 33.02,
+        "y_mm": 25.4,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 12,
+        "x_mm": 33.02,
+        "y_mm": 27.94,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 13,
+        "x_mm": 33.02,
+        "y_mm": 30.48,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 14,
+        "x_mm": 33.02,
+        "y_mm": 33.02,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 15,
+        "x_mm": 33.02,
+        "y_mm": 35.56,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 16,
+        "x_mm": 33.02,
+        "y_mm": 38.1,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 17,
+        "x_mm": 33.02,
+        "y_mm": 40.64,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 18,
+        "x_mm": 33.02,
+        "y_mm": 43.18,
+        "net_on_shield": null,
+        "used": false
+      },
+      {
+        "header": "H2",
+        "pin": 19,
+        "x_mm": 33.02,
+        "y_mm": 45.72,
+        "net_on_shield": "GND",
+        "used": true
+      },
+      {
+        "header": "H2",
+        "pin": 20,
+        "x_mm": 33.02,
+        "y_mm": 48.26,
+        "net_on_shield": null,
+        "used": false
+      }
+    ]
+  }
+}

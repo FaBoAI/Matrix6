@@ -1,0 +1,832 @@
+{
+  "pcb_sha256": "d4baae69416e07bda5e7b92d2c81b41b77b089a59c8f3010dbfb94d57be7886e",
+  "preserved_from_v04": {
+    "usb_copper": true,
+    "design_rules": true,
+    "net_classes": true
+  },
+  "row_pitch_mm": 2.54,
+  "column_spacing_mm": 33.02,
+  "header_pins": 40,
+  "main_pins_matched": 37,
+  "intentional_NC": {
+    "H2.5": "USB_DM",
+    "H2.6": "USB_DP",
+    "H2.20": "VBAT"
+  },
+  "shields": {
+    "S1_WS2812_6x6": {
+      "pad_positions_checked": 40,
+      "used_pins_checked": 5,
+      "connections": [
+        {
+          "pin": "H1.2",
+          "shield_net": "GND",
+          "matrix6_net": "GND"
+        },
+        {
+          "pin": "H2.1",
+          "shield_net": "VBUS",
+          "matrix6_net": "VBUS_FUSED"
+        },
+        {
+          "pin": "H2.2",
+          "shield_net": "GND",
+          "matrix6_net": "GND"
+        },
+        {
+          "pin": "H2.7",
+          "shield_net": "IO21",
+          "matrix6_net": "IO21"
+        },
+        {
+          "pin": "H2.19",
+          "shield_net": "GND",
+          "matrix6_net": "GND"
+        }
+      ],
+      "status": "PIN_MAP_PASS"
+    },
+    "S2_ICM20948_x9": {
+      "pad_positions_checked": 40,
+      "used_pins_checked": 16,
+      "connections": [
+        {
+          "pin": "H1.1",
+          "shield_net": "3V3",
+          "matrix6_net": "+3V3"
+        },
+        {
+          "pin": "H1.2",
+          "shield_net": "GND",
+          "matrix6_net": "GND"
+        },
+        {
+          "pin": "H1.5",
+          "shield_net": "CS1",
+          "matrix6_net": "IO1"
+        },
+        {
+          "pin": "H1.6",
+          "shield_net": "CS2",
+          "matrix6_net": "IO2"
+        },
+        {
+          "pin": "H1.7",
+          "shield_net": "CS3",
+          "matrix6_net": "IO3"
+        },
+        {
+          "pin": "H1.8",
+          "shield_net": "CS4",
+          "matrix6_net": "IO4"
+        },
+        {
+          "pin": "H1.9",
+          "shield_net": "CS5",
+          "matrix6_net": "IO5"
+        },
+        {
+          "pin": "H1.10",
+          "shield_net": "CS6",
+          "matrix6_net": "IO6"
+        },
+        {
+          "pin": "H1.11",
+          "shield_net": "CS7",
+          "matrix6_net": "IO7"
+        },
+        {
+          "pin": "H1.12",
+          "shield_net": "CS8",
+          "matrix6_net": "IO8"
+        },
+        {
+          "pin": "H1.13",
+          "shield_net": "CS9",
+          "matrix6_net": "IO9"
+        },
+        {
+          "pin": "H1.15",
+          "shield_net": "MOSI",
+          "matrix6_net": "IO11"
+        },
+        {
+          "pin": "H1.16",
+          "shield_net": "SCLK",
+          "matrix6_net": "IO12"
+        },
+        {
+          "pin": "H1.17",
+          "shield_net": "MISO",
+          "matrix6_net": "IO13"
+        },
+        {
+          "pin": "H2.2",
+          "shield_net": "GND",
+          "matrix6_net": "GND"
+        },
+        {
+          "pin": "H2.19",
+          "shield_net": "GND",
+          "matrix6_net": "GND"
+        }
+      ],
+      "status": "PIN_MAP_PASS"
+    },
+    "S3_BME690_x9": {
+      "pad_positions_checked": 40,
+      "used_pins_checked": 16,
+      "connections": [
+        {
+          "pin": "H1.1",
+          "shield_net": "3V3",
+          "matrix6_net": "+3V3"
+        },
+        {
+          "pin": "H1.2",
+          "shield_net": "GND",
+          "matrix6_net": "GND"
+        },
+        {
+          "pin": "H1.5",
+          "shield_net": "CS1",
+          "matrix6_net": "IO1"
+        },
+        {
+          "pin": "H1.6",
+          "shield_net": "CS2",
+          "matrix6_net": "IO2"
+        },
+        {
+          "pin": "H1.7",
+          "shield_net": "CS3",
+          "matrix6_net": "IO3"
+        },
+        {
+          "pin": "H1.8",
+          "shield_net": "CS4",
+          "matrix6_net": "IO4"
+        },
+        {
+          "pin": "H1.9",
+          "shield_net": "CS5",
+          "matrix6_net": "IO5"
+        },
+        {
+          "pin": "H1.10",
+          "shield_net": "CS6",
+          "matrix6_net": "IO6"
+        },
+        {
+          "pin": "H1.11",
+          "shield_net": "CS7",
+          "matrix6_net": "IO7"
+        },
+        {
+          "pin": "H1.12",
+          "shield_net": "CS8",
+          "matrix6_net": "IO8"
+        },
+        {
+          "pin": "H1.13",
+          "shield_net": "CS9",
+          "matrix6_net": "IO9"
+        },
+        {
+          "pin": "H1.15",
+          "shield_net": "MOSI",
+          "matrix6_net": "IO11"
+        },
+        {
+          "pin": "H1.16",
+          "shield_net": "SCLK",
+          "matrix6_net": "IO12"
+        },
+        {
+          "pin": "H1.17",
+          "shield_net": "MISO",
+          "matrix6_net": "IO13"
+        },
+        {
+          "pin": "H2.2",
+          "shield_net": "GND",
+          "matrix6_net": "GND"
+        },
+        {
+          "pin": "H2.19",
+          "shield_net": "GND",
+          "matrix6_net": "GND"
+        }
+      ],
+      "status": "PIN_MAP_PASS"
+    },
+    "S4_MLX90393_x9": {
+      "pad_positions_checked": 40,
+      "used_pins_checked": 16,
+      "connections": [
+        {
+          "pin": "H1.1",
+          "shield_net": "3V3",
+          "matrix6_net": "+3V3"
+        },
+        {
+          "pin": "H1.2",
+          "shield_net": "GND",
+          "matrix6_net": "GND"
+        },
+        {
+          "pin": "H1.5",
+          "shield_net": "CS1",
+          "matrix6_net": "IO1"
+        },
+        {
+          "pin": "H1.6",
+          "shield_net": "CS2",
+          "matrix6_net": "IO2"
+        },
+        {
+          "pin": "H1.7",
+          "shield_net": "CS3",
+          "matrix6_net": "IO3"
+        },
+        {
+          "pin": "H1.8",
+          "shield_net": "CS4",
+          "matrix6_net": "IO4"
+        },
+        {
+          "pin": "H1.9",
+          "shield_net": "CS5",
+          "matrix6_net": "IO5"
+        },
+        {
+          "pin": "H1.10",
+          "shield_net": "CS6",
+          "matrix6_net": "IO6"
+        },
+        {
+          "pin": "H1.11",
+          "shield_net": "CS7",
+          "matrix6_net": "IO7"
+        },
+        {
+          "pin": "H1.12",
+          "shield_net": "CS8",
+          "matrix6_net": "IO8"
+        },
+        {
+          "pin": "H1.13",
+          "shield_net": "CS9",
+          "matrix6_net": "IO9"
+        },
+        {
+          "pin": "H1.15",
+          "shield_net": "MOSI",
+          "matrix6_net": "IO11"
+        },
+        {
+          "pin": "H1.16",
+          "shield_net": "SCLK",
+          "matrix6_net": "IO12"
+        },
+        {
+          "pin": "H1.17",
+          "shield_net": "MISO",
+          "matrix6_net": "IO13"
+        },
+        {
+          "pin": "H2.2",
+          "shield_net": "GND",
+          "matrix6_net": "GND"
+        },
+        {
+          "pin": "H2.19",
+          "shield_net": "GND",
+          "matrix6_net": "GND"
+        }
+      ],
+      "status": "PIN_MAP_PASS"
+    },
+    "S5_VL53L1X_x9": {
+      "pad_positions_checked": 40,
+      "used_pins_checked": 15,
+      "connections": [
+        {
+          "pin": "H1.1",
+          "shield_net": "3V3",
+          "matrix6_net": "+3V3"
+        },
+        {
+          "pin": "H1.2",
+          "shield_net": "GND",
+          "matrix6_net": "GND"
+        },
+        {
+          "pin": "H1.5",
+          "shield_net": "XSHUT1",
+          "matrix6_net": "IO1"
+        },
+        {
+          "pin": "H1.6",
+          "shield_net": "XSHUT2",
+          "matrix6_net": "IO2"
+        },
+        {
+          "pin": "H1.7",
+          "shield_net": "XSHUT3",
+          "matrix6_net": "IO3"
+        },
+        {
+          "pin": "H1.8",
+          "shield_net": "XSHUT4",
+          "matrix6_net": "IO4"
+        },
+        {
+          "pin": "H1.9",
+          "shield_net": "XSHUT5",
+          "matrix6_net": "IO5"
+        },
+        {
+          "pin": "H1.10",
+          "shield_net": "XSHUT6",
+          "matrix6_net": "IO6"
+        },
+        {
+          "pin": "H1.11",
+          "shield_net": "XSHUT7",
+          "matrix6_net": "IO7"
+        },
+        {
+          "pin": "H1.12",
+          "shield_net": "XSHUT8",
+          "matrix6_net": "IO8"
+        },
+        {
+          "pin": "H1.13",
+          "shield_net": "XSHUT9",
+          "matrix6_net": "IO9"
+        },
+        {
+          "pin": "H1.15",
+          "shield_net": "SDA",
+          "matrix6_net": "IO11"
+        },
+        {
+          "pin": "H1.16",
+          "shield_net": "SCL",
+          "matrix6_net": "IO12"
+        },
+        {
+          "pin": "H2.2",
+          "shield_net": "GND",
+          "matrix6_net": "GND"
+        },
+        {
+          "pin": "H2.19",
+          "shield_net": "GND",
+          "matrix6_net": "GND"
+        }
+      ],
+      "status": "PIN_MAP_PASS"
+    },
+    "S6_BMP581_x9": {
+      "pad_positions_checked": 40,
+      "used_pins_checked": 16,
+      "connections": [
+        {
+          "pin": "H1.1",
+          "shield_net": "3V3",
+          "matrix6_net": "+3V3"
+        },
+        {
+          "pin": "H1.2",
+          "shield_net": "GND",
+          "matrix6_net": "GND"
+        },
+        {
+          "pin": "H1.5",
+          "shield_net": "CS1",
+          "matrix6_net": "IO1"
+        },
+        {
+          "pin": "H1.6",
+          "shield_net": "CS2",
+          "matrix6_net": "IO2"
+        },
+        {
+          "pin": "H1.7",
+          "shield_net": "CS3",
+          "matrix6_net": "IO3"
+        },
+        {
+          "pin": "H1.8",
+          "shield_net": "CS4",
+          "matrix6_net": "IO4"
+        },
+        {
+          "pin": "H1.9",
+          "shield_net": "CS5",
+          "matrix6_net": "IO5"
+        },
+        {
+          "pin": "H1.10",
+          "shield_net": "CS6",
+          "matrix6_net": "IO6"
+        },
+        {
+          "pin": "H1.11",
+          "shield_net": "CS7",
+          "matrix6_net": "IO7"
+        },
+        {
+          "pin": "H1.12",
+          "shield_net": "CS8",
+          "matrix6_net": "IO8"
+        },
+        {
+          "pin": "H1.13",
+          "shield_net": "CS9",
+          "matrix6_net": "IO9"
+        },
+        {
+          "pin": "H1.15",
+          "shield_net": "MOSI",
+          "matrix6_net": "IO11"
+        },
+        {
+          "pin": "H1.16",
+          "shield_net": "SCLK",
+          "matrix6_net": "IO12"
+        },
+        {
+          "pin": "H1.17",
+          "shield_net": "MISO",
+          "matrix6_net": "IO13"
+        },
+        {
+          "pin": "H2.2",
+          "shield_net": "GND",
+          "matrix6_net": "GND"
+        },
+        {
+          "pin": "H2.19",
+          "shield_net": "GND",
+          "matrix6_net": "GND"
+        }
+      ],
+      "status": "PIN_MAP_PASS"
+    },
+    "S7_VL6180X_x9": {
+      "pad_positions_checked": 40,
+      "used_pins_checked": 15,
+      "connections": [
+        {
+          "pin": "H1.1",
+          "shield_net": "3V3",
+          "matrix6_net": "+3V3"
+        },
+        {
+          "pin": "H1.2",
+          "shield_net": "GND",
+          "matrix6_net": "GND"
+        },
+        {
+          "pin": "H1.5",
+          "shield_net": "CE1",
+          "matrix6_net": "IO1"
+        },
+        {
+          "pin": "H1.6",
+          "shield_net": "CE2",
+          "matrix6_net": "IO2"
+        },
+        {
+          "pin": "H1.7",
+          "shield_net": "CE3",
+          "matrix6_net": "IO3"
+        },
+        {
+          "pin": "H1.8",
+          "shield_net": "CE4",
+          "matrix6_net": "IO4"
+        },
+        {
+          "pin": "H1.9",
+          "shield_net": "CE5",
+          "matrix6_net": "IO5"
+        },
+        {
+          "pin": "H1.10",
+          "shield_net": "CE6",
+          "matrix6_net": "IO6"
+        },
+        {
+          "pin": "H1.11",
+          "shield_net": "CE7",
+          "matrix6_net": "IO7"
+        },
+        {
+          "pin": "H1.12",
+          "shield_net": "CE8",
+          "matrix6_net": "IO8"
+        },
+        {
+          "pin": "H1.13",
+          "shield_net": "CE9",
+          "matrix6_net": "IO9"
+        },
+        {
+          "pin": "H1.15",
+          "shield_net": "SDA",
+          "matrix6_net": "IO11"
+        },
+        {
+          "pin": "H1.16",
+          "shield_net": "SCL",
+          "matrix6_net": "IO12"
+        },
+        {
+          "pin": "H2.2",
+          "shield_net": "GND",
+          "matrix6_net": "GND"
+        },
+        {
+          "pin": "H2.19",
+          "shield_net": "GND",
+          "matrix6_net": "GND"
+        }
+      ],
+      "status": "PIN_MAP_PASS"
+    },
+    "S8_Touch3x3": {
+      "pad_positions_checked": 40,
+      "used_pins_checked": 9,
+      "connections": [
+        {
+          "pin": "H1.5",
+          "shield_net": "T1",
+          "matrix6_net": "IO1"
+        },
+        {
+          "pin": "H1.6",
+          "shield_net": "T2",
+          "matrix6_net": "IO2"
+        },
+        {
+          "pin": "H1.7",
+          "shield_net": "T3",
+          "matrix6_net": "IO3"
+        },
+        {
+          "pin": "H1.8",
+          "shield_net": "T4",
+          "matrix6_net": "IO4"
+        },
+        {
+          "pin": "H1.9",
+          "shield_net": "T5",
+          "matrix6_net": "IO5"
+        },
+        {
+          "pin": "H1.10",
+          "shield_net": "T6",
+          "matrix6_net": "IO6"
+        },
+        {
+          "pin": "H1.11",
+          "shield_net": "T7",
+          "matrix6_net": "IO7"
+        },
+        {
+          "pin": "H1.12",
+          "shield_net": "T8",
+          "matrix6_net": "IO8"
+        },
+        {
+          "pin": "H1.13",
+          "shield_net": "T9",
+          "matrix6_net": "IO9"
+        }
+      ],
+      "status": "PIN_MAP_PASS"
+    },
+    "S9_MagPix": {
+      "pad_positions_checked": 40,
+      "used_pins_checked": 13,
+      "connections": [
+        {
+          "pin": "H1.2",
+          "shield_net": "GND",
+          "matrix6_net": "GND"
+        },
+        {
+          "pin": "H1.5",
+          "shield_net": "G1",
+          "matrix6_net": "IO1"
+        },
+        {
+          "pin": "H1.6",
+          "shield_net": "G2",
+          "matrix6_net": "IO2"
+        },
+        {
+          "pin": "H1.7",
+          "shield_net": "G3",
+          "matrix6_net": "IO3"
+        },
+        {
+          "pin": "H1.8",
+          "shield_net": "G4",
+          "matrix6_net": "IO4"
+        },
+        {
+          "pin": "H1.9",
+          "shield_net": "G5",
+          "matrix6_net": "IO5"
+        },
+        {
+          "pin": "H1.10",
+          "shield_net": "G6",
+          "matrix6_net": "IO6"
+        },
+        {
+          "pin": "H1.11",
+          "shield_net": "G7",
+          "matrix6_net": "IO7"
+        },
+        {
+          "pin": "H1.12",
+          "shield_net": "G8",
+          "matrix6_net": "IO8"
+        },
+        {
+          "pin": "H1.13",
+          "shield_net": "G9",
+          "matrix6_net": "IO9"
+        },
+        {
+          "pin": "H2.1",
+          "shield_net": "VBUS_IN",
+          "matrix6_net": "VBUS_FUSED"
+        },
+        {
+          "pin": "H2.2",
+          "shield_net": "GND",
+          "matrix6_net": "GND"
+        },
+        {
+          "pin": "H2.19",
+          "shield_net": "GND",
+          "matrix6_net": "GND"
+        }
+      ],
+      "status": "PIN_MAP_PASS"
+    },
+    "S10_AirFlow": {
+      "pad_positions_checked": 40,
+      "used_pins_checked": 15,
+      "connections": [
+        {
+          "pin": "H1.1",
+          "shield_net": "3V3",
+          "matrix6_net": "+3V3"
+        },
+        {
+          "pin": "H1.2",
+          "shield_net": "GND",
+          "matrix6_net": "GND"
+        },
+        {
+          "pin": "H1.5",
+          "shield_net": "A1",
+          "matrix6_net": "IO1"
+        },
+        {
+          "pin": "H1.6",
+          "shield_net": "A2",
+          "matrix6_net": "IO2"
+        },
+        {
+          "pin": "H1.7",
+          "shield_net": "A3",
+          "matrix6_net": "IO3"
+        },
+        {
+          "pin": "H1.8",
+          "shield_net": "A4",
+          "matrix6_net": "IO4"
+        },
+        {
+          "pin": "H1.9",
+          "shield_net": "A5",
+          "matrix6_net": "IO5"
+        },
+        {
+          "pin": "H1.10",
+          "shield_net": "A6",
+          "matrix6_net": "IO6"
+        },
+        {
+          "pin": "H1.11",
+          "shield_net": "A7",
+          "matrix6_net": "IO7"
+        },
+        {
+          "pin": "H1.12",
+          "shield_net": "A8",
+          "matrix6_net": "IO8"
+        },
+        {
+          "pin": "H1.13",
+          "shield_net": "A9",
+          "matrix6_net": "IO9"
+        },
+        {
+          "pin": "H1.18",
+          "shield_net": "HEAT_EN",
+          "matrix6_net": "IO14"
+        },
+        {
+          "pin": "H2.1",
+          "shield_net": "VBUS",
+          "matrix6_net": "VBUS_FUSED"
+        },
+        {
+          "pin": "H2.2",
+          "shield_net": "GND",
+          "matrix6_net": "GND"
+        },
+        {
+          "pin": "H2.19",
+          "shield_net": "GND",
+          "matrix6_net": "GND"
+        }
+      ],
+      "status": "PIN_MAP_PASS"
+    },
+    "S11_Display": {
+      "pad_positions_checked": 40,
+      "used_pins_checked": 11,
+      "connections": [
+        {
+          "pin": "H1.1",
+          "shield_net": "3V3",
+          "matrix6_net": "+3V3"
+        },
+        {
+          "pin": "H1.2",
+          "shield_net": "GND",
+          "matrix6_net": "GND"
+        },
+        {
+          "pin": "H1.5",
+          "shield_net": "CS",
+          "matrix6_net": "IO1"
+        },
+        {
+          "pin": "H1.6",
+          "shield_net": "DC",
+          "matrix6_net": "IO2"
+        },
+        {
+          "pin": "H1.7",
+          "shield_net": "LCD_RST",
+          "matrix6_net": "IO3"
+        },
+        {
+          "pin": "H1.8",
+          "shield_net": "BL_PWM",
+          "matrix6_net": "IO4"
+        },
+        {
+          "pin": "H1.15",
+          "shield_net": "MOSI",
+          "matrix6_net": "IO11"
+        },
+        {
+          "pin": "H1.16",
+          "shield_net": "SCLK",
+          "matrix6_net": "IO12"
+        },
+        {
+          "pin": "H2.1",
+          "shield_net": "VBUS",
+          "matrix6_net": "VBUS_FUSED"
+        },
+        {
+          "pin": "H2.2",
+          "shield_net": "GND",
+          "matrix6_net": "GND"
+        },
+        {
+          "pin": "H2.19",
+          "shield_net": "GND",
+          "matrix6_net": "GND"
+        }
+      ],
+      "status": "PIN_MAP_PASS"
+    }
+  },
+  "scope": "XY pad positions and used signal/power pin assignments only. Connector mating height, all shield loads, radio behavior and physical operation remain prototype tests."
+}

@@ -1,0 +1,59 @@
+{
+  "module_return": [
+    {
+      "mesh_step_mm": 0.25,
+      "source_via_mm": [
+        118.8,
+        109.7
+      ],
+      "sink_via_mm": [
+        119.3,
+        141.3
+      ],
+      "copper_C": 60,
+      "L2_copper_mm": 0.0152,
+      "current_A": 0.5,
+      "plane_resistance_ohm": 0.0028592937282117103,
+      "plane_drop_mV": 1.429646864105855,
+      "contact_diameter_mm": 0.6,
+      "nodes": 35209
+    },
+    {
+      "mesh_step_mm": 0.125,
+      "source_via_mm": [
+        118.8,
+        109.7
+      ],
+      "sink_via_mm": [
+        119.3,
+        141.3
+      ],
+      "copper_C": 60,
+      "L2_copper_mm": 0.0152,
+      "current_A": 0.5,
+      "plane_resistance_ohm": 0.0026831738706838224,
+      "plane_drop_mV": 1.3415869353419112,
+      "contact_diameter_mm": 0.6,
+      "nodes": 141097
+    }
+  ],
+  "input_return": {
+    "mesh_step_mm": 0.125,
+    "source_via_mm": [
+      119.3,
+      141.3
+    ],
+    "sink_via_mm": [
+      115.1,
+      149.35
+    ],
+    "copper_C": 60,
+    "L2_copper_mm": 0.0152,
+    "current_A": 0.5,
+    "plane_resistance_ohm": 0.0017148627992124282,
+    "plane_drop_mV": 0.8574313996062141,
+    "contact_diameter_mm": 0.6,
+    "nodes": 141096
+  },
+  "scope": "L2 only between named GND vias. 0.5 A through a single source/sink; copper 60C. Does not include via barrels, solder/contact resistance or top-layer spreading."
+}

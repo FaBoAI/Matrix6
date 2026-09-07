@@ -1,0 +1,11 @@
+{
+  "pcb_sha256": "d4baae69416e07bda5e7b92d2c81b41b77b089a59c8f3010dbfb94d57be7886e",
+  "footprint": "USB4105_NoUnderbodyCopper",
+  "body_F_Cu_tracks_or_vias": 0,
+  "body_top_zone_filled_sample_points": 0,
+  "body_top_zone_sample_count": 6497,
+  "own_connector_pads_allowed": true,
+  "negative_control": "Added an F.Cu track and through via inside J1 in a temporary copy only.",
+  "negative_control_keepout_violations": 2,
+  "status": "PASS"
+}
