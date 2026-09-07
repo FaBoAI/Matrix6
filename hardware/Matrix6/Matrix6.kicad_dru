@@ -1,0 +1,70 @@
+(version 1)
+
+# L2 must remain a ground-only reference. Through-hole pads/vias are allowed;
+# their antipads are audited separately under the USB route.
+(rule "L2 ground plane only"
+  (layer "In1.Cu")
+  (condition "A.NetName != '/GND'")
+  (constraint disallow track zone))
+
+(rule "USB top layer without vias"
+  (condition "A.inDiffPair('*USB*')")
+  (constraint via_count (max 0)))
+(rule "USB on F.Cu only"
+  (condition "A.inDiffPair('*USB*') && A.Layer != 'F.Cu'")
+  (constraint disallow track))
+(rule "USB short pad escapes"
+  (condition "A.inDiffPair('*USB*')")
+  (constraint track_width (min 0.20mm) (max 0.28mm)))
+(rule "USB 90 ohm uniform trace width"
+  (condition "A.memberOfGroup('USB_90OHM_TRUNK')")
+  (constraint track_width (min 0.28mm) (opt 0.28mm) (max 0.28mm)))
+(rule "USB coplanar ground spacing"
+  (layer "F.Cu")
+  (condition "A.memberOfGroup('USB_90OHM_TRUNK') && B.NetName == '/GND'")
+  (constraint clearance (min 0.50mm)))
+
+# Evaluate individual USB-C insertion paths; the connector has two data pairs.
+# Comparing the sum of every branch in the net would give a misleading skew.
+(rule "USB-C B contacts equal length"
+  (condition "A.fromTo('R3-1','J1-B7') || A.fromTo('R4-1','J1-B6')")
+  (constraint skew (max 0.10mm))
+  (constraint length (max 55mm)))
+(rule "USB module to series resistors"
+  (condition "A.inDiffPair('/MCU_USB')")
+  (constraint skew (max 0.10mm))
+  (constraint length (max 3mm)))
+
+(rule "Power global branch minimum"
+  (condition "A.hasNetclass('POWER')")
+  (constraint track_width (min 0.25mm)))
+(rule "3V3 module supply minimum"
+  (condition "A.fromTo('L1-2','U1-2')")
+  (constraint track_width (min 0.40mm)))
+(rule "Fused USB supply minimum"
+  (condition "A.NetName == '/VBUS_FUSED'")
+  (constraint track_width (min 0.80mm)))
+(rule "5V supply minimum"
+  (condition "A.NetName == '/+5V' && !A.memberOfGroup('BUCK_EN_STRAP')")
+  (constraint track_width (min 0.60mm)))
+
+(rule "USB main pair spacing"
+  (condition "A.memberOfGroup('USB_90OHM_TRUNK') && A.Origin_Y >= 122mm && A.End_Y <= 145.85mm")
+  (constraint diff_pair_gap (min 0.19mm) (opt 0.20mm) (max 0.21mm)))
+
+(rule "Buck switch node only on top"
+ (condition "A.NetName == '/BUCK_SW' && A.Layer != 'F.Cu'")
+ (constraint disallow track via))
+(rule "Buck enable short strap"
+ (condition "A.memberOfGroup('BUCK_EN_STRAP')")
+ (constraint track_width (min 0.30mm)))
+
+(rule "USB A6 crossover branch width"
+ (condition "A.NetName == '/USB_A_P'")
+ (constraint track_width (min 0.20mm) (max 0.28mm)))
+(rule "USB A6 crossover branch top only"
+ (condition "A.NetName == '/USB_A_P' && A.Layer != 'F.Cu'")
+ (constraint disallow track))
+(rule "USB A6 crossover no vias"
+ (condition "A.NetName == '/USB_A_P'")
+ (constraint disallow via))

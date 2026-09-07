@@ -1,0 +1,24 @@
+{
+  "pcb_sha256": "8aa08e79b2ed2c2c5429a158a3f7b68d60afc51934c3f93364eb990dd7c399c2",
+  "connector": "GCT USB4105-GF-A-120",
+  "drawing": "https://gct.co/files/drawings/usb4105.pdf",
+  "drawing_revision": "B4, 2023-12-18, page 1",
+  "footprint": "DevBoard:USB4105_NoUnderbodyCopper",
+  "footprint_keepout_count": 1,
+  "footprint_body_bounds_mm": [
+    113.31,
+    154.325,
+    122.25,
+    161.675
+  ],
+  "A6_B6_pad_body_facing_edge_y_mm": 154.89499999999998,
+  "USB_P_body_facing_copper_edge_y_mm": 154.1,
+  "USB_P_extension_beyond_pad_edge_mm": 0,
+  "USB_P_clearance_from_body_mm": 0.225,
+  "tracks_intersecting_body": [],
+  "vias_intersecting_body": [],
+  "conclusion": "The project now prohibits F.Cu tracks, vias and copper pours across the complete body outline. D+ uses R11 outside the body; CC1 is rerouted outside the body. Connector pads retain the manufacturer footprint dimensions.",
+  "drawing_0_10_note": "The 0.10 callout has a geometric flatness symbol; it is not a guaranteed PCB standoff.",
+  "keepout_origin": "Conservative project rule added in response to the user; not claimed as a manufacturer mandate.",
+  "residual_scope": "Ordinary assembly inspection and USB signal-integrity testing still apply. R11 package delay is not part of the 2D uniform impedance calculation."
+}
