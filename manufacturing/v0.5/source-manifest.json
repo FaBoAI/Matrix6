@@ -1,0 +1,33 @@
+{
+  "cad_source_commit": "d1438c606553286f8075416b602664ae09d1bd65",
+  "cad_pcb_sha256": "d4baae69416e07bda5e7b92d2c81b41b77b089a59c8f3010dbfb94d57be7886e",
+  "assembly_status": "NOT RELEASED; raw KiCad BOM/positions are for review only",
+  "reference_parity": {
+    "bom_count": 32,
+    "position_count": 32,
+    "all_on_top": true
+  },
+  "files": {
+    "Matrix6-v0.5-Gerber.zip": "a3a51d28f292bef8443b06d256cf7c0c0044c5e5cb499ed32602f18c42bd7f29",
+    "README.md": "4b7f61f98465e619f0ef48abf8a09b4edd43a0edb5d9f470e3cb9110ffe1916c",
+    "gerber/Matrix6-B_Cu.gbl": "dc2ed67a564df0fe073e707fe468c48a37cd7358bdb0a732952cb76ff38d76af",
+    "gerber/Matrix6-B_Mask.gbs": "494176b2e38f8650561e831e4af05a32034346154de00ec4702cdcc5bea195f1",
+    "gerber/Matrix6-B_Paste.gbp": "247e0209ac08a20b3b9a8f43e618bb99effee261847d3a5cc080afde9e5ea23a",
+    "gerber/Matrix6-B_Silkscreen.gbo": "176893491a3301b2ee5f5a67b0e8d13b350abe8fbd3c9795d49ee0719fe2b9a2",
+    "gerber/Matrix6-Edge_Cuts.gm1": "cb12d5c95863c16d90a7c7fbc16777ee558d045becd699d02aa277c9b9e894c0",
+    "gerber/Matrix6-F_Cu.gtl": "e3a81c3c9a2975c6761f19a6a108bf34a80f87cac8b9b07878f03ef79e6af863",
+    "gerber/Matrix6-F_Mask.gts": "87b84865e5c5a38ed97711942122565d4a3c6ba0e3cbeff3fa2220f7669e758c",
+    "gerber/Matrix6-F_Paste.gtp": "c7eaeaf36831940d49160a9cacb1244fda7429e8ec59680f8260050a925575c0",
+    "gerber/Matrix6-F_Silkscreen.gto": "dfb0194f1425ca692447c441a027f983329331f25b3594a34d09e8839852cc6a",
+    "gerber/Matrix6-In1_Cu.g1": "73396ac61719942cac4129231896a814ca14a592d13c5fc00049fdde3f50cef0",
+    "gerber/Matrix6-In2_Cu.g2": "d20def7bb899592c7d4f0dba4bac60975917708a5740ac885996346a208bfb88",
+    "gerber/Matrix6-NPTH.drl": "a8599263ec2ccc8b359a2e0f7b550583bca8725738a45234f832e38d5d945fe6",
+    "gerber/Matrix6-PTH.drl": "f598e623929a02ae4b364283e05ff194020e0c0785c102102c87c397a5297c6e",
+    "gerber/Matrix6-fabrication-requirements.jpg": "b4f566815c636a6400416e0d66598a468e4f2a804773d5bcf81badc7ca76f526",
+    "gerber/Matrix6-job.gbrjob": "7378c3437874d957e3ceaa192c3bd6e707ad1d379b105074555330295d0559a4",
+    "review/Matrix6-KiCad-BOM-DRAFT.csv": "efcd9837d81c2fd516eab4f9de481fa2277f6eb4325bd3e337ebb6b4bd54ccb0",
+    "review/Matrix6-KiCad-positions.csv": "dd5170cc3d4d350f3ba7f2ee692492f6d3a65460a290275aa8bc1aaf87a3cec7",
+    "review/Matrix6-fabrication-requirements.svg": "fc7b06c5338688a823878cf2c1efa213780635477eb7e7091f39fd8d500effe6",
+    "review/drill-report.txt": "974b403971f0335408ceeb5e25522caf95ea7fb7398c5be80a6dc7ec06309c4b"
+  }
+}
