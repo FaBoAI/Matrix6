@@ -1,5 +1,5 @@
 {
-  "status": "QUOTATION; live parts matching, model rotations and CAM review pending",
+  "status": "QUOTATION; all 26 BOM groups matched live; JLC engineering placement and CAM approval required before manufacture",
   "cad_pcb_sha256": "698938d0628a4010f1af26af436fd30b10bca423762f6e7ecb5a648c8e5de58c",
   "component_count": 48,
   "bom_groups": 26,
@@ -47,12 +47,12 @@
       ]
     }
   },
-  "coordinate_origin": "KiCad absolute origin, same as Gerber, Y inverted to Cartesian; actual KiCad side rotations",
-  "unmatched": [
-    "C3",
-    "C4,C6,C7,C12",
-    "D2",
-    "D3",
-    "H1,H2"
-  ]
+  "coordinate_origin": "KiCad absolute origin, same as Gerber, Y inverted to Cartesian; rotation offsets below adapt to selected JLC models",
+  "jlc_rotation_offsets_degrees": {
+    "H1": 90,
+    "H2": 90,
+    "J2": 180
+  },
+  "placement_reference": "review/Matrix6-assembly-reference.png",
+  "unmatched": []
 }

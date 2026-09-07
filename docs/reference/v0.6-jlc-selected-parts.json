@@ -1,0 +1,15 @@
+{
+  "checked_date": "2026-09-07",
+  "source": "JLCPCB live BOM matching for Matrix6-v0.6-Gerber",
+  "parts": {
+    "C3": {"mpn": "GRM21BR61H106KE43L", "lcsc": "C440198", "specification": "10uF 50V X5R 10%, 0805; exceeds 16V requested rating"},
+    "C4": {"mpn": "CC0603KRX7R9BB104", "lcsc": "C14663"},
+    "C6": {"mpn": "CC0603KRX7R9BB104", "lcsc": "C14663"},
+    "C7": {"mpn": "CC0603KRX7R9BB104", "lcsc": "C14663"},
+    "C12": {"mpn": "CC0603KRX7R9BB104", "lcsc": "C14663"},
+    "D2": {"mpn": "XL-1608SURC-06", "lcsc": "C965799", "specification": "Red 0603"},
+    "D3": {"mpn": "XL-1608UBC-04", "lcsc": "C965807", "specification": "Blue 0603; prototype brightness check at the existing 1k series resistance"},
+    "H1": {"mpn": "254PM-1x20P-V", "lcsc": "C53202183", "specification": "1x20 vertical female, 2.54mm pitch, 8.5mm insulation height, 3.2mm pins"},
+    "H2": {"mpn": "254PM-1x20P-V", "lcsc": "C53202183", "specification": "1x20 vertical female, 2.54mm pitch, 8.5mm insulation height, 3.2mm pins"}
+  }
+}

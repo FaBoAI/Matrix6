@@ -19,7 +19,11 @@ old=list(csv.DictReader((ROOT/'manufacturing/v0.5/assembly/Matrix6-v0.5-BOM.csv'
 exact={ref:(r['Manufacturer Part Number'],r['JLCPCB Part #']) for r in old for ref in r['Designator'].split(',')}
 for ref,d in json.loads((ROOT/'docs/reference/v0.6-parts.json').read_text()).items():
     if d['pcb'] is not None and d['mpn']:exact[ref]=(d['mpn'],d['lcsc'])
-# 100 nF bypasses remain one specified dielectric/voltage group pending live matching.
+selected_path=ROOT/'docs/reference/v0.6-jlc-selected-parts.json'
+if selected_path.exists():
+    for ref,d in json.loads(selected_path.read_text())['parts'].items():
+        exact[ref]=(d['mpn'],d['lcsc'])
+# Same electrical specification for the four 100 nF bypasses.
 comments={'D2':'LED Red 0603','D3':'LED Blue 0603','H1':'Female Socket 1x20 2.54mm Vertical','H2':'Female Socket 1x20 2.54mm Vertical',**{r:'100nF 50V X7R' for r in ['C4','C6','C7','C12']}}
 groups=OrderedDict()
 for row in bom:
@@ -50,7 +54,15 @@ with cf.open('w',newline='') as f:
             x=(min(p.ToMM(q.GetLeft()) for q in boxes)+max(p.ToMM(q.GetRight()) for q in boxes))/2
             y=-(min(p.ToMM(q.GetTop()) for q in boxes)+max(p.ToMM(q.GetBottom()) for q in boxes))/2
             centroids[ref]={'anchor':[float(row['PosX']),float(row['PosY'])],'fab_body_center':[x,y]}
-        w.writerow([ref,f'{x:.6f}',f'{y:.6f}',f'{float(row["Rot"])%360:.6f}','Top' if row['Side']=='top' else 'Bottom'])
+        rot=float(row['Rot'])%360
+        # C53202183's JLC model is horizontal at KiCad's 180 degrees.
+        # Its two sockets were verified vertical after +90 degrees in JLC.
+        if ref in ['H1','H2']:rot=(rot+90)%360
+        # C114218's bottom-side model has its contact row at the mouth end
+        # with the native angle. +180 aligns contacts to Y=139.725 mm and
+        # leaves the opening toward the antenna, as verified in JLC preview.
+        if ref=='J2':rot=(rot+180)%360
+        w.writerow([ref,f'{x:.6f}',f'{y:.6f}',f'{rot:.6f}','Top' if row['Side']=='top' else 'Bottom'])
 files=sorted(q for q in (OUT/'gerber').iterdir() if q.suffix!='.gbrjob')
 assert {'.gtl','.g1','.g2','.gbl','.gts','.gbs','.gto','.gbo','.gtp','.gbp','.gm1'}<={q.suffix for q in files}
 assert sum(q.suffix=='.drl' for q in files)==2
@@ -58,7 +70,7 @@ assert (OUT/'gerber/Matrix6-fabrication-requirements.jpg').exists()
 with zipfile.ZipFile(OUT/'Matrix6-v0.6-Gerber.zip','w',zipfile.ZIP_DEFLATED) as z:
     for q in files:z.write(q,q.name)
 with zipfile.ZipFile(OUT/'Matrix6-v0.6-Gerber.zip') as z:assert z.testzip() is None
-report={'status':'QUOTATION; live parts matching, model rotations and CAM review pending','cad_pcb_sha256':hashlib.sha256(CAD.read_bytes()).hexdigest(),'component_count':len(refs),'bom_groups':len(groups),'top_count':sum(r['Side']=='top' for r in pos),'bottom_count':sum(r['Side']=='bottom' for r in pos),'centroid_adjustments':centroids,'coordinate_origin':'KiCad absolute origin, same as Gerber, Y inverted to Cartesian; actual KiCad side rotations','unmatched':[','.join(rr) for (_,_,lcsc,_),rr in groups.items() if not lcsc]}
+report={'status':'QUOTATION; all 26 BOM groups matched live; JLC engineering placement and CAM approval required before manufacture','cad_pcb_sha256':hashlib.sha256(CAD.read_bytes()).hexdigest(),'component_count':len(refs),'bom_groups':len(groups),'top_count':sum(r['Side']=='top' for r in pos),'bottom_count':sum(r['Side']=='bottom' for r in pos),'centroid_adjustments':centroids,'coordinate_origin':'KiCad absolute origin, same as Gerber, Y inverted to Cartesian; rotation offsets below adapt to selected JLC models','jlc_rotation_offsets_degrees':{'H1':90,'H2':90,'J2':180},'placement_reference':'review/Matrix6-assembly-reference.png','unmatched':[','.join(rr) for (_,_,lcsc,_),rr in groups.items() if not lcsc]}
 (DEST/'export-validation.json').write_text(json.dumps(report,indent=2)+'\n')
 manifest={**report,'cad_hashes':hashes,'files':{str(q.relative_to(OUT)):hashlib.sha256(q.read_bytes()).hexdigest() for q in OUT.rglob('*') if q.is_file() and q.name!='source-manifest.json'}}
 (OUT/'source-manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
