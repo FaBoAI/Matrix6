@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="910" viewBox="0 0 1080 910">
+<rect width="1080" height="910" fill="#f4f7fa"/>
+<style>text{font-family:Arial,sans-serif;fill:#173047} .small{font-size:15px}</style>
+<text x="65" y="40" font-size="27">Matrix Six v0.6 / microSD access — rear view</text>
+<rect x="65.0" y="80" width="487.68" height="732" fill="white" stroke="#173047" stroke-width="2" stroke-dasharray=""/>
+<rect x="213.7999999999999" y="86.0" width="189.59999999999997" height="270.0" fill="#dcf7e8" stroke="#179763" stroke-width="2" stroke-dasharray="7 5"/>
+<rect x="171.14" y="583.94" width="18.11999999999989" height="36.11999999999989" fill="#e9edf1" stroke="#4e6781" stroke-width="2" stroke-dasharray=""/>
+<text x="170.19999999999993" y="607.0" font-size="14">R13</text>
+<rect x="213.73999999999995" y="357.14" width="189.0" height="213.0" fill="#dce8f9" stroke="#4e6781" stroke-width="2" stroke-dasharray=""/>
+<text x="298.23999999999995" y="468.64" font-size="14">J2</text>
+<rect x="222.73999999999995" y="611.3000000000001" width="46.91999999999996" height="41.399999999999864" fill="#e9edf1" stroke="#4e6781" stroke-width="2" stroke-dasharray=""/>
+<text x="236.19999999999993" y="637.0" font-size="14">Q1</text>
+<rect x="155.30000000000007" y="623.3000000000001" width="49.7999999999999" height="41.399999999999864" fill="#e9edf1" stroke="#4e6781" stroke-width="2" stroke-dasharray=""/>
+<text x="170.19999999999993" y="649.0" font-size="14">U4</text>
+<rect x="390.5" y="699.5" width="83.39999999999986" height="103.80000000000007" fill="#e9edf1" stroke="#4e6781" stroke-width="2" stroke-dasharray=""/>
+<text x="422.19999999999993" y="756.3999999999999" font-size="14">J3</text>
+<rect x="145.10001199999977" y="725.5399999999998" width="41.400000000000205" height="24.120000000000232" fill="#e9edf1" stroke="#4e6781" stroke-width="2" stroke-dasharray=""/>
+<text x="155.80001200000004" y="742.6000000000001" font-size="14">C10</text>
+<rect x="440.53999999999985" y="553.6999999999999" width="24.12000000000006" height="41.400000000000205" fill="#e9edf1" stroke="#4e6781" stroke-width="2" stroke-dasharray=""/>
+<text x="442.5999999999998" y="579.3999999999999" font-size="14">C11</text>
+<rect x="147.14" y="571.94" width="18.11999999999989" height="36.11999999999989" fill="#e9edf1" stroke="#4e6781" stroke-width="2" stroke-dasharray=""/>
+<text x="146.19999999999993" y="595.0" font-size="14">R14</text>
+<rect x="265.9399999999999" y="574.3399999999999" width="18.12000000000006" height="36.12000000000023" fill="#e9edf1" stroke="#4e6781" stroke-width="2" stroke-dasharray=""/>
+<text x="265.0" y="597.3999999999999" font-size="14">R15</text>
+<rect x="305.8399999999999" y="570.7400000000001" width="18.12000000000006" height="36.11999999999989" fill="#e9edf1" stroke="#4e6781" stroke-width="2" stroke-dasharray=""/>
+<text x="304.89999999999986" y="593.8000000000001" font-size="14">C12</text>
+<rect x="147.5" y="687.14" width="41.399999999999864" height="24.11999999999989" fill="#e9edf1" stroke="#4e6781" stroke-width="2" stroke-dasharray=""/>
+<text x="158.19999999999993" y="704.1999999999999" font-size="14">C9</text>
+<circle cx="506.96" cy="719.1199999999999" r="6" fill="#f1c55c" stroke="#705812"/>
+<circle cx="506.96" cy="688.64" r="6" fill="#f1c55c" stroke="#705812"/>
+<circle cx="506.96" cy="658.1600000000001" r="6" fill="#f1c55c" stroke="#705812"/>
+<circle cx="506.96" cy="627.6799999999998" r="6" fill="#f1c55c" stroke="#705812"/>
+<circle cx="506.96" cy="597.1999999999999" r="6" fill="#f1c55c" stroke="#705812"/>
+<circle cx="506.96" cy="566.72" r="6" fill="#f1c55c" stroke="#705812"/>
+<circle cx="506.96" cy="536.2400000000001" r="6" fill="#f1c55c" stroke="#705812"/>
+<circle cx="506.96" cy="505.7599999999999" r="6" fill="#f1c55c" stroke="#705812"/>
+<circle cx="506.96" cy="475.28" r="6" fill="#f1c55c" stroke="#705812"/>
+<circle cx="506.96" cy="444.80000000000007" r="6" fill="#f1c55c" stroke="#705812"/>
+<circle cx="506.96" cy="414.32" r="6" fill="#f1c55c" stroke="#705812"/>
+<circle cx="506.96" cy="383.8399999999999" r="6" fill="#f1c55c" stroke="#705812"/>
+<circle cx="506.96" cy="353.36" r="6" fill="#f1c55c" stroke="#705812"/>
+<circle cx="506.96" cy="322.87999999999994" r="6" fill="#f1c55c" stroke="#705812"/>
+<circle cx="506.96" cy="292.40000000000003" r="6" fill="#f1c55c" stroke="#705812"/>
+<circle cx="506.96" cy="261.91999999999996" r="6" fill="#f1c55c" stroke="#705812"/>
+<circle cx="506.96" cy="231.44000000000005" r="6" fill="#f1c55c" stroke="#705812"/>
+<circle cx="506.96" cy="200.95999999999998" r="6" fill="#f1c55c" stroke="#705812"/>
+<circle cx="506.96" cy="170.48000000000008" r="6" fill="#f1c55c" stroke="#705812"/>
+<circle cx="506.96" cy="140.0" r="6" fill="#f1c55c" stroke="#705812"/>
+<circle cx="110.72000000000003" cy="719.1199999999999" r="6" fill="#f1c55c" stroke="#705812"/>
+<circle cx="110.72000000000003" cy="688.64" r="6" fill="#f1c55c" stroke="#705812"/>
+<circle cx="110.72000000000003" cy="658.1600000000001" r="6" fill="#f1c55c" stroke="#705812"/>
+<circle cx="110.72000000000003" cy="627.6799999999998" r="6" fill="#f1c55c" stroke="#705812"/>
+<circle cx="110.72000000000003" cy="597.1999999999999" r="6" fill="#f1c55c" stroke="#705812"/>
+<circle cx="110.72000000000003" cy="566.72" r="6" fill="#f1c55c" stroke="#705812"/>
+<circle cx="110.72000000000003" cy="536.2400000000001" r="6" fill="#f1c55c" stroke="#705812"/>
+<circle cx="110.72000000000003" cy="505.7599999999999" r="6" fill="#f1c55c" stroke="#705812"/>
+<circle cx="110.72000000000003" cy="475.28" r="6" fill="#f1c55c" stroke="#705812"/>
+<circle cx="110.72000000000003" cy="444.80000000000007" r="6" fill="#f1c55c" stroke="#705812"/>
+<circle cx="110.72000000000003" cy="414.32" r="6" fill="#f1c55c" stroke="#705812"/>
+<circle cx="110.72000000000003" cy="383.8399999999999" r="6" fill="#f1c55c" stroke="#705812"/>
+<circle cx="110.72000000000003" cy="353.36" r="6" fill="#f1c55c" stroke="#705812"/>
+<circle cx="110.72000000000003" cy="322.87999999999994" r="6" fill="#f1c55c" stroke="#705812"/>
+<circle cx="110.72000000000003" cy="292.40000000000003" r="6" fill="#f1c55c" stroke="#705812"/>
+<circle cx="110.72000000000003" cy="261.91999999999996" r="6" fill="#f1c55c" stroke="#705812"/>
+<circle cx="110.72000000000003" cy="231.44000000000005" r="6" fill="#f1c55c" stroke="#705812"/>
+<circle cx="110.72000000000003" cy="200.95999999999998" r="6" fill="#f1c55c" stroke="#705812"/>
+<circle cx="110.72000000000003" cy="170.48000000000008" r="6" fill="#f1c55c" stroke="#705812"/>
+<circle cx="110.72000000000003" cy="140.0" r="6" fill="#f1c55c" stroke="#705812"/>
+<path d="M308.59999999999997,341.59999999999997 L308.59999999999997,113.59999999999997 m-10,16 l10,-16 l10,16" fill="none" stroke="#138c5a" stroke-width="5"/>
+<text x="625" y="110" font-size="24">Clear card withdrawal corridor</text>
+<text x="625" y="150" font-size="17">15.8 mm wide × 22.5 mm deep</text>
+<text x="625" y="182" font-size="17">Opening faces the antenna edge.</text>
+<text x="625" y="214" font-size="17">No rear component courtyard overlaps.</text>
+<text x="625" y="246" font-size="17">A rear placement keepout protects the path.</text>
+<text x="625" y="278" font-size="17"></text>
+<text x="625" y="310" font-size="17">J2: rear microSD slot</text>
+<text x="625" y="342" font-size="17">J3: rear LiPo connector</text>
+<text x="625" y="374" font-size="17">Charger and battery parts are behind J2.</text>
+<text x="625" y="406" font-size="17"></text>
+<text x="625" y="438" font-size="17">USB / RESET / BOOT remain at the lower edge.</text>
+<text x="625" y="470" font-size="17"></text>
+<text x="625" y="502" font-size="17">Dimensions are PCB coordinates in mm.</text>
+<text x="625" y="534" font-size="17">Check card handling after assembly.</text>
+<text x="65" y="855" font-size="16">Green: reserved access area   Blue: SD slot courtyard   Gray: other rear components</text>
+<text x="65" y="883" font-size="14">No autorouter used. CAD courtyard check passed; this drawing is not a 3D collision simulation.</text>
+</svg>

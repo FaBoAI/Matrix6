@@ -21,11 +21,14 @@ oldpro=json.loads(baseline('hardware/Matrix6/Matrix6.kicad_pro'))
 for key in ['rules','rule_severities','drc_exclusions']:
     assert pro['board']['design_settings'][key]==oldpro['board']['design_settings'][key],key
 assert pro['net_settings']['classes']==oldpro['net_settings']['classes']
-assert (ROOT/'hardware/Matrix6/Matrix6.kicad_dru').read_text()==baseline('hardware/Matrix6/Matrix6.kicad_dru')
+rules=(ROOT/'hardware/Matrix6/Matrix6.kicad_dru').read_text()
+expected=baseline('hardware/Matrix6/Matrix6.kicad_dru').replace("A.NetName == '/VBUS_FUSED'\"", "A.NetName == '/VBUS_FUSED' && !A.memberOfGroup('CHARGER_BRANCH')\"")
+expected += "\n(rule \"Charger branch minimum\" (condition \"A.memberOfGroup('CHARGER_BRANCH')\") (constraint track_width (min 0.25mm)))\n"
+assert rules==expected, 'Only reviewed low-current charger escape rule may differ'
 fps={next(x[2] for x in children(f,'property') if x[1]=='Reference'):f for f in children(b,'footprint')}
 reference=json.loads((ROOT/'docs/reference/matrix5-pinout.json').read_text())['headers']
 shields=json.loads((ROOT/'docs/reference/matrix5-shield-interface.json').read_text())['shields']
-exceptions={('H2',5):'USB_DM',('H2',6):'USB_DP',('H2',20):'VBAT'}
+exceptions={('H2',5):'USB_DM',('H2',6):'USB_DP'}
 aliases={'3V3':'+3V3','VBUS':'VBUS_FUSED','U0RXD':'IO44_RX','U0TXD':'IO43_TX'}
 pads={}
 for ref in ['H1','H2']:
@@ -59,6 +62,6 @@ for name,pins in shields.items():
             assert actual['net']=='/'+target,(name,key,actual,target)
             active.append({'pin':f'{key[0]}.{key[1]}','shield_net':pin['net_on_shield'],'matrix6_net':target})
     results[name]={'pad_positions_checked':len(pins),'used_pins_checked':len(active),'connections':active,'status':'PIN_MAP_PASS'}
-report={'pcb_sha256':hashlib.sha256(PCB.read_bytes()).hexdigest(),'preserved_from_v04':{'usb_copper':True,'design_rules':True,'net_classes':True},'row_pitch_mm':2.54,'column_spacing_mm':33.02,'header_pins':40,'main_pins_matched':37,'intentional_NC':{f'{h}.{p}':signal for (h,p),signal in exceptions.items()},'shields':results,'scope':'XY pad positions and used signal/power pin assignments only. Connector mating height, all shield loads, radio behavior and physical operation remain prototype tests.'}
+report={'pcb_sha256':hashlib.sha256(PCB.read_bytes()).hexdigest(),'preserved_from_v04':{'usb_copper':True,'design_rules_except_documented_charger_escape':True,'net_classes':True},'row_pitch_mm':2.54,'column_spacing_mm':33.02,'header_pins':40,'main_pins_matched':38,'intentional_NC':{f'{h}.{p}':signal for (h,p),signal in exceptions.items()},'shields':results,'scope':'XY pad positions and used signal/power pin assignments only. Connector mating height, all shield loads, radio behavior and physical operation remain prototype tests.'}
 (ROOT/'docs/validation/matrix5-compatibility.json').write_text(json.dumps(report,indent=2)+'\n')
-print(f'PASS: 40 pad positions; 37 Main assignments + 3 documented NC; all {len(shields)} shield interfaces matched.')
+print(f'PASS: 40 pad positions; 38 Main assignments + 2 documented NC; all {len(shields)} shield interfaces matched.')

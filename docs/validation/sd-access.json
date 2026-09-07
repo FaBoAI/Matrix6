@@ -1,0 +1,85 @@
+{
+  "pcb_sha256": "698938d0628a4010f1af26af436fd30b10bca423762f6e7ecb5a648c8e5de58c",
+  "status": "PASS",
+  "side": "B.Cu",
+  "slot_rotation_deg": 0.0,
+  "opening_direction": "toward antenna / decreasing PCB Y",
+  "component_keepout_mm": [
+    109.9,
+    100.5,
+    125.7,
+    123.0
+  ],
+  "keepout_width_mm": 15.8,
+  "keepout_depth_mm": 22.5,
+  "rear_courtyards_mm": {
+    "R13": [
+      127.745,
+      141.995,
+      129.255,
+      145.005
+    ],
+    "J2": [
+      109.955,
+      123.095,
+      125.705,
+      140.845
+    ],
+    "Q1": [
+      121.045,
+      144.275,
+      124.955,
+      147.725
+    ],
+    "U4": [
+      126.425,
+      145.275,
+      130.575,
+      148.725
+    ],
+    "J3": [
+      104.025,
+      151.625,
+      110.975,
+      160.275
+    ],
+    "C10": [
+      127.974999,
+      153.795,
+      131.424999,
+      155.805
+    ],
+    "C11": [
+      104.795,
+      139.475,
+      106.805,
+      142.925
+    ],
+    "R14": [
+      129.745,
+      140.995,
+      131.255,
+      144.005
+    ],
+    "R15": [
+      119.845,
+      141.195,
+      121.355,
+      144.205
+    ],
+    "C12": [
+      116.52,
+      140.895,
+      118.03,
+      143.905
+    ],
+    "C9": [
+      127.775,
+      150.595,
+      131.225,
+      152.605
+    ]
+  },
+  "obstructing_components": [],
+  "scope": "Rear courtyard clearance for card withdrawal on the bare PCB. Enclosure, installed shield stack, solder protrusions and real card/finger handling require a physical fit check."
+}

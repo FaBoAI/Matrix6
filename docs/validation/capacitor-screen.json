@@ -1,0 +1,32 @@
+{
+  "source": "https://product.samsungsem.com/mlcc/CL21A226MAQNNN.do",
+  "accessed": "2026-09-07",
+  "part": "CL21A226MAQNNNE",
+  "curve_conditions": "25C, 120Hz, 0.5Vrms",
+  "screen_factors": {
+    "initial_tolerance": 0.8,
+    "X5R_temperature": 0.85,
+    "aging_allowance_assumption": 0.9
+  },
+  "results": [
+    {
+      "bias_V": 3.3,
+      "typical_change_pct": -32.2897819832586,
+      "typical_uF": 14.896247963683107,
+      "screened_uF": 9.116503753774062
+    },
+    {
+      "bias_V": 4.2,
+      "typical_change_pct": -43.297315444886394,
+      "typical_uF": 12.474590602124993,
+      "screened_uF": 7.634449448500496
+    },
+    {
+      "bias_V": 5.25,
+      "typical_change_pct": -53.44606254930267,
+      "typical_uF": 10.241866239153413,
+      "screened_uF": 6.268022138361889
+    }
+  ],
+  "scope": "Typical manufacturer curve with conservative screening allowances, not a guaranteed combined worst-case capacitance. Incoming substitutions require recheck."
+}

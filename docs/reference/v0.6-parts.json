@@ -1,0 +1,442 @@
+{
+  "U2": {
+    "fp": "Package_SON:Texas_DRC0010J",
+    "nets": {
+      "1": "+3V3",
+      "2": "SW_L2",
+      "3": "GND",
+      "4": "SW_L1",
+      "5": "VSYS",
+      "6": "VSYS",
+      "7": "GND",
+      "8": "VINA",
+      "9": "GND",
+      "10": "+3V3",
+      "11": "GND"
+    },
+    "pcb": [
+      121.5,
+      138,
+      0,
+      "F"
+    ],
+    "value": "TPS63001 (3.3V)",
+    "mpn": "TPS63001DRCR",
+    "lcsc": "C28060"
+  },
+  "L1": {
+    "fp": "Inductor_SMD:L_Bourns-SRN4018",
+    "nets": {
+      "1": "SW_L1",
+      "2": "SW_L2"
+    },
+    "pcb": [
+      116.9,
+      138,
+      90,
+      "F"
+    ],
+    "value": "2.2uH / 3A",
+    "mpn": "SRN4018-2R2M",
+    "lcsc": "C913207"
+  },
+  "C1": {
+    "fp": "Capacitor_SMD:C_0805_2012Metric",
+    "nets": {
+      "1": "VSYS",
+      "2": "GND"
+    },
+    "pcb": [
+      120.4,
+      142.2,
+      180,
+      "F"
+    ],
+    "value": "22uF 25V X5R",
+    "mpn": "CL21A226MAQNNNE",
+    "lcsc": "C45783"
+  },
+  "C2": {
+    "fp": "Capacitor_SMD:C_0805_2012Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "pcb": [
+      118.6,
+      132.8,
+      0,
+      "F"
+    ],
+    "value": "22uF 25V X5R",
+    "mpn": "CL21A226MAQNNNE",
+    "lcsc": "C45783"
+  },
+  "C8": {
+    "fp": "Capacitor_SMD:C_0805_2012Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "pcb": [
+      121.5,
+      144.8,
+      0,
+      "F"
+    ],
+    "value": "22uF 25V X5R",
+    "mpn": "CL21A226MAQNNNE",
+    "lcsc": "C45783"
+  },
+  "C7": {
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "VINA",
+      "2": "GND"
+    },
+    "pcb": [
+      125.3,
+      135.4,
+      0,
+      "F"
+    ],
+    "value": "100nF",
+    "mpn": "",
+    "lcsc": ""
+  },
+  "R7": {
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "IO45",
+      "2": "GND"
+    },
+    "pcb": [
+      122,
+      128.8,
+      90,
+      "F"
+    ],
+    "value": "10k",
+    "mpn": "0603WAF1002T5E",
+    "lcsc": "C25804"
+  },
+  "R12": {
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "VSYS",
+      "2": "VINA"
+    },
+    "pcb": [
+      125.7,
+      140,
+      90,
+      "F"
+    ],
+    "value": "100R",
+    "mpn": "0603WAF1000T5E",
+    "lcsc": "C22775"
+  },
+  "U4": {
+    "fp": "Package_TO_SOT_SMD:SOT-23-5",
+    "nets": {
+      "1": null,
+      "2": "GND",
+      "3": "VBAT",
+      "4": "VBUS_FUSED",
+      "5": "CHG_PROG"
+    },
+    "pcb": [
+      128.5,
+      147,
+      0,
+      "B"
+    ],
+    "value": "MCP73831 / 100mA",
+    "mpn": "MCP73831T-2ACI/OT",
+    "lcsc": "C424093"
+  },
+  "Q1": {
+    "fp": "Package_TO_SOT_SMD:SOT-23",
+    "nets": {
+      "1": "VBUS_FUSED",
+      "2": "VSYS",
+      "3": "VBAT"
+    },
+    "pcb": [
+      123.0,
+      146.0,
+      0,
+      "B"
+    ],
+    "value": "AO3401A",
+    "mpn": "AO3401A",
+    "lcsc": "C15127"
+  },
+  "J3": {
+    "fp": "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal",
+    "nets": {
+      "1": "VBAT",
+      "2": "GND"
+    },
+    "pcb": [
+      108.5,
+      153.5,
+      0,
+      "B"
+    ],
+    "value": "LiPo 1S / PH2",
+    "mpn": "S2B-PH-K-S(LF)(SN)",
+    "lcsc": "C173752"
+  },
+  "R13": {
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "CHG_PROG",
+      "2": "GND"
+    },
+    "pcb": [
+      128.5,
+      143.5,
+      90,
+      "B"
+    ],
+    "value": "10k / 100mA",
+    "mpn": "0603WAF1002T5E",
+    "lcsc": "C25804"
+  },
+  "R14": {
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "VBUS_FUSED",
+      "2": "GND"
+    },
+    "pcb": [
+      130.5,
+      142.5,
+      90,
+      "B"
+    ],
+    "value": "100k",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803"
+  },
+  "C9": {
+    "fp": "Capacitor_SMD:C_0805_2012Metric",
+    "nets": {
+      "1": "VBUS_FUSED",
+      "2": "GND"
+    },
+    "pcb": [
+      129.5,
+      151.6,
+      180,
+      "B"
+    ],
+    "value": "22uF 25V X5R",
+    "mpn": "CL21A226MAQNNNE",
+    "lcsc": "C45783"
+  },
+  "C10": {
+    "fp": "Capacitor_SMD:C_0805_2012Metric",
+    "nets": {
+      "1": "VBAT",
+      "2": "GND"
+    },
+    "pcb": [
+      129.7,
+      154.8,
+      0,
+      "B"
+    ],
+    "value": "22uF 25V X5R",
+    "mpn": "CL21A226MAQNNNE",
+    "lcsc": "C45783"
+  },
+  "J2": {
+    "fp": "Connector_Card:microSD_HC_Hirose_DM3AT-SF-PEJM5",
+    "nets": {
+      "1": "SD_DAT2",
+      "2": "IO10",
+      "3": "IO11",
+      "4": "+3V3",
+      "5": "IO12",
+      "6": "GND",
+      "7": "IO13",
+      "8": "SD_DAT1",
+      "9": null,
+      "10": null,
+      "SH": "GND"
+    },
+    "pcb": [
+      117.8,
+      132.0,
+      180,
+      "B"
+    ],
+    "value": "microSD (rear)",
+    "mpn": "DM3AT-SF-PEJM5",
+    "lcsc": "C114218"
+  },
+  "R15": {
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "SD_DAT2",
+      "2": "+3V3"
+    },
+    "pcb": [
+      120.6,
+      142.7,
+      -90,
+      "B"
+    ],
+    "value": "10k",
+    "mpn": "0603WAF1002T5E",
+    "lcsc": "C25804"
+  },
+  "R16": {
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "IO10",
+      "2": "+3V3"
+    },
+    "pcb": [
+      113.0,
+      128.0,
+      -90,
+      "F"
+    ],
+    "value": "10k",
+    "mpn": "0603WAF1002T5E",
+    "lcsc": "C25804"
+  },
+  "R17": {
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "IO11",
+      "2": "+3V3"
+    },
+    "pcb": [
+      115.0,
+      128.0,
+      -90,
+      "F"
+    ],
+    "value": "10k",
+    "mpn": "0603WAF1002T5E",
+    "lcsc": "C25804"
+  },
+  "R18": {
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "IO13",
+      "2": "+3V3"
+    },
+    "pcb": [
+      117.0,
+      128.0,
+      -90,
+      "F"
+    ],
+    "value": "10k",
+    "mpn": "0603WAF1002T5E",
+    "lcsc": "C25804"
+  },
+  "R19": {
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "SD_DAT1",
+      "2": "+3V3"
+    },
+    "pcb": [
+      117.5,
+      130.4,
+      0,
+      "F"
+    ],
+    "value": "10k",
+    "mpn": "0603WAF1002T5E",
+    "lcsc": "C25804"
+  },
+  "C11": {
+    "fp": "Capacitor_SMD:C_0805_2012Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "pcb": [
+      105.8,
+      141.2,
+      90,
+      "B"
+    ],
+    "value": "22uF 25V X5R",
+    "mpn": "CL21A226MAQNNNE",
+    "lcsc": "C45783"
+  },
+  "C12": {
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "pcb": [
+      117.275,
+      142.4,
+      -90,
+      "B"
+    ],
+    "value": "100nF",
+    "mpn": "",
+    "lcsc": ""
+  },
+  "#FLG05": {
+    "fp": "",
+    "nets": {
+      "1": "VINA"
+    },
+    "pcb": null,
+    "value": "PWR_FLAG",
+    "mpn": "",
+    "lcsc": ""
+  },
+  "#FLG06": {
+    "fp": "",
+    "nets": {
+      "1": "VBUS_FUSED"
+    },
+    "pcb": null,
+    "value": "PWR_FLAG",
+    "mpn": "",
+    "lcsc": ""
+  },
+  "#FLG01": {
+    "fp": "",
+    "nets": {
+      "1": "VBUS"
+    },
+    "pcb": null,
+    "value": "PWR_FLAG",
+    "mpn": "",
+    "lcsc": ""
+  },
+  "#FLG02": {
+    "fp": "",
+    "nets": {
+      "1": "VSYS"
+    },
+    "pcb": null,
+    "value": "PWR_FLAG",
+    "mpn": "",
+    "lcsc": ""
+  },
+  "#FLG03": {
+    "fp": "",
+    "nets": {
+      "1": "GND"
+    },
+    "pcb": null,
+    "value": "PWR_FLAG",
+    "mpn": "",
+    "lcsc": ""
+  }
+}

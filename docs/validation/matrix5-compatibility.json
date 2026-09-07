@@ -1,18 +1,17 @@
 {
-  "pcb_sha256": "d4baae69416e07bda5e7b92d2c81b41b77b089a59c8f3010dbfb94d57be7886e",
+  "pcb_sha256": "698938d0628a4010f1af26af436fd30b10bca423762f6e7ecb5a648c8e5de58c",
   "preserved_from_v04": {
     "usb_copper": true,
-    "design_rules": true,
+    "design_rules_except_documented_charger_escape": true,
     "net_classes": true
   },
   "row_pitch_mm": 2.54,
   "column_spacing_mm": 33.02,
   "header_pins": 40,
-  "main_pins_matched": 37,
+  "main_pins_matched": 38,
   "intentional_NC": {
     "H2.5": "USB_DM",
-    "H2.6": "USB_DP",
-    "H2.20": "VBAT"
+    "H2.6": "USB_DP"
   },
   "shields": {
     "S1_WS2812_6x6": {

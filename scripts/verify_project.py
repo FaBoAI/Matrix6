@@ -12,6 +12,7 @@ run(CLI,'sch','erc','--severity-all','--exit-code-violations','--format','json',
 run(CLI,'pcb','drc','--schematic-parity','--all-track-errors','--severity-all','--refill-zones','--save-board','--exit-code-violations','--format','json','-o',str(REPORT/'drc.json'),str(CAD.with_suffix('.kicad_pcb')))
 run(PYTHON,'scripts/audit_electrical_layout.py')
 run(PYTHON,'scripts/verify_usb_keepout.py')
+run(PYTHON,'scripts/verify_sd_access.py')
 run(sys.executable,'scripts/verify_matrix5_compat.py')
 run(PYTHON,'scripts/export_ground_geometry.py')
 analysis=os.environ.get('ANALYSIS_PYTHON')

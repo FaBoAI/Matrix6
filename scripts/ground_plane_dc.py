@@ -39,11 +39,11 @@ def run(step,source,sink):
  return out,(x,y,img)
 results=[]
 for step in [.25,.125]:
- result,field=run(step,[118.8,109.7],[119.3,141.3]);results.append(result)
-input_result,_=run(.125,[119.3,141.3],[115.1,149.35])
+ result,field=run(step,[118.8,109.7],[121.2,137.6]);results.append(result)
+input_result,_=run(.125,[121.2,137.6],[115.1,149.35])
 (R/'ground-plane-dc.json').write_text(json.dumps({'module_return':results,'input_return':input_result,
  'scope':'L2 only between named GND vias. 0.5 A through a single source/sink; copper 60C. Does not include via barrels, solder/contact resistance or top-layer spreading.'},indent=2))
 import matplotlib;matplotlib.use('Agg')
 import matplotlib.pyplot as plt
-x,y,img=field;fig,ax=plt.subplots(figsize=(5,8),layout='constrained');im=ax.pcolormesh(x,y,img,cmap='viridis',shading='nearest');ax.invert_yaxis();ax.set_aspect('equal');ax.set(xlabel='PCB X (mm)',ylabel='PCB Y (mm)',title='L2 GND: 500 mA return, copper 60°C\nDC mesh estimate between two GND vias');ax.plot([118.8,119.3],[109.7,141.3],'wo',ms=5);fig.colorbar(im,ax=ax,label='Ground potential (mV)');fig.savefig(R/'ground-plane-dc.png',dpi=180)
+x,y,img=field;fig,ax=plt.subplots(figsize=(5,8),layout='constrained');im=ax.pcolormesh(x,y,img,cmap='viridis',shading='nearest');ax.invert_yaxis();ax.set_aspect('equal');ax.set(xlabel='PCB X (mm)',ylabel='PCB Y (mm)',title='L2 GND: 500 mA return, copper 60°C\nDC mesh estimate between two GND vias');ax.plot([118.8,121.2],[109.7,137.6],'wo',ms=5);fig.colorbar(im,ax=ax,label='Ground potential (mV)');fig.savefig(R/'ground-plane-dc.png',dpi=180)
 print(json.dumps({'module_return':results,'input_return':input_result},indent=2))

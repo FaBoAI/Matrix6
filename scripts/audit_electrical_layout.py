@@ -61,7 +61,7 @@ def graph(net,kind='length'):
     # Through-hole header pins are plated; connect their pad centers across layers.
     for f in fps.values():
         for q in f.Pads():
-            if q.GetNetname() not in netnames or not q.IsOnLayer(p.B_Cu):continue
+            if q.GetNetname() not in netnames or q.GetAttribute()!=p.PAD_ATTRIB_PTH:continue
             pos=xy(q.GetPosition());drill=max(.1,p.ToMM(q.GetDrillSize().x));area=math.pi*((drill/2+.020)**2-(drill/2)**2)
             for a,c in zip(LAYERS,LAYERS[1:]):
                 length=Z[c]-Z[a];r=RHO*length/area
@@ -90,7 +90,7 @@ def graph(net,kind='length'):
     return g
 
 def measure(net,source,dest,kind='length'):
-    g=graph(net,kind);start=(p.F_Cu,*pad(*source));target=(p.F_Cu,*pad(*dest))
+    g=graph(net,kind);start=(p.F_Cu if getpad(*source).IsOnLayer(p.F_Cu) else p.B_Cu,*pad(*source));target=(p.F_Cu if getpad(*dest).IsOnLayer(p.F_Cu) else p.B_Cu,*pad(*dest))
     todo=[(0,start)];visited={};prev={}
     while todo:
         val,u=heapq.heappop(todo)
@@ -144,11 +144,16 @@ ground_info={'signal_track_count_L2':sum(t.GetLayer()==p.In1_Cu and not isinstan
 
 power={}
 for label,net,s,d,load in [
- ('USB_to_fuse','/VBUS',('J1','A4'),('F1','1'),.65),
+ ('USB_to_fuse','/VBUS',('J1','A4'),('F1','1'),.76),
  ('fuse_to_diode','/VBUS_FUSED',('F1','2'),('D1','2'),.55),
- ('diode_to_buck','/+5V',('D1','1'),('U2','3'),.55),
- ('buck_to_module','/+3V3',('L1','2'),('U1','2'),.5),
- ('buck_to_left_header','/+3V3',('L1','2'),('H1','1'),.5),
+ ('diode_to_converter','/VSYS',('D1','1'),('U2','5'),.55),
+ ('converter_to_module','/+3V3',('U2','1'),('U1','2'),.5),
+ ('converter_to_left_header','/+3V3',('U2','1'),('H1','1'),.5),
+ ('converter_to_SD','/+3V3',('U2','1'),('J2','4'),.2),
+ ('battery_to_PFET','/VBAT',('J3','1'),('Q1','3'),.8),
+ ('PFET_to_converter','/VSYS',('Q1','2'),('U2','5'),.8),
+ ('fuse_to_charger','/VBUS_FUSED',('F1','2'),('U4','4'),.11),
+ ('charger_to_battery','/VBAT',('U4','3'),('J3','1'),.11),
  ('fuse_to_shield_VBUS','/VBUS_FUSED',('F1','2'),('H2','1'),.1)]:
     resistance,segments=measure(net,s,d,'resistance');est=[]
     for seg in segments:
@@ -162,45 +167,63 @@ for label,net,s,d,load in [
                   'copper_drop_V':load*resistance,'copper_loss_W':load*load*resistance,
                   'max_IPC2221_trace_rise_C_estimate':max(est),'segments':segments}
 
-# Switching converter loss envelope: efficiency is an explicit engineering
-# assumption, not a manufacturer-guaranteed minimum or a measured value.
+# Conditional electrical screening; measurements on assembled boards remain required.
 vin=5.25;vout=3.3;load=.5;ambient=50;efficiency_floor=.80
 loss=vout*load*(1/efficiency_floor-1)
-thermal={'design_current_A':load,'ambient_C':ambient,'assumed_efficiency_floor':efficiency_floor,
- 'total_converter_loss_W':loss,'junction_C_if_all_loss_in_IC_at_89K_per_W':ambient+89*loss,
+thermal={'part':'TPS63001DRCR','design_current_A':load,'ambient_C':ambient,
+ 'assumed_efficiency_floor':efficiency_floor,'total_converter_loss_W':loss,
+ 'junction_C_if_all_loss_in_IC_at_46_8K_per_W':ambient+46.8*loss,
  'junction_C_sensitivity_at_150K_per_W':ambient+150*loss,
- 'thermal_pass_is_conditional_on_assumptions':True,'design_junction_limit_C':125,
- 'minimum_efficiency_to_stay_below_125C_at_150K_per_W':vout*load/(vout*load+(125-ambient)/150)}
-# L tolerance -20%; frequency includes -6% spread, not unspecified oscillator tolerance.
-L=4.7e-6*.8;frequency=1.1e6*.94
-ripple=vout*(vin-vout)/(vin*L*frequency);irms=math.sqrt(load**2+ripple**2/12)
-inductor={'part':'Bourns SRN4018-4R7M','nominal_H':4.7e-6,'minimum_L_H':L,
- 'frequency_Hz_assumption':frequency,'ripple_A_pp':ripple,'peak_A':load+ripple/2,
- 'rms_A':irms,'rating_rms_A':1.9,'rating_saturation_A':2.,'DCR_max_25C_ohm':.084,
- 'estimated_copper_loss_60C_W':irms**2*.084*(1+.00393*40),
- 'estimated_temperature_rise_from_rated_40C_C':40*(irms/1.9)**2,
- 'note':'Normal 500mA operation only; inductor saturation is below IC peak current limit, so do not claim 2A board rating or guaranteed fault-current saturation margin.'}
-# Effective capacitances are explicit minimum component-selection requirements.
-capacitors={'C1_nominal_uF':22,'C1_min_effective_uF_at_5V_50C':10,
- 'C2_C8_nominal_total_uF':44,'C2_C8_min_effective_total_uF_at_3V3_50C':22,
- 'required_input_ripple_current_A_rms':load/2,'assumed_output_ESR_ohm':.01,
- 'output_ripple_V_estimate':ripple/(8*frequency*22e-6)+ripple*.01}
-# USB connector voltage is a stated design input at the PCB under load.
-# PTC hot resistance is screened at twice its specified R1max, not guaranteed.
-in_copper_R=sum(power[k]['one_conductive_path_resistance_ohm_60C'] for k in ['USB_to_fuse','fuse_to_diode','diode_to_buck'])
+ 'thermal_pass_is_conditional_on_assumptions':True,'design_junction_limit_C':125}
+# 1 MHz is an explicit conservative screening assumption (datasheet typical
+# oscillator 1.25 MHz); not a guaranteed oscillator tolerance.
+L=2.2e-6*.8;frequency=1e6
+buck_ripple=vout*(vin-vout)/(vin*L*frequency)
+boost_vin=2.8;boost_current=vout*load/(boost_vin*efficiency_floor)
+boost_ripple=boost_vin*(1-boost_vin/vout)/(L*frequency)
+peak=max(load+buck_ripple/2,boost_current+boost_ripple/2)
+irms=max(math.sqrt(load**2+buck_ripple**2/12),math.sqrt(boost_current**2+boost_ripple**2/12))
+inductor={'part':'Bourns SRN4018-2R2M','nominal_H':2.2e-6,'minimum_L_H':L,
+ 'frequency_Hz_assumption':frequency,'buck_ripple_A_pp':buck_ripple,
+ 'boost_ripple_A_pp':boost_ripple,'peak_A':peak,'rms_A':irms,
+ 'rating_rms_A':2.9,'rating_saturation_A':3.,'DCR_25C_ohm':.044,
+ 'estimated_copper_loss_60C_W':irms**2*.044*(1+.00393*40),
+ 'estimated_temperature_rise_from_rated_40C_C':40*(irms/2.9)**2,
+ 'scope':'Steady-state screening at 500mA total 3V3. Transients, core loss and mode transitions need bench verification.'}
+capacitors={'MPN':'CL21A226MAQNNNE','C1_nominal_uF':22,
+ 'C2_C8_nominal_total_uF':44,'C9_C10_each_nominal_uF':22,
+ 'C1_C9_C10_min_effective_uF_required':4.7,
+ 'C2_C8_min_effective_total_uF_design_target':15,
+ 'DC_bias_temperature_aging_verification':'Typical manufacturer curve screened; see capacitor-screen.json. Combined tolerance/temperature/aging is not guaranteed.'}
 fuse={'part':'MF-NSMF110/16X-2','rated_hold_A_at_23C':1.1,'hold_A_at_50C':.83,
- 'hold_A_at_60C':.80,'R1max_23C_ohm':.23,'assumed_hot_resistance_ohm':.46,
- 'input_screen_A':.65,'hot_drop_V':.65*.46,'hot_loss_W':.65**2*.46}
-diodes={'part':'Vishay SS14-E3/61T','screen_forward_drop_V':.5,
+ 'R1max_23C_ohm':.23,'assumed_hot_resistance_ohm':.46,
+ 'input_screen_A':.76,'hot_drop_V':.76*.46,'hot_loss_W':.76**2*.46}
+diodes={'part':'SS14-E3/61T','screen_forward_drop_V':.5,
  'loss_W_at_055A':.55*.5,'junction_C_at_50C_theta150':50+.55*.5*150}
 input_budget={'minimum_USB_voltage_at_connector_under_load_V':4.75,
- 'screen_current_A':.65,'additional_shield_VBUS_load_A':.1,'converter_input_lower_bound_V':4.75-.5-.65*(.46+power['USB_to_fuse']['one_conductive_path_resistance_ohm_60C'])-.55*sum(power[k]['one_conductive_path_resistance_ohm_60C'] for k in ['fuse_to_diode','diode_to_buck'])-.01,
- 'ground_return_drop_allowance_V':.01,'converter_minimum_input_V':3.8,
- 'note':'500mA 3V3 load requires an adequately rated source. This is not a claim of USB enumeration/inrush compliance or operation at every USB cable-drop corner.'}
+ 'screen_current_A':.76,'additional_shield_VBUS_load_A':.1,'charger_max_screen_A':.11,
+ 'converter_input_lower_bound_V':4.75-.5-.76*(.46+power['USB_to_fuse']['one_conductive_path_resistance_ohm_60C'])-.55*sum(power[k]['one_conductive_path_resistance_ohm_60C'] for k in ['fuse_to_diode','diode_to_converter'])-.01,
+ 'ground_return_drop_allowance_V':.01,'converter_minimum_input_V':1.8,
+ 'note':'Source capable of at least 1A required for this simultaneous-load screen. USB current negotiation/inrush is not certified.'}
 input_budget['calculated_input_A_at_lower_bound_and_80pct_efficiency']=3.3*.5/(.8*input_budget['converter_input_lower_bound_V'])
-assert input_budget['converter_input_lower_bound_V']>3.8
-assert input_budget['calculated_input_A_at_lower_bound_and_80pct_efficiency'] < .55
-result={'board':str(BOARD.relative_to(ROOT)),'USB':usb,'GND':ground_info,'power':power,'buck_thermal_screening':thermal,'inductor':inductor,'capacitors':capacitors,'fuse':fuse,'diode':diodes,'input_budget':input_budget,
+charger={'part':'MCP73831T-2ACI/OT','setpoint_V':4.2,'RPROG_ohm':10000,
+ 'nominal_charge_A':.1,'max_charge_screen_A':.11,
+ 'max_dissipation_screen_W':(5.25-3.0)*.11,
+ 'junction_C_at_50C_theta230':50+(5.25-3.0)*.11*230,
+ 'cell_temperature_sensor':False,'pack_protection_required':True,
+ 'minimum_pack_capacity_mAh':500,'minimum_discharge_rating_A':1.0,
+ 'note':'Verify pack polarity and its specified charging temperature; IC thermal regulation is not cell-temperature monitoring.'}
+battery={'minimum_loaded_connector_voltage_V':3.0,'input_screen_A':.8,
+ 'PFET_Rds_assumed_hot_ohm':.17,
+ 'converter_input_lower_bound_V':3.0-.8*(.17+sum(power[k]['one_conductive_path_resistance_ohm_60C'] for k in ['battery_to_PFET','PFET_to_converter']))-.01,
+ 'note':'Protected 1S 3.7V/4.2V battery. No on-board cell protection, undervoltage cutoff at 3V or 5V boost output. This 3V loaded limit is a design condition.'}
+battery['calculated_input_A_at_lower_bound_and_80pct_efficiency']=1.65/(.8*battery['converter_input_lower_bound_V'])
+assert input_budget['converter_input_lower_bound_V']>1.8
+assert input_budget['calculated_input_A_at_lower_bound_and_80pct_efficiency']<.55
+assert battery['converter_input_lower_bound_V']>2.4
+assert battery['calculated_input_A_at_lower_bound_and_80pct_efficiency']<.8
+assert charger['junction_C_at_50C_theta230']<125
+result={'board':str(BOARD.relative_to(ROOT)),'USB':usb,'GND':ground_info,'power':power,'converter_thermal_screening':thermal,'charger':charger,'battery':battery,'inductor':inductor,'capacitors':capacitors,'fuse':fuse,'diode':diodes,'input_budget':input_budget,
         'assumptions':{'copper_temperature_for_resistance_C':60,'via_plating_mm':.020,
         'power_path_note':'One existing conductive path; parallel vias/paths ignored conservatively. Ground-plane and component resistance are not included.',
         'thermal_method':'IPC-2221 empirical trace screen, not IPC-2152 certification or a board thermal simulation.'}}

@@ -42,7 +42,7 @@
   (condition "A.fromTo('L1-2','U1-2')")
   (constraint track_width (min 0.40mm)))
 (rule "Fused USB supply minimum"
-  (condition "A.NetName == '/VBUS_FUSED'")
+  (condition "A.NetName == '/VBUS_FUSED' && !A.memberOfGroup('CHARGER_BRANCH')")
   (constraint track_width (min 0.80mm)))
 (rule "5V supply minimum"
   (condition "A.NetName == '/+5V' && !A.memberOfGroup('BUCK_EN_STRAP')")
@@ -68,3 +68,5 @@
 (rule "USB A6 crossover no vias"
  (condition "A.NetName == '/USB_A_P'")
  (constraint disallow via))
+
+(rule "Charger branch minimum" (condition "A.memberOfGroup('CHARGER_BRANCH')") (constraint track_width (min 0.25mm)))
