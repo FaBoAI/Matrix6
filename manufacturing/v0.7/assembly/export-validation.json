@@ -1,0 +1,58 @@
+{
+  "status": "QUOTATION; all 26 BOM groups matched live; JLC engineering placement and CAM approval required before manufacture",
+  "cad_pcb_sha256": "fabde2cfe1d13ff8f631c0265ae2106bbdb555769dfc1150de94dfcd200140ec",
+  "component_count": 48,
+  "bom_groups": 26,
+  "top_count": 37,
+  "bottom_count": 11,
+  "centroid_adjustments": {
+    "J2": {
+      "anchor": [
+        117.8,
+        -132.0
+      ],
+      "fab_body_center": [
+        117.80000000000001,
+        -131.75
+      ]
+    },
+    "J3": {
+      "anchor": [
+        108.5,
+        -153.5
+      ],
+      "fab_body_center": [
+        107.5,
+        -155.95
+      ]
+    },
+    "H1": {
+      "anchor": [
+        101.27,
+        -153.26
+      ],
+      "fab_body_center": [
+        101.27000000000001,
+        -129.13
+      ]
+    },
+    "H2": {
+      "anchor": [
+        134.29,
+        -153.26
+      ],
+      "fab_body_center": [
+        134.29000000000002,
+        -129.13
+      ]
+    }
+  },
+  "coordinate_origin": "KiCad absolute origin, same as Gerber, Y inverted to Cartesian; rotation offsets below adapt to selected JLC models",
+  "jlc_rotation_offsets_degrees": {
+    "H1": 90,
+    "H2": 90,
+    "J2": 180
+  },
+  "placement_reference": "review/Matrix6-assembly-reference.png",
+  "unmatched": []
+}

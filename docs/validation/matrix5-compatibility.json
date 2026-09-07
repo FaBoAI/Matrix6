@@ -1,5 +1,5 @@
 {
-  "pcb_sha256": "698938d0628a4010f1af26af436fd30b10bca423762f6e7ecb5a648c8e5de58c",
+  "pcb_sha256": "fabde2cfe1d13ff8f631c0265ae2106bbdb555769dfc1150de94dfcd200140ec",
   "preserved_from_v04": {
     "usb_copper": true,
     "design_rules_except_documented_charger_escape": true,

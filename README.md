@@ -1,8 +1,10 @@
 # Matrix Six
 
-ESP32-S3-WROOM-1-N8R8を使った、Matrix5シールド向けのKiCad 10開発基板です。現行設計は **v0.6**。オートルーターを使わず、部品配置と配線を個別に指定しました。
+ESP32-S3-WROOM-1-N8R8を使った、Matrix5シールド向けのKiCad 10開発基板です。現行設計は **v0.7（四隅R2 mm）**。オートルーターを使わず、部品配置と配線を個別に指定しました。
 
 ![Matrix Six裏面3D・30度](docs/validation/pcb-3d-bottom.png)
+
+![Matrix Six表面3D・30度](docs/validation/pcb-3d-top.png)
 
 ## KiCadで開く
 
@@ -12,7 +14,7 @@ ESP32-S3-WROOM-1-N8R8を使った、Matrix5シールド向けのKiCad 10開発�
 - 裏面microSD（CS=10、MOSI=11、CLK=12、MISO=13）。口はアンテナ側へ向け、15.8 × 22.5 mmの抜き差し空間を確保。
 - 裏面JST-PH 2ピンLiPo端子、MCP73831で公称100 mA充電、AO3401AによるUSB／電池自動切替。
 - USBの左にRESET、右にBOOT。基板下部の赤LEDは `POWER`、青LEDはGPIO48の `PIN 48`。
-- 40.64 × 61.00 mm、4層。L2は連続GND、USBは表面のみ・ビア0。
+- 40.64 × 61.00 mm、四隅R2 mm、4層。L2は連続GND、USBは表面のみ・ビア0。v0.6から全48部品と624個の配線・ビアの位置を保持。
 - H1/H2は各20ピン、ピッチ2.54 mm、列間33.02 mmのメスソケット。1番ピンはUSB側。
 - 表面に `Matrix Six`、裏面に `Designed By GPT-6 Astra`。
 
@@ -28,9 +30,10 @@ LiPoは保護回路付き1セル3.7 V／満充電4.2 V、500 mAh以上・放電�
 
 ## 検証と図面
 
-| 項目 | 保存したv0.6の結果 |
+| 項目 | 保存したv0.7の結果 |
 |---|---|
 | DRC / ERC / 未配線 / 回路図整合性 | すべて0件 |
+| 外形 | 四隅R2 mm、直線4本＋円弧4本で閉じた輪郭 |
 | SD抜き差し空間 | 裏面15.8 × 22.5 mm、部品の配置禁止領域。重なり0 |
 | Matrix5端子照合 | 全11シールドの使用ピン・40位置が一致 |
 | USB | v0.4の銅配線を保持、表面のみ・ビア0 |
@@ -47,7 +50,7 @@ JLC04161H-7628相当の層構成を設定し、USB均一断面の既存2D推定�
 
 ## JLCPCBへの試作発注
 
-[v0.6の見積もり用データ](manufacturing/v0.6/README.md)を用意しています。両面実装へ変更したため、旧v0.5の見積もりをそのまま注文しないでください。最新の部品在庫・極性と回転、コンデンサの実効容量、製造スタックアップの確認を残しており、製造リリース・注文・決済は未実施です。
+[v0.7の丸角版製造データ](manufacturing/v0.7/README.md)を使用してください。v0.6以前のGerberは四隅が直角の旧版です。BOM・CPLの内容はv0.6と同一で、全26部品グループの型番を選択済みです。JLCPCBの最終実装位置・極性とCAMの確認は製造前に必要です。最新の見積もり状況は製造データのREADMEに記録しています。
 
 ## 検証の再実行
 
@@ -60,5 +63,7 @@ python3 scripts/verify_project.py
 `scripts/manual_matrix5_layout.py` は初期インポートのコミットを入力とした、座標指定による移行記録です。オートルーターではありません。再実行すると後からのCAD編集を上書きするので、通常の検証には使いません。
 
 v0.6の回路選定・電源条件は [設計メモ](docs/matrix-six-v06.md) に記録しています。
+
+v0.7の外形変更は `scripts/round_board_corners.py` に記録しています。四隅を削り込む円弧と接線で構成し、基板寸法、端子位置、配線を保持したことを [外形検証](docs/validation/rounded-corners.json) で確認しています。版別の製造出力はPCBのリビジョンから出力先を決定します。
 
 旧DevBoardの資料は [docs/devboard-v04](docs/devboard-v04/README.md) に履歴として保存しています。現在の端子・給電条件はこのREADMEとv0.6の互換性資料を使用してください。ライブラリの帰属は [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) に記載しています。

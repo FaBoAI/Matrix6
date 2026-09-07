@@ -6,11 +6,10 @@ Render the generated fabrication SVG to JPEG and include it in the upload ZIP.
 from pathlib import Path
 import hashlib, html, json, os, subprocess
 from sexpr import parse, children, child
+from manufacturing_revision import REV, OUT, RADIUS
 
 ROOT = Path(__file__).resolve().parent.parent
-OUT = ROOT / 'manufacturing/v0.6'
 CAD = ROOT / 'hardware/Matrix6/Matrix6.kicad_pcb'
-assert child(child(parse(CAD.read_text()), 'title_block'), 'rev')[1]=='0.6'
 MAC = Path('/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli')
 CLI = os.environ.get('KICAD_CLI', str(MAC) if MAC.exists() else 'kicad-cli')
 for path, expected in json.loads((ROOT/'docs/validation/cad-sha256.json').read_text()).items():
@@ -42,13 +41,13 @@ pieces = ['<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1400" vi
           '<style>text{font-family:Arial,sans-serif;fill:#172337} .small{font-size:22px}</style>']
 def text(x, y, value, size=27):
     pieces.append(f'<text x="{x}" y="{y}" font-size="{size}">{html.escape(value)}</text>')
-text(60, 65, 'Matrix Six v0.6 — PCB FABRICATION / IMPEDANCE REQUIREMENTS', 37)
+text(60, 65, f'Matrix Six v{REV} — PCB FABRICATION / IMPEDANCE REQUIREMENTS', 37)
 text(60, 108, 'Prototype quotation • CAD hash in source-manifest.json • All dimensions in mm • 2026-09-07', 23)
 text(60, 160, 'USB routing', 25)
 scale = 14
 def xy(x, y): return 90+(x-97.46)*scale, 200+(y-100)*scale
 x,y=xy(97.46,100)
-pieces.append(f'<rect x="{x}" y="{y}" width="{40.64*scale}" height="{61*scale}" fill="#f5f7f8" stroke="#253649" stroke-width="3"/>')
+pieces.append(f'<rect x="{x}" y="{y}" width="{40.64*scale}" height="{61*scale}" rx="{RADIUS*scale}" fill="#f5f7f8" stroke="#253649" stroke-width="3"/>')
 for refx in [101.27,134.29]:
     for pin in range(20):
         px,py=xy(refx,153.26-pin*2.54)
@@ -60,14 +59,14 @@ for seg in children(b,'segment'):
     if net not in colors: continue
     ax,ay=xy(*map(float,child(seg,'start')[1:3])); bx,by=xy(*map(float,child(seg,'end')[1:3]))
     pieces.append(f'<line x1="{ax}" y1="{ay}" x2="{bx}" y2="{by}" stroke="{colors[net]}" stroke-width="{float(child(seg,"width")[1])*scale}" stroke-linecap="round"/>')
-for label, ax,ay,aw,ah in [('U1',108.78,95.8,18,25.5),('J1 USB-C',113.31,154.325,8.94,7.35)]:
+for label, ax,ay,aw,ah in [('U1',108.78,93.75,18,25.5),('J1 USB-C',113.31,154.325,8.94,7.35)]:
     px,py=xy(ax,ay)
     pieces.append(f'<rect x="{px}" y="{py}" width="{aw*scale}" height="{ah*scale}" fill="none" stroke="#647488" stroke-width="2" stroke-dasharray="7 5"/>')
     text(px+4,py+25,label,21)
 for label,px,py in [('R3/R4',106.5,116.3),('R11 0R',117.53,151.75)]:
     xx,yy=xy(px,py);text(xx+85 if label.startswith('R11') else xx-15,yy-15,label,20)
 text(90,1115,'D+ red / D− blue; all USB copper on L1.',23)
-text(90,1150,'Board: 40.64 × 61.00',23)
+text(90,1150,f'Board: 40.64 × 61.00; 4 corners R{RADIUS:g}',23)
 text(90,1185,'KiCad coordinates: X=97.46..138.10',23)
 text(90,1220,'Y=100..161 (downward). Gerber Y is negative.',22)
 

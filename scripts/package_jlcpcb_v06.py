@@ -1,4 +1,4 @@
-"""Create versioned quotation BOM/CPL and Gerber package for the verified v0.6.
+"""Create versioned quotation BOM/CPL and Gerber package for the verified PCB.
 
 No order is submitted. Coordinates are read from KiCad; no PCB mutation.
 Run with KiCad Python after export_jlcpcb_v06.py and rendering the fab JPG.
@@ -7,7 +7,8 @@ from pathlib import Path
 from collections import OrderedDict
 import ast,csv,hashlib,json,zipfile
 import wx,pcbnew as p
-ROOT=Path(__file__).resolve().parent.parent;OUT=ROOT/'manufacturing/v0.6';DEST=OUT/'assembly';DEST.mkdir(exist_ok=True)
+from manufacturing_revision import REV, OUT
+ROOT=Path(__file__).resolve().parent.parent;DEST=OUT/'assembly';DEST.mkdir(exist_ok=True)
 CAD=ROOT/'hardware/Matrix6/Matrix6.kicad_pcb';hashes=json.loads((ROOT/'docs/validation/cad-sha256.json').read_text())
 for path,h in hashes.items():assert hashlib.sha256((ROOT/path).read_bytes()).hexdigest()==h,path
 app=wx.App(False);b=p.LoadBoard(str(CAD));fps={f.GetReference():f for f in b.GetFootprints()}
@@ -30,13 +31,13 @@ for row in bom:
     ref=row['Reference'];mpn,lcsc=exact.get(ref,('',''));name=mpn or comments.get(ref,row['Value']);fp=row['Footprint'].split(':')[-1]
     if fp.startswith(('C_0805','C_0603','R_0603','LED_0603')):fp=fp.split('_')[1]
     groups.setdefault((name,fp,lcsc,mpn),[]).append(ref)
-bf=DEST/'Matrix6-v0.6-BOM.csv'
+bf=DEST/f'Matrix6-v{REV}-BOM.csv'
 with bf.open('w',newline='') as f:
     w=csv.writer(f);w.writerow(['Comment','Designator','Footprint','JLCPCB Part #','Manufacturer Part Number','Quantity'])
     for (name,fp,lcsc,mpn),rr in groups.items():w.writerow([name,','.join(rr),fp,lcsc,mpn,len(rr)])
 # Only non-centred connectors need a centroid offset. Fab outline geometry is
 # measured in board coordinates, so the rear mirror is already applied.
-centroids={};cf=DEST/'Matrix6-v0.6-CPL.csv'
+centroids={};cf=DEST/f'Matrix6-v{REV}-CPL.csv'
 with cf.open('w',newline='') as f:
     w=csv.writer(f);w.writerow(['Designator','Mid X','Mid Y','Rotation','Layer'])
     for row in pos:
@@ -67,9 +68,9 @@ files=sorted(q for q in (OUT/'gerber').iterdir() if q.suffix!='.gbrjob')
 assert {'.gtl','.g1','.g2','.gbl','.gts','.gbs','.gto','.gbo','.gtp','.gbp','.gm1'}<={q.suffix for q in files}
 assert sum(q.suffix=='.drl' for q in files)==2
 assert (OUT/'gerber/Matrix6-fabrication-requirements.jpg').exists()
-with zipfile.ZipFile(OUT/'Matrix6-v0.6-Gerber.zip','w',zipfile.ZIP_DEFLATED) as z:
+with zipfile.ZipFile(OUT/f'Matrix6-v{REV}-Gerber.zip','w',zipfile.ZIP_DEFLATED) as z:
     for q in files:z.write(q,q.name)
-with zipfile.ZipFile(OUT/'Matrix6-v0.6-Gerber.zip') as z:assert z.testzip() is None
+with zipfile.ZipFile(OUT/f'Matrix6-v{REV}-Gerber.zip') as z:assert z.testzip() is None
 report={'status':'QUOTATION; all 26 BOM groups matched live; JLC engineering placement and CAM approval required before manufacture','cad_pcb_sha256':hashlib.sha256(CAD.read_bytes()).hexdigest(),'component_count':len(refs),'bom_groups':len(groups),'top_count':sum(r['Side']=='top' for r in pos),'bottom_count':sum(r['Side']=='bottom' for r in pos),'centroid_adjustments':centroids,'coordinate_origin':'KiCad absolute origin, same as Gerber, Y inverted to Cartesian; rotation offsets below adapt to selected JLC models','jlc_rotation_offsets_degrees':{'H1':90,'H2':90,'J2':180},'placement_reference':'review/Matrix6-assembly-reference.png','unmatched':[','.join(rr) for (_,_,lcsc,_),rr in groups.items() if not lcsc]}
 (DEST/'export-validation.json').write_text(json.dumps(report,indent=2)+'\n')
 manifest={**report,'cad_hashes':hashes,'files':{str(q.relative_to(OUT)):hashlib.sha256(q.read_bytes()).hexdigest() for q in OUT.rglob('*') if q.is_file() and q.name!='source-manifest.json'}}

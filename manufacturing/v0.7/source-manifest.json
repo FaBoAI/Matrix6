@@ -1,0 +1,95 @@
+{
+  "status": "QUOTATION; all 26 BOM groups matched live; JLC engineering placement and CAM approval required before manufacture",
+  "cad_pcb_sha256": "fabde2cfe1d13ff8f631c0265ae2106bbdb555769dfc1150de94dfcd200140ec",
+  "component_count": 48,
+  "bom_groups": 26,
+  "top_count": 37,
+  "bottom_count": 11,
+  "centroid_adjustments": {
+    "J2": {
+      "anchor": [
+        117.8,
+        -132.0
+      ],
+      "fab_body_center": [
+        117.80000000000001,
+        -131.75
+      ]
+    },
+    "J3": {
+      "anchor": [
+        108.5,
+        -153.5
+      ],
+      "fab_body_center": [
+        107.5,
+        -155.95
+      ]
+    },
+    "H1": {
+      "anchor": [
+        101.27,
+        -153.26
+      ],
+      "fab_body_center": [
+        101.27000000000001,
+        -129.13
+      ]
+    },
+    "H2": {
+      "anchor": [
+        134.29,
+        -153.26
+      ],
+      "fab_body_center": [
+        134.29000000000002,
+        -129.13
+      ]
+    }
+  },
+  "coordinate_origin": "KiCad absolute origin, same as Gerber, Y inverted to Cartesian; rotation offsets below adapt to selected JLC models",
+  "jlc_rotation_offsets_degrees": {
+    "H1": 90,
+    "H2": 90,
+    "J2": 180
+  },
+  "placement_reference": "review/Matrix6-assembly-reference.png",
+  "unmatched": [],
+  "cad_hashes": {
+    "hardware/Matrix6/DevBoard.pretty/ESP32-S3-WROOM-1_Edge.kicad_mod": "237e55aaaaeaa52318c4d55d68511deab3aeb2502707f54f94bd662925637618",
+    "hardware/Matrix6/DevBoard.pretty/USB4105_NoUnderbodyCopper.kicad_mod": "4bbaa70574992ef1080f766fed0a294b0f93f629313c2d320ae763e0d73d905b",
+    "hardware/Matrix6/Matrix6.kicad_dru": "3c7b3db8e5b41e7a6f5c85ce00b2faa338fa1fbd8b671bc6aceec9c237a157f3",
+    "hardware/Matrix6/Matrix6.kicad_pcb": "fabde2cfe1d13ff8f631c0265ae2106bbdb555769dfc1150de94dfcd200140ec",
+    "hardware/Matrix6/Matrix6.kicad_pro": "d3f710aa46eace0d8e5668a509a0e7d796a11c1747108aa82aff168eba487fbb",
+    "hardware/Matrix6/Matrix6.kicad_sch": "7852fa1e80fc55f193be03f480d2a7f72dd4e5d0d9b91d0bea9d2e40a3b2ad9a",
+    "hardware/Matrix6/fp-lib-table": "94acf4155dcf4ef8fa5c6760ef2e0bd14c95b52f87102432366e173ee71cdde0"
+  },
+  "files": {
+    "README.md": "11b6fb43789635df07685c194ffe3f2fed137ab9f6bce72ca679c469756f8e69",
+    "Matrix6-v0.7-Gerber.zip": "f805e3ac5cb84ff49d2815282714471a2fe6a1ccede0e28d448ec1c9d70029e5",
+    "assembly/export-validation.json": "c0439d4be2e693b4e4dd88d8b3392176f49877a1fd60098ea2115e593f5bedbb",
+    "assembly/Matrix6-v0.7-CPL.csv": "65ae67b558adfc1219150050e570755d13b650c9086f5065f3e12a683e0df885",
+    "assembly/Matrix6-v0.7-BOM.csv": "a79ecfa03d78df071f3f78216fe4cb6de378a07a7dbad61f1810c5dc491ccf98",
+    "review/Matrix6-KiCad-positions.csv": "135e7778a5bdc0497b1d570141301d47688c6dbc549463241a2e6c03f05a08c5",
+    "review/Matrix6-assembly-reference.svg": "2b8fe6fe13870cdc1bd924d80513cd7020d2727b531ab027cd2a0293cf138c25",
+    "review/Matrix6-assembly-reference.png": "fe4da19fe013fbcfc819805c13c9d7a0d0e2ce5dcabe415669a4f651be464c37",
+    "review/Matrix6-KiCad-BOM-DRAFT.csv": "08d0ea9997f70cb605c325818560239dfcb9e3555bd5c18282aaa4445e147319",
+    "review/Matrix6-fabrication-requirements.svg": "c0be3a8b93d84cabd7c65d4444f235f4636c5d81cc4c3af6f55d27c9ad7cbf73",
+    "review/drill-report.txt": "4a8a001dc748d567b7c9b562a246088aa5d3d467f59d860ba186f6257a06c277",
+    "gerber/Matrix6-B_Paste.gbp": "171120bccf80082bfd33115970e3e672ba8aff8e625a8b6bf8efb59471c8cebd",
+    "gerber/Matrix6-F_Cu.gtl": "aefd58c37158606f581ce91af76f04f0fd0a2200700786016845a7e83968d192",
+    "gerber/Matrix6-B_Mask.gbs": "4f2e62d9132398ffd3b539e1d772c0458262b3da097ac03a7a0bc2b5d7c43f76",
+    "gerber/Matrix6-NPTH.drl": "e149c88174c503fc1ee5a15053fc64c0bc1d33a2381422d7d2871b726ab4e9ce",
+    "gerber/Matrix6-B_Cu.gbl": "6a9ed5f342d01c4d0c8167407476c002e0e92126f5a9700910bdcefb9531d57c",
+    "gerber/Matrix6-B_Silkscreen.gbo": "eb3bc7a9cce1b91d1e10766557c23132d6a9e0506d77ac0531ebf7682198cbe2",
+    "gerber/Matrix6-F_Silkscreen.gto": "36ae73690c09c50869ff83691ffab2d34d1e487576de48f533336658967971ee",
+    "gerber/Matrix6-In1_Cu.g1": "a57e4f7a36e2603fbde633752556e204ba6aa4d63dbdac3267e5973b331efbcc",
+    "gerber/Matrix6-F_Mask.gts": "92e431c039956834df2f2137f72db21f4545a9241ee997e36a4ef4730bfbbaa2",
+    "gerber/Matrix6-In2_Cu.g2": "7c22cc5ffb805ce91b08e9cf95b87c2ab69088c7fb2adad003dd9687c7e4b9b0",
+    "gerber/Matrix6-PTH.drl": "ac2fec7f5e6e4441f7949391419af3bdb1b0bfb91a5ccc362b8ba82880a5ef01",
+    "gerber/Matrix6-job.gbrjob": "194c20404974b62746c661a344f482ecf69a345761027aef93a8025cb288c4d4",
+    "gerber/Matrix6-fabrication-requirements.jpg": "730d63cdf48dce5954787ddb4060e53321143a0e7e86f66764ce2514314c16a1",
+    "gerber/Matrix6-F_Paste.gtp": "039cd050740d0dbaf014c35c6d60863645f78068132d137604d58c1c0c8da7f4",
+    "gerber/Matrix6-Edge_Cuts.gm1": "4576449ab421007bdc90b915e07996db6889d6f28e0b780088a5a8df7aabe74c"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "previous_pcb_sha256": "698938d0628a4010f1af26af436fd30b10bca423762f6e7ecb5a648c8e5de58c",
+  "corner_radius_mm": 2.0,
+  "outline_bounds_mm": [
+    97.46,
+    100.0,
+    138.1,
+    161.0
+  ],
+  "straight_edges": 4,
+  "quarter_circle_arcs": 4,
+  "footprints_and_routed_copper_unchanged": true,
+  "nominal_area_mm2": 2475.606370614359,
+  "validation": "PASS: refilled board DRC/ERC/parity/unrouted 0; all footprints and routed copper preserved from b8887a6.",
+  "pcb_sha256": "fabde2cfe1d13ff8f631c0265ae2106bbdb555769dfc1150de94dfcd200140ec",
+  "actual_arc_radii_mm": [
+    2.0,
+    2.0,
+    2.0,
+    2.0
+  ]
+}

@@ -22,7 +22,7 @@
   "GND": {
     "signal_track_count_L2": 0,
     "connected_copper_regions": 1,
-    "area_mm2": 2181.387159804275,
+    "area_mm2": 2179.4484072173263,
     "USB_reference_samples": 13182,
     "missing_ground_samples": []
   },

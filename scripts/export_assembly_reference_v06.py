@@ -2,19 +2,20 @@
 from pathlib import Path
 from html import escape
 import wx, pcbnew as p
+from manufacturing_revision import REV, OUT, RADIUS
 ROOT=Path(__file__).resolve().parent.parent
 app=wx.App(False); b=p.LoadBoard(str(ROOT/'hardware/Matrix6/Matrix6.kicad_pcb'))
 S=15; X0=97.46; Y0=90; W=40.64
 svg=['<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1520" viewBox="0 0 1600 1520">', '<rect width="1600" height="1520" fill="white"/>']
 def text(x,y,t,size=19,color='#18242d'):
     svg.append(f'<text x="{x}" y="{y}" font-family="Arial,sans-serif" font-size="{size}" fill="{color}">{escape(t)}</text>')
-text(65,50,'Matrix Six v0.6 — CAD assembly reference',32)
+text(65,50,f'Matrix Six v{REV} — CAD assembly reference / corners R{RADIUS:g} mm',32)
 text(65,82,'Use actual pad locations and polarity. JLC preview model origins may differ. CAM/placement approval required.',19)
 for bottom,ox,label in [(False,85,'TOP — viewed from component side'),(True,900,'BOTTOM — viewed from component side')]:
     text(ox,122,label,22)
     def xy(x,y):return (ox+((X0+W-x) if bottom else (x-X0))*S,145+(y-Y0)*S)
     x,y=xy(X0+W if bottom else X0,100)
-    svg.append(f'<rect x="{x}" y="{y}" width="{W*S}" height="{61*S}" fill="#f1e9f7" stroke="#344653" stroke-width="2"/>')
+    svg.append(f'<rect x="{x}" y="{y}" width="{W*S}" height="{61*S}" rx="{RADIUS*S}" fill="#f1e9f7" stroke="#344653" stroke-width="2"/>')
     for f in b.GetFootprints():
         side=f.GetLayer()==p.B_Cu
         if side!=bottom:continue
@@ -51,4 +52,4 @@ notes=[
 ]
 for i,t in enumerate(notes):text(65,1308+i*30,t,18)
 svg.append('</svg>')
-out=ROOT/'manufacturing/v0.6/review/Matrix6-assembly-reference.svg';out.write_text('\n'.join(svg));print(out)
+out=OUT/'review/Matrix6-assembly-reference.svg';out.write_text('\n'.join(svg));print(out)

@@ -6,6 +6,7 @@ from pathlib import Path
 import hashlib,html,json
 import pcbnew as p
 import wx
+from manufacturing_revision import REV, RADIUS
 app=wx.App(False);ROOT=Path(__file__).resolve().parent.parent
 board=ROOT/'hardware/Matrix6/Matrix6.kicad_pcb';b=p.LoadBoard(str(board))
 fps={f.GetReference():f for f in b.GetFootprints()};slot=fps['J2']
@@ -36,10 +37,10 @@ s=12;ox=65;oy=80
 def pos(x,y):return ox+(138.1-x)*s,oy+(y-100)*s
 svg=['<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="910" viewBox="0 0 1080 910">','<rect width="1080" height="910" fill="#f4f7fa"/>','<style>text{font-family:Arial,sans-serif;fill:#173047} .small{font-size:15px}</style>']
 def text(x,y,label,size=20):svg.append(f'<text x="{x}" y="{y}" font-size="{size}">{html.escape(label)}</text>')
-def rect(box,fill,stroke,dash=''):
-    x,y=pos(box[2],box[1]);svg.append(f'<rect x="{x}" y="{y}" width="{(box[2]-box[0])*s}" height="{(box[3]-box[1])*s}" fill="{fill}" stroke="{stroke}" stroke-width="2" stroke-dasharray="{dash}"/>')
-text(65,40,'Matrix Six v0.6 / microSD access — rear view',27)
-rect([97.46,100,138.1,161],'white','#173047')
+def rect(box,fill,stroke,dash='',radius=0):
+    x,y=pos(box[2],box[1]);svg.append(f'<rect x="{x}" y="{y}" width="{(box[2]-box[0])*s}" height="{(box[3]-box[1])*s}" rx="{radius*s}" fill="{fill}" stroke="{stroke}" stroke-width="2" stroke-dasharray="{dash}"/>')
+text(65,40,f'Matrix Six v{REV} / microSD access — rear view',27)
+rect([97.46,100,138.1,161],'white','#173047',radius=RADIUS)
 rect(corridor,'#dcf7e8','#179763','7 5')
 for r,box in rear.items():
     rect(box,'#dce8f9' if r=='J2' else '#e9edf1','#4e6781')
