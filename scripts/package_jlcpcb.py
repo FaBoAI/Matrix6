@@ -21,7 +21,7 @@ for path,expected in json.loads((ROOT/'docs/validation/cad-sha256.json').read_te
     assert hashlib.sha256((ROOT/path).read_bytes()).hexdigest()==expected,path
 manifest={'cad_source_commit':'d1438c606553286f8075416b602664ae09d1bd65',
           'cad_pcb_sha256':hashlib.sha256((ROOT/'hardware/Matrix6/Matrix6.kicad_pcb').read_bytes()).hexdigest(),
-          'assembly_status':'NOT RELEASED; raw KiCad BOM/positions are for review only',
+          'assembly_status':'NOT RELEASED; assembly BOM/CPL are for quotation and matching; part selection and placement review remain pending',
           'reference_parity':{'bom_count':len(bom),'position_count':len(pos),'all_on_top':True},
           'files':{str(p.relative_to(OUT)):hashlib.sha256(p.read_bytes()).hexdigest()
                    for p in sorted(OUT.rglob('*')) if p.is_file() and p.name!='source-manifest.json'}}

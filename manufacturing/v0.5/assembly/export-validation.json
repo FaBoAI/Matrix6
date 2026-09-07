@@ -1,0 +1,77 @@
+{
+  "status": "QUOTATION ONLY - part selection and placement preview not released",
+  "cad_pcb_sha256": "d4baae69416e07bda5e7b92d2c81b41b77b089a59c8f3010dbfb94d57be7886e",
+  "bom_lines": 22,
+  "component_count": 32,
+  "cpl_lines": 32,
+  "all_top": true,
+  "coordinate_units": "mm",
+  "coordinate_origin": "KiCad absolute origin, identical to Gerbers; Y inverted to Cartesian",
+  "centroid_corrections": {
+    "H1": {
+      "original_mm": [
+        101.27,
+        -153.26
+      ],
+      "body_center_mm": [
+        101.27,
+        -129.13
+      ]
+    },
+    "H2": {
+      "original_mm": [
+        134.29,
+        -153.26
+      ],
+      "body_center_mm": [
+        134.29,
+        -129.13
+      ]
+    }
+  },
+  "rotation_status": "KiCad rotations normalized to 0..359; JLC model rotations require preview review",
+  "unmatched_part_numbers": [
+    "C1",
+    "C2,C8",
+    "C3",
+    "C4,C6",
+    "C7",
+    "D2",
+    "D3",
+    "H1,H2"
+  ],
+  "unselected_manufacturer_parts": [
+    "C1",
+    "C2,C8",
+    "C3",
+    "C4,C6",
+    "C7",
+    "D2",
+    "D3",
+    "H1,H2"
+  ],
+  "file_sha256": {
+    "Matrix6-v0.5-BOM.csv": "22fec5aed24e3bbec9f229f4164e985362906112008afcf77f89503d83f26d69",
+    "Matrix6-v0.5-CPL.csv": "f684208fa5589891c9d644c1d2a256d4ecb19838e90a350560cbcfd7f16200fa"
+  },
+  "format_sources": [
+    "https://jlcpcb.com/help/article/how-to-generate-the-bom-and-centroid-file-from-kicad",
+    "https://jlcpcb.com/help/article/bill-of-materials-for-pcb-assembly"
+  ],
+  "part_sources": [
+    "https://jlcpcb.com/partdetail/C21190",
+    "https://jlcpcb.com/partdetail/C231329",
+    "https://jlcpcb.com/partdetail/C23186",
+    "https://jlcpcb.com/partdetail/C23345",
+    "https://jlcpcb.com/partdetail/C25415531",
+    "https://jlcpcb.com/partdetail/C25804",
+    "https://jlcpcb.com/partdetail/C2913201",
+    "https://jlcpcb.com/partdetail/C47460",
+    "https://jlcpcb.com/partdetail/C5184243",
+    "https://jlcpcb.com/partdetail/C59782",
+    "https://jlcpcb.com/partdetail/C7519",
+    "https://jlcpcb.com/partdetail/C780206",
+    "https://jlcpcb.com/partdetail/C780769",
+    "https://jlcpcb.com/partdetail/C844915"
+  ]
+}
