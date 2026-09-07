@@ -87,6 +87,8 @@ for t in b.GetTracks():
 
 
 exec((ROOT/'scripts/two_layer_routes.py').read_text())
+from move_r8_for_branding import move_r8
+move_r8(b)
 from set_matrix_branding import apply_branding
 apply_branding(b)
 p.SaveBoard(str(OUT/'Matrix6.kicad_pcb'),b)

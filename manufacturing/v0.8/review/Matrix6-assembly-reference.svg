@@ -171,11 +171,11 @@
 <circle cx="387.8500000000002" cy="787.0000000000002" r="14.875" fill="none" stroke="#d03535" stroke-width="2"/>
 <rect x="408.85" y="776.1250000000002" width="15.0" height="21.75" transform="rotate(-0.0 416.35 787.0000000000002)" fill="#d6a446" stroke="#674600" stroke-width="0.5"/>
 <text x="407.1" y="778.0000000000002" font-family="Arial,sans-serif" font-size="13" fill="#18242d">C2</text>
-<rect x="298.60000000000014" y="642.8125" width="23.999999999999886" height="12.375" stroke="#526675" fill="none" stroke-width="1.5"/>
-<rect x="292.225" y="641.8749999999999" width="12.0" height="14.25" transform="rotate(-0.0 298.225 648.9999999999999)" fill="#d6a446" stroke="#674600" stroke-width="0.5"/>
-<circle cx="298.225" cy="648.9999999999999" r="11.125" fill="none" stroke="#d03535" stroke-width="2"/>
-<rect x="316.97500000000014" y="641.8749999999999" width="12.0" height="14.25" transform="rotate(-0.0 322.97500000000014 648.9999999999999)" fill="#d6a446" stroke="#674600" stroke-width="0.5"/>
-<text x="315.6000000000001" y="639.9999999999999" font-family="Arial,sans-serif" font-size="13" fill="#18242d">R8</text>
+<rect x="556.4124999999999" y="587.5" width="12.375000000000227" height="23.999999999999886" stroke="#526675" fill="none" stroke-width="1.5"/>
+<rect x="556.6000000000003" y="604.75" width="12.0" height="14.25" transform="rotate(-90.0 562.6000000000003 611.875)" fill="#d6a446" stroke="#674600" stroke-width="0.5"/>
+<circle cx="562.6000000000003" cy="611.875" r="11.125" fill="none" stroke="#d03535" stroke-width="2"/>
+<rect x="556.6000000000003" y="579.9999999999999" width="12.0" height="14.25" transform="rotate(-90.0 562.6000000000003 587.1249999999999)" fill="#d6a446" stroke="#674600" stroke-width="0.5"/>
+<text x="567.6000000000003" y="590.5" font-family="Arial,sans-serif" font-size="13" fill="#18242d">R8</text>
 <rect x="97.60000000000005" y="313.00000000000006" width="11.999999999999957" height="23.999999999999886" stroke="#526675" fill="none" stroke-width="1.5"/>
 <rect x="96.85000000000014" y="329.5000000000001" width="13.5" height="14.25" transform="rotate(-90.0 103.60000000000014 336.6250000000001)" fill="#d6a446" stroke="#674600" stroke-width="0.5"/>
 <circle cx="103.60000000000014" cy="336.6250000000001" r="11.125" fill="none" stroke="#d03535" stroke-width="2"/>

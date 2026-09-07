@@ -27,6 +27,6 @@
     }
   ],
   "rear_ground_regions": 4,
-  "GND_stitch_vias": 45,
+  "GND_stitch_vias": 44,
   "scope": "Saved filled F.Cu GND beside the straight differential pair, including 0.5 mm outward width. Rear is a stitched pour with signal crossings, not an uninterrupted reference plane. Local connector/bend/meander transitions need prototype SI/EMC testing."
 }

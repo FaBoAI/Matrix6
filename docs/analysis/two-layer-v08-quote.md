@@ -1,6 +1,8 @@
 # v0.8 2層版のJLCPCB基板見積もり
 
-2026-09-08、拡大したMatrix Sixと直下のDesigned by GPT-6 Astraを含む最終v0.8 Gerber ZIPをアップロードしました。JLCPCBは **2層、40.64 × 61 mm** と認識し、ファイルをProjects > Quotesへ保存した旨を表示しています。
+> この見積もりはR8移動・文字の中央寄せより前の記録です。現行Gerber/CPLは更新済みで、JLCPCBへの再アップロードが必要です。寸法・層数・部品型番・数量は変わっていません。
+
+2026-09-08、拡大したMatrix Sixと直下のDesigned by GPT-6 Astraを含む見積時点のv0.8 Gerber ZIPをアップロードしました。JLCPCBは **2層、40.64 × 61 mm** と認識し、ファイルをProjects > Quotesへ保存した旨を表示しています。
 
 比較条件は基板5枚、Standard PCBA・両面実装2枚、JLC追加レール込み70.64 × 71 mm。公称1.6 mm、紫、白シルク、S1000H TG155、ENIG 1u、両面1 oz、エポキシ充填・銅キャップ、Horizontal Electroless Copper Plating、0.3 mm穴料金区分、フライングプローブ全数導通検査、製造図面確認ありです。製造図面は自動承認しない設定を選びました。
 

@@ -13,11 +13,11 @@
       "copper_C": 60,
       "copper_mm": 0.035,
       "current_A": 0.5,
-      "ground_resistance_ohm": 0.00584688134295394,
-      "ground_drop_mV": 2.9234406714769703,
-      "connected_stitches": 65,
+      "ground_resistance_ohm": 0.005850214178408275,
+      "ground_drop_mV": 2.9251070892041375,
+      "connected_stitches": 64,
       "omitted_stitches": [],
-      "active_nodes": 44475
+      "active_nodes": 44485
     },
     {
       "mesh_step_mm": 0.125,
@@ -32,11 +32,11 @@
       "copper_C": 60,
       "copper_mm": 0.035,
       "current_A": 0.5,
-      "ground_resistance_ohm": 0.00471550557542907,
-      "ground_drop_mV": 2.357752787714535,
-      "connected_stitches": 65,
+      "ground_resistance_ohm": 0.0046960093931410875,
+      "ground_drop_mV": 2.348004696570544,
+      "connected_stitches": 64,
       "omitted_stitches": [],
-      "active_nodes": 177842
+      "active_nodes": 177889
     },
     {
       "mesh_step_mm": 0.0625,
@@ -51,11 +51,11 @@
       "copper_C": 60,
       "copper_mm": 0.035,
       "current_A": 0.5,
-      "ground_resistance_ohm": 0.004695914899537031,
-      "ground_drop_mV": 2.3479574497685154,
-      "connected_stitches": 65,
+      "ground_resistance_ohm": 0.0046727899042943956,
+      "ground_drop_mV": 2.336394952147198,
+      "connected_stitches": 64,
       "omitted_stitches": [],
-      "active_nodes": 710461
+      "active_nodes": 710641
     }
   ],
   "input_return": {
@@ -71,11 +71,11 @@
     "copper_C": 60,
     "copper_mm": 0.035,
     "current_A": 0.8,
-    "ground_resistance_ohm": 0.00806026096784507,
-    "ground_drop_mV": 6.448208774276056,
-    "connected_stitches": 65,
+    "ground_resistance_ohm": 0.008059094885285759,
+    "ground_drop_mV": 6.447275908228607,
+    "connected_stitches": 64,
     "omitted_stitches": [],
-    "active_nodes": 177842
+    "active_nodes": 177889
   },
   "scope": "Front and rear filled pours, through-hole GND stitches; 20 um barrel plating; 60 C copper. Approximate DC mesh. GND pads/traces are included and drill holes subtracted; solder/contact resistance is not included. Not an EMC or thermal certification."
 }
