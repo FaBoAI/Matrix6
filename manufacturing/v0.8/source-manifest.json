@@ -1,5 +1,5 @@
 {
-  "status": "TWO-LAYER PROTOTYPE QUOTATION; inherited exact parts mapping; current stock, revised CPL placement and CAM review pending",
+  "status": "TWO-LAYER PROTOTYPE ORDER PAYMENT PAGE READY; all 26 exact BOM groups selected; final JLC DFM/CAM approval and payment completion unconfirmed",
   "cad_pcb_sha256": "20be22f195de4a42cf2f9902171f88ed01ce740b4684df816ad5f17b66c79c9f",
   "component_count": 48,
   "bom_groups": 26,
@@ -65,7 +65,7 @@
     "hardware/Matrix6/fp-lib-table": "94acf4155dcf4ef8fa5c6760ef2e0bd14c95b52f87102432366e173ee71cdde0"
   },
   "files": {
-    "README.md": "7b8109f2a46d3acc7f7912be06557421b0ce0a383f09494d1fcbb2fbcae43210",
+    "README.md": "a1e20ebd1c902737246f3a816abc060c3840400adec35eaa00cc0f0634ae5dc3",
     "Matrix6-v0.8-Gerber.zip": "89d3072399df033898e433e7c2f0e9a7e75ffe56867b2b2d70deb4cf3636ab8f",
     "assembly/Matrix6-v0.8-BOM.csv": "f6f77328540943156100e85a7b7c570021ce9e5473b0ef439b6931c4c0c7037c",
     "assembly/export-validation.json": "7cdde3f39e83e73ff8ac61fc395ed1ac7b428104840b79fe1350995c222bf5f6",
@@ -89,5 +89,7 @@
     "gerber/Matrix6-fabrication-requirements.jpg": "58811521dc291fcfa6ba312e5aaa774520cbf55883db8d374f961919d14e1d14",
     "gerber/Matrix6-F_Paste.gtp": "2f6e38c142c713c57f48b27540ebcfa310c82d3c6f1978572461c5af33a38225",
     "gerber/Matrix6-Edge_Cuts.gm1": "d20ec3bcc7547998a62966e5cbe191f060ade9193d05fb59f245cdc6688eb44b"
-  }
+  },
+  "order_record": "../../docs/analysis/two-layer-v08-order.md",
+  "order_batch": "W2026090808083223"
 }
